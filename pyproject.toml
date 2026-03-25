@@ -1,0 +1,22 @@
+# --- Made by Erick -----
+[project]
+name = "hl-unification"
+version = "0.1.0"
+description = "Monorepo unificado do Booster T1 - hsl-player, booster_deploy, booster_assets, booster_robotics_sdk"
+requires-python = ">=3.10,<3.11"
+
+[tool.uv.workspace]
+members = [
+    "booster_assets",
+    "booster_deploy",
+]
+exclude = [
+    "booster_robotics_sdk",
+]
+
+[tool.uv.sources]
+booster-assets = { workspace = true }
+booster-deploy = { workspace = true }
+
+[dependency-groups]
+dev = []
