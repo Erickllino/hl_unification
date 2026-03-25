@@ -1,0 +1,20 @@
+[project]
+name = "booster-deploy"
+version = "0.1.0"
+description = "Deploy de modelos RL no Booster T1"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "mujoco",
+    "scipy",
+    "numpy",
+    "evdev",
+    "booster-assets",
+]
+
+[tool.uv.sources]
+booster-assets = { workspace = true }
+
+[tool.setuptools.packages.find]
+include = ["booster_deploy*", "tasks*"]

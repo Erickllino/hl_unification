@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/booster_assets/__init__.py
+src/booster_assets/motions.py
+src/booster_assets.egg-info/PKG-INFO
+src/booster_assets.egg-info/SOURCES.txt
+src/booster_assets.egg-info/dependency_links.txt
+src/booster_assets.egg-info/top_level.txt

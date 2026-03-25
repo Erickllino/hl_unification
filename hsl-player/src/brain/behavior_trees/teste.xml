@@ -1,0 +1,51 @@
+<root BTCPP_format="4">
+    <include path="./subtrees/subtree_cam_find_and_track_ball.xml" />
+    <include path="./subtrees/subtree_locate.xml" />
+    <include path="./subtrees/subtree_auto_standup_and_locate.xml" />
+    <BehaviorTree ID = "MainTree">
+        <Sequence name="root">
+
+
+        <RunOnce><Script code="control_state=4" /></RunOnce>
+        <!-- <ReactiveSequence _while="control_state==4" name="Kick Testing"> -->
+        <SubTree ID="CamFindAndTrackBall" _autoremap="true" />
+             <ReactiveSequence name="KickSelector">
+            <!--kickinho -->
+            <!-- Script code muda as variáveis na memória -->
+            <Sequence _while="test_kick_type=='kickinho'">
+                <Script code="kickType='kickinho'"/>
+                <Kick/>  <!-- valores default, parâmetro em brain_tree.h (321-327)-->
+                <Script code="test_kick_type='none'"/> 
+                <!--<Sleep msec="2000" />-->
+            </Sequence>
+
+            <!--kick -->
+            <Sequence _while="test_kick_type=='kick'">
+                <Script code="kickType='kick'"/>
+                <Kick/>
+                <Script code="test_kick_type='none'"/> 
+                <!--<Sleep msec="2000" />-->
+            </Sequence>
+
+            <!--kickao -->
+            <Sequence _while="test_kick_type=='kickao'">
+                <Script code="kickType='kickao'"/>
+                <Kick/>
+                <Script code="test_kick_type='none'"/> 
+                <!--<Sleep msec="2000" />-->
+            </Sequence>
+
+            <!--kick -->
+            <Sequence _while="test_kick_type=='drible'">
+                <Script code="kickType='drible'"/>
+                <Kick/>
+                <Script code="test_kick_type='none'"/> 
+                <!--<Sleep msec="2000" />-->
+            </Sequence>
+            </ReactiveSequence>
+        </Sequence>
+    </BehaviorTree>
+</root>
+
+
+
