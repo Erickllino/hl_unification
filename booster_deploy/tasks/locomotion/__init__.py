@@ -16,5 +16,18 @@ class T1WalkControllerCfg1(T1WalkControllerCfg):
         self.policy.checkpoint_path = "models/t1_walk.pt"
 
 
+@configclass
+class T1WalkTest(T1WalkControllerCfg):
+    '''Human-like walk for T1 robot.'''
+    def __post_init__(self):
+        super().__post_init__()
+        self.policy.checkpoint_path = "models/t1_test.pt"
+        self.policy.actor_obs_history_length = 1
+
+
 register_task(
     "t1_walk", T1WalkControllerCfg1())
+
+register_task(
+    "t1_test", T1WalkTest()
+)

@@ -32,7 +32,10 @@ class LocomotionPolicy(Policy):
 
         # Observation and action parameters
         self.actor_obs_history_length = cfg.actor_obs_history_length
-        self.action_scale = cfg.action_scale
+        if isinstance(cfg.action_scale, (list, tuple)):
+            self.action_scale = torch.tensor(cfg.action_scale, dtype=torch.float32)
+        else:
+            self.action_scale = cfg.action_scale
 
         # Initialize buffers
         self.obs_history = None
@@ -139,7 +142,7 @@ class LocomotionPolicyCfg(PolicyCfg):
     constructor = LocomotionPolicy
     checkpoint_path: str = MISSING  # type: ignore
     actor_obs_history_length: int = 10
-    action_scale: float = 0.25
+    action_scale: float | list[float] = 0.25
     obs_dof_vel_scale: float = 1.0
     policy_joint_names: list[str] = MISSING  # type: ignore
 
@@ -236,6 +239,33 @@ class T1WalkControllerCfg(ControllerCfg):
     )
     policy: LocomotionPolicyCfg = LocomotionPolicyCfg(
         obs_dof_vel_scale=1.0,
+        # Per-joint action scales matching training: 0.25 * effort_limit_sim / stiffness
+        # arms(Shoulder/Elbow): 0.25*18/50=0.09  waist: 0.25*25/200=0.03125
+        # hip_pitch: 0.25*45/200=0.05625  hip_roll/yaw: 0.25*25/200=0.03125
+        # knee: 0.25*60/200=0.075  ankle_pitch: 0.25*24/50=0.12  ankle_roll: 0.25*15/50=0.075
+        action_scale=[
+            0.09,     # Left_Shoulder_Pitch
+            0.09,     # Right_Shoulder_Pitch
+            0.03125,  # Waist
+            0.09,     # Left_Shoulder_Roll
+            0.09,     # Right_Shoulder_Roll
+            0.05625,  # Left_Hip_Pitch
+            0.05625,  # Right_Hip_Pitch
+            0.09,     # Left_Elbow_Pitch
+            0.09,     # Right_Elbow_Pitch
+            0.03125,  # Left_Hip_Roll
+            0.03125,  # Right_Hip_Roll
+            0.09,     # Left_Elbow_Yaw
+            0.09,     # Right_Elbow_Yaw
+            0.03125,  # Left_Hip_Yaw
+            0.03125,  # Right_Hip_Yaw
+            0.075,    # Left_Knee_Pitch
+            0.075,    # Right_Knee_Pitch
+            0.12,     # Left_Ankle_Pitch
+            0.12,     # Right_Ankle_Pitch
+            0.075,    # Left_Ankle_Roll
+            0.075,    # Right_Ankle_Roll
+        ],
         policy_joint_names=[
             'Left_Shoulder_Pitch',
             'Right_Shoulder_Pitch',
