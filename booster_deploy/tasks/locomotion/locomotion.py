@@ -203,7 +203,6 @@ class K1WalkControllerCfg(ControllerCfg):
         ],
     )
 
-
 @configclass
 class T1WalkControllerCfg(ControllerCfg):
     robot = T1_23DOF_CFG.replace(  # type: ignore
@@ -243,6 +242,11 @@ class T1WalkControllerCfg(ControllerCfg):
         # arms(Shoulder/Elbow): 0.25*18/50=0.09  waist: 0.25*25/200=0.03125
         # hip_pitch: 0.25*45/200=0.05625  hip_roll/yaw: 0.25*25/200=0.03125
         # knee: 0.25*60/200=0.075  ankle_pitch: 0.25*24/50=0.12  ankle_roll: 0.25*15/50=0.075
+        #
+        # NEW order (mjlab_playground XML order) — use for models trained with mjlab_playground.
+        # To revert to old models, comment this block and uncomment the LEGACY block below.
+        # LEGACY order — for models trained before mjlab_playground migration.
+        # Uncomment below and comment the blocks above to test old models.
         action_scale=[
             0.09,     # Left_Shoulder_Pitch
             0.09,     # Right_Shoulder_Pitch
@@ -287,6 +291,98 @@ class T1WalkControllerCfg(ControllerCfg):
             'Left_Ankle_Pitch',
             'Right_Ankle_Pitch',
             'Left_Ankle_Roll',
-            'Right_Ankle_Roll'
+            'Right_Ankle_Roll',
         ],
     )
+
+@configclass
+class T1WalkControllerTest(ControllerCfg):
+    robot = T1_23DOF_CFG.replace(  # type: ignore
+        default_joint_pos=[
+            0, 0,
+            0.2, -1.3, 0, -0.5,
+            0.2,  1.3, 0,  0.5,
+            0.,
+            -0.2, 0, 0, 0.4, -0.2, 0.,
+            -0.2, 0, 0, 0.4, -0.2, 0.
+        ],
+        joint_stiffness=[
+            4.0, 4.0,
+            50.0, 50.0, 50.0, 50.0,
+            50.0, 50.0, 50.0, 50.0,
+            200.,
+            200.0, 200.0, 200.0, 200.0, 50.0, 50.0,
+            200.0, 200.0, 200.0, 200.0, 50.0, 50.0,
+        ],
+        joint_damping=[
+            1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0,
+            5.0,
+            5.0, 5.0, 5.0, 5.0, 2.0, 2.0,
+            5.0, 5.0, 5.0, 5.0, 2.0, 2.0,
+        ],
+    )
+    vel_command: VelocityCommandCfg = VelocityCommandCfg(
+        vx_max=1.0,
+        vy_max=1.0,
+        vyaw_max=1.0,
+    )
+    policy: LocomotionPolicyCfg = LocomotionPolicyCfg(
+        obs_dof_vel_scale=1.0,
+        # Per-joint action scales matching training: 0.25 * effort_limit_sim / stiffness
+        # arms(Shoulder/Elbow): 0.25*18/50=0.09  waist: 0.25*25/200=0.03125
+        # hip_pitch: 0.25*45/200=0.05625  hip_roll/yaw: 0.25*25/200=0.03125
+        # knee: 0.25*60/200=0.075  ankle_pitch: 0.25*24/50=0.12  ankle_roll: 0.25*15/50=0.075
+        #
+        # NEW order (mjlab_playground XML order) — use for models trained with mjlab_playground.
+        # To revert to old models, comment this block and uncomment the LEGACY block below.
+        action_scale=[
+            0.09,     # Left_Shoulder_Pitch
+            0.09,     # Left_Shoulder_Roll
+            0.09,     # Left_Elbow_Pitch
+            0.09,     # Left_Elbow_Yaw
+            0.09,     # Right_Shoulder_Pitch
+            0.09,     # Right_Shoulder_Roll
+            0.09,     # Right_Elbow_Pitch
+            0.09,     # Right_Elbow_Yaw
+            0.03125,  # Waist
+            0.05625,  # Left_Hip_Pitch
+            0.03125,  # Left_Hip_Roll
+            0.03125,  # Left_Hip_Yaw
+            0.075,    # Left_Knee_Pitch
+            0.12,     # Left_Ankle_Pitch
+            0.075,    # Left_Ankle_Roll
+            0.05625,  # Right_Hip_Pitch
+            0.03125,  # Right_Hip_Roll
+            0.03125,  # Right_Hip_Yaw
+            0.075,    # Right_Knee_Pitch
+            0.12,     # Right_Ankle_Pitch
+            0.075,    # Right_Ankle_Roll
+        ],
+        policy_joint_names=[
+            'Left_Shoulder_Pitch',
+            'Left_Shoulder_Roll',
+            'Left_Elbow_Pitch',
+            'Left_Elbow_Yaw',
+            'Right_Shoulder_Pitch',
+            'Right_Shoulder_Roll',
+            'Right_Elbow_Pitch',
+            'Right_Elbow_Yaw',
+            'Waist',
+            'Left_Hip_Pitch',
+            'Left_Hip_Roll',
+            'Left_Hip_Yaw',
+            'Left_Knee_Pitch',
+            'Left_Ankle_Pitch',
+            'Left_Ankle_Roll',
+            'Right_Hip_Pitch',
+            'Right_Hip_Roll',
+            'Right_Hip_Yaw',
+            'Right_Knee_Pitch',
+            'Right_Ankle_Pitch',
+            'Right_Ankle_Roll',
+        ]
+    )
+
+

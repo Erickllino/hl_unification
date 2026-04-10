@@ -2,7 +2,8 @@ from booster_deploy.utils.isaaclab.configclass import configclass
 from booster_deploy.utils.registry import register_task
 from .locomotion import (
     K1WalkControllerCfg,
-    T1WalkControllerCfg
+    T1WalkControllerCfg,
+    T1WalkControllerTest
 )
 
 # Register locomotion tasks
@@ -17,11 +18,11 @@ class T1WalkControllerCfg1(T1WalkControllerCfg):
 
 
 @configclass
-class T1WalkTest(T1WalkControllerCfg):
+class T1WalkTest(T1WalkControllerTest):
     '''Human-like walk for T1 robot.'''
     def __post_init__(self):
         super().__post_init__()
-        self.policy.checkpoint_path = "models/t1_test.pt"
+        self.policy.checkpoint_path = "models/policy.pt"
         self.policy.actor_obs_history_length = 1
 
 

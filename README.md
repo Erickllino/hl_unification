@@ -1,204 +1,208 @@
-# HL Unification — Monorepo Booster T1
+# HL Unification — Booster T1
 
-Monorepo unificado para o robô humanoide Booster T1, integrando simulação,
-deploy de modelos RL, SDK de controle e lógica de jogo (RoboCup).
+Monorepo unificado do robô humanoide **Booster T1** para RoboCup, integrando:
 
-## Estrutura
+| Módulo | Função |
+|--------|--------|
+| `hsl-player` | Lógica de jogo — behaviour trees, visão (YOLO/TensorRT), game controller (ROS2) |
+| `booster_deploy` | Políticas de RL — locomotion, simulação MuJoCo e deploy no robô real |
+| `booster_assets` | Modelos do robô (URDF/MJCF) e motion data |
+| `booster_robotics_sdk` | SDK C++ com bindings Python para interface com hardware |
 
-```
-hl_unification/
-├── booster_assets/            # Configurações do robô (joints, motions)
-├── booster_deploy/            # Treino/deploy de políticas RL (MuJoCo + robô real)
-├── booster_robotics_sdk/      # SDK C++ com bindings Python (interface hardware)
-├── hsl-player/                # ROS2 workspace — behaviour trees, visão, game controller
-├── pyproject.toml             # UV workspace (unifica os pacotes Python)
-└── .python-version            # Python 3.10
-```
+> Para documentação detalhada de cada módulo, consulte [docs/](docs/).
 
-| Pacote | Descrição | Build |
-|---|---|---|
-| `booster_assets` | Assets do T1 (modelos MJCF, nomes de joints, motions) | Python puro |
-| `booster_deploy` | Controllers MuJoCo/robô real + políticas RL (locomotion, mimic) | Python (torch, mujoco) |
-| `booster_robotics_sdk` | Bindings pybind11 do SDK C++ da Booster | C++ (scikit-build) |
-| `hsl-player` | Brain (behaviour trees), visão (YOLO/TensorRT), game controller, sound | ROS2 / colcon |
+---
 
-## Requisitos
+## Instalação
 
-| Ferramenta | Versão | Notas |
-|---|---|---|
-| Python | 3.10 | Compatível com robô real e ROS2 Humble |
-| [uv](https://docs.astral.sh/uv/) | >= 0.4 | Gerenciador de pacotes |
-| ROS 2 Humble | — | Apenas para hsl-player e deploy no robô |
-| MuJoCo | >= 3.x | Instalado automaticamente pelo uv |
-| CMake + GCC | — | Apenas se precisar compilar o booster_robotics_sdk |
-
-## Instalacao
-
-### 1. Instalar uv
+### No PC (simulação)
 
 ```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+bash install_sim.sh
 ```
 
-### 2. Clonar o repositorio
+Instala o `uv` e cria o ambiente Python com todas as dependências para rodar a simulação MuJoCo localmente.
+
+### No robô (jogo + deploy real)
 
 ```bash
-git clone <url-do-repo> hl_unification
-cd hl_unification
+bash install_robot.sh
 ```
 
-### 3. Criar venv e instalar dependencias
+Compila o SDK C++, instala as dependências Python e compila o `hsl-player` com colcon.
+
+**Pré-requisito:** ROS2 Humble instalado (`sudo apt install ros-humble-desktop`).
+
+---
+
+## 1. Rodar o jogo (hsl-player)
+
+O `hsl-player` controla toda a lógica de jogo: behaviour trees, visão e comunicação com o árbitro.
+
+### Build (primeira vez ou após mudanças no código)
 
 ```bash
-uv sync
+cd hsl-player
+colcon build --symlink-install
+source install/setup.bash
 ```
 
-Isso cria o `.venv/` com Python 3.10 e instala todos os pacotes:
-`booster_assets`, `booster_deploy`, `torch`, `mujoco`, `scipy`, `numpy`, `evdev`.
+### Iniciar no jogo real
 
-### 4. Ativar o ambiente
+```bash
+cd hsl-player
+./scripts/start.sh
+```
+
+### Parar
+
+```bash
+./scripts/stop.sh
+```
+
+### Simulação (rcsssmj)
+
+```bash
+cd hsl-player
+./scripts/sim_start.sh
+
+# Para parar:
+./scripts/sim_stop.sh
+```
+
+### Pacotes ROS2
+
+| Pacote | Tipo | Função |
+|--------|------|--------|
+| `brain` | C++ | Behaviour trees — lógica de jogo |
+| `vision` | C++ | Detecção de bola/jogadores (YOLO + TensorRT) |
+| `game_controller` | C++ | Recebe comandos do árbitro via UDP |
+| `sound_play` | Python | Reprodução de sons |
+| `booster_msgs` | ROS2 msgs | Mensagens customizadas |
+| `booster_ros2_interface` | C++ | Interface com o SDK do robô |
+
+---
+
+## 2. Rodar o robô via deploy (RL direto)
+
+O `booster_deploy` roda uma política RL (ex: `t1_walk.pt`) diretamente no hardware, sem a camada de jogo do `hsl-player`.
+
+**Pré-requisitos:**
+- Firmware Booster >= v1.4 na **motion board** do T1
+- SDK compilado no robô (feito pelo `install_robot.sh`)
+
+### Iniciar
 
 ```bash
 source .venv/bin/activate
+source /opt/booster/BoosterRos2Interface/install/setup.bash
+python3 booster_deploy/scripts/deploy.py --task t1_walk
 ```
 
-Ou use `uv run <comando>` sem ativar.
+### Sequência de ativação no robô
 
-## Simulacao MuJoCo (booster_deploy)
+1. Pressionar **X** no joystick (ou `x` no teclado) → entra em modo `kCustom`
+2. Pressionar **A** no joystick (ou `r` no teclado) → inicia a política `t1_walk.pt`
+3. O robô passa a responder aos comandos de velocidade
 
-### Listar tasks disponiveis
+### Controles (teclado)
+
+| Tecla | Ação |
+|-------|------|
+| `w / s` | vx — frente / trás |
+| `a / d` | vy — esquerda / direita |
+| `q / e` | vyaw — rotação esq/dir |
+| `Espaço` | parar |
+
+### Listar tasks disponíveis
 
 ```bash
-python booster_deploy/scripts/deploy.py --list
+python3 booster_deploy/scripts/deploy.py --list
 ```
 
-Tasks registradas:
-- `t1_walk` — Caminhada do T1
-- `k1_mj2` — K1 com motion MJ2
-- `k1_fight` — K1 com motion de luta
+---
 
-### Rodar simulacao
+## 3. Rodar a simulação (MuJoCo)
+
+Testa a política RL localmente sem o robô físico.
 
 ```bash
-python booster_deploy/scripts/deploy.py --task t1_walk --mujoco
+source .venv/bin/activate
+python3 booster_deploy/scripts/deploy.py --task t1_walk --mujoco
 ```
 
-O MuJoCo abre o viewer com o T1. Comandos de velocidade via stdin:
+O viewer do MuJoCo abrirá com o T1. Use os mesmos controles de teclado da seção anterior.
 
-```
-Set command (x, y, yaw): 0.5 0.0 0.0    # andar para frente
-Set command (x, y, yaw): 0.0 0.3 0.0    # andar para o lado
-Set command (x, y, yaw): 0.0 0.0 1.0    # girar
-```
+### Limites conhecidos do `t1_walk.pt`
 
-### Teste de limites automatico
+| Eixo | Mínimo útil | Máximo seguro | Observação |
+|------|-------------|---------------|------------|
+| vx   | 0.4 m/s     | ~2.0 m/s      | > 1.35 deriva para esquerda |
+| vy   | 0.4 m/s     | ~1.0 m/s      | > 1.0 instável |
+| vyaw | 0.25 rad/s  | ~2.0 rad/s    | > 2.0 instável |
+
+> Convenção: vx+ = frente, vy+ = esquerda, vyaw+ = anti-horário.
+
+### Teste de limites automático
 
 ```bash
-python booster_deploy/inject_values.py
+source .venv/bin/activate
+python3 booster_deploy/inject_values.py
 ```
 
-Incrementa automaticamente `vx`, `vy` ou `vyaw` a cada 10s para mapear limites do modelo.
+Incrementa automaticamente `vx`, `vy` ou `vyaw` a cada 10s para mapear os limites do modelo.
 
-Limites conhecidos do `t1_walk.pt`:
+---
 
-| Comando | Min util | Max seguro | Notas |
-|---|---|---|---|
-| vx | 0.4 m/s | ~2.0 m/s | > 1.35 deriva para esquerda |
-| vy | 0.4 m/s | ~1.0 m/s | > 1.0 instavel |
-| vyaw | 0.25 rad/s | ~2.0 rad/s | > 2.0 instavel |
+## 4. SDK (booster_robotics_sdk)
 
-## Deploy no robo real (T1)
+Necessário apenas no **robô real** para que o `booster_deploy` acesse o hardware.
+O `install_robot.sh` já compila e instala automaticamente.
 
-### 1. Compilar o SDK no robo
+### Compilação manual
 
 ```bash
 cd booster_robotics_sdk
+sudo ./install.sh                       # dependências do sistema
 mkdir build && cd build
 cmake .. -DBUILD_PYTHON_BINDING=ON
 make -j$(nproc)
 sudo make install
 ```
 
-### 2. Instalar dependencias no robo
-
-O robo ja tem Python 3.10 e ROS2 Humble:
+### Verificar instalação
 
 ```bash
-pip install torch scipy evdev
-pip install -e booster_assets
-pip install -e booster_deploy
+python3 -c "import booster_robotics_sdk_python; print('SDK OK')"
 ```
 
-### 3. Iniciar ROS2
+---
 
-```bash
-source /opt/booster/BoosterRos2Interface/install/setup.bash
-```
-
-### 4. Rodar
-
-```bash
-python3 booster_deploy/scripts/deploy.py --task t1_walk
-```
-
-Sequencia:
-1. Pressionar `x` (ou botao X do joystick) → entra em modo `kCustom`
-2. Pressionar `r` (ou botao A do joystick) → inicia o `t1_walk.pt`
-3. Robo responde a comandos de velocidade
-
-## hsl-player (ROS2)
-
-O `hsl-player` e um workspace ROS2 separado, compilado com colcon:
-
-```bash
-cd hsl-player
-colcon build
-source install/setup.bash
-```
-
-### Iniciar o sistema completo
-
-```bash
-# Terminal 1 — brain + vision + game_controller
-./scripts/sim_start.sh
-
-# Parar
-./scripts/sim_stop.sh
-```
-
-### Pacotes ROS2
-
-| Pacote | Tipo | Funcao |
-|---|---|---|
-| `brain` | C++ | Behaviour trees — logica de jogo |
-| `vision` | C++ | Detecao de bola/jogadores (YOLO + TensorRT) |
-| `game_controller` | C++ | Recebe comandos do arbitro via UDP |
-| `sound_play` | Python | Reproducao de sons |
-| `booster_msgs` | ROS2 msgs | Mensagens customizadas |
-| `booster_ros2_interface` | C++ | Interface com o SDK do robo |
-
-## Adicionar uma nova task de RL
+## Estrutura do repositório
 
 ```
-booster_deploy/tasks/minha_task/
-├── __init__.py          # register_task("nome", MinhaCfg())
-├── task.py              # Policy + ControllerCfg
-└── models/
-    └── modelo.pt        # checkpoint TorchScript
+hl_unification/
+├── booster_assets/            # Modelos do robô (URDF/MJCF) e motion data
+├── booster_deploy/            # Políticas RL + controllers (MuJoCo e robô real)
+├── booster_robotics_sdk/      # SDK C++ + bindings Python (interface hardware)
+├── hsl-player/                # ROS2 — behaviour trees, visão, game controller
+├── docs/                      # Documentação detalhada de cada módulo
+│   ├── booster_deploy.md
+│   ├── booster_assets.md
+│   ├── booster_robotics_sdk.md
+│   ├── hsl_player.md
+│   └── dev_guide.md
+├── install_sim.sh             # Instalação para PC (simulação)
+├── install_robot.sh           # Instalação para o robô
+├── pyproject.toml             # UV workspace Python
+└── .python-version            # Python 3.10
 ```
 
-Verificar registro:
-
-```bash
-python booster_deploy/scripts/deploy.py --list
-```
+---
 
 ## Notas
 
-- **booster_robotics_sdk** esta excluido do UV workspace porque precisa compilar C++.
-  No robo real, compile separadamente (ver secao Deploy).
-- **hsl-player** e compilado com colcon (ROS2), nao faz parte do venv Python.
-- **CUDA**: se o driver NVIDIA for antigo, torch funciona em CPU. Para GPU,
-  atualize o driver ou instale uma versao de torch compativel.
-- Para integracao hsl-player + booster_deploy via ROS2, consulte a documentacao
-  em [BACKLOG.md](BACKLOG.md).
+- **booster_robotics_sdk** está excluído do UV workspace porque requer compilação C++. No robô, use `install_robot.sh`.
+- **hsl-player** é compilado com colcon (ROS2) e não faz parte do `.venv` Python.
+- **CUDA**: se o driver NVIDIA for antigo, o torch roda em CPU. Para GPU, instale uma versão de torch compatível com o driver.
+- Para integração `hsl-player` ↔ `booster_deploy` via ROS2 (`/booster/cmd_vel`), consulte [BACKLOG.md](BACKLOG.md).
