@@ -18,7 +18,7 @@ Monorepo unificado do robô humanoide **Booster T1** para RoboCup, integrando:
 ### No PC (simulação)
 
 ```bash
-bash install_sim.sh
+bash install_remote.sh
 ```
 
 Instala o `uv` e cria o ambiente Python com todas as dependências para rodar a simulação MuJoCo localmente.
@@ -94,9 +94,8 @@ O `booster_deploy` roda uma política RL (ex: `t1_walk.pt`) diretamente no hardw
 ### Iniciar
 
 ```bash
-source .venv/bin/activate
 source /opt/booster/BoosterRos2Interface/install/setup.bash
-python3 booster_deploy/scripts/deploy.py --task t1_walk
+uv run deploy --task t1_walk
 ```
 
 ### Sequência de ativação no robô
@@ -117,7 +116,7 @@ python3 booster_deploy/scripts/deploy.py --task t1_walk
 ### Listar tasks disponíveis
 
 ```bash
-python3 booster_deploy/scripts/deploy.py --list
+uv run deploy --list
 ```
 
 ---
@@ -127,8 +126,7 @@ python3 booster_deploy/scripts/deploy.py --list
 Testa a política RL localmente sem o robô físico.
 
 ```bash
-source .venv/bin/activate
-python3 booster_deploy/scripts/deploy.py --task t1_walk --mujoco
+uv run deploy --task t1_walk --mujoco
 ```
 
 O viewer do MuJoCo abrirá com o T1. Use os mesmos controles de teclado da seção anterior.
@@ -146,8 +144,7 @@ O viewer do MuJoCo abrirá com o T1. Use os mesmos controles de teclado da seç�
 ### Teste de limites automático
 
 ```bash
-source .venv/bin/activate
-python3 booster_deploy/inject_values.py
+uv run python3 booster_deploy/inject_values.py
 ```
 
 Incrementa automaticamente `vx`, `vy` ou `vyaw` a cada 10s para mapear os limites do modelo.
@@ -192,7 +189,7 @@ hl_unification/
 │   ├── booster_robotics_sdk.md
 │   ├── hsl_player.md
 │   └── dev_guide.md
-├── install_sim.sh             # Instalação para PC (simulação)
+├── install_remote.sh          # Instalação para PC (simulação)
 ├── install_robot.sh           # Instalação para o robô
 ├── pyproject.toml             # UV workspace Python
 └── .python-version            # Python 3.10

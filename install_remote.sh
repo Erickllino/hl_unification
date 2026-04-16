@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install_sim.sh — Instalação para PC (simulação MuJoCo)
+# install_remote.sh — Instalação para PC (simulação MuJoCo)
 # Instala uv e as dependências Python do workspace (booster_deploy + booster_assets + torch + mujoco)
 set -euo pipefail
 
@@ -7,7 +7,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 echo "================================================"
-echo " HL Unification — Instalação para Simulação"
+echo " HL Unification — Instalação Remota (PC)"
 echo "================================================"
 echo ""
 
@@ -48,12 +48,9 @@ echo "================================================"
 echo " Instalação concluída!"
 echo "================================================"
 echo ""
-echo "Ativar o ambiente:"
-echo "  source .venv/bin/activate"
-echo ""
 echo "Rodar a simulação MuJoCo:"
-echo "  python3 booster_deploy/scripts/deploy.py --task t1_walk --mujoco"
+echo "  uv run deploy --task t1_walk --mujoco"
 echo ""
 echo "Listar tasks disponíveis:"
-echo "  python3 booster_deploy/scripts/deploy.py --list"
+echo "  uv run deploy --list"
 echo ""

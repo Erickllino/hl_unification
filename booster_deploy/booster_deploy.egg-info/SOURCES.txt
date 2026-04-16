@@ -2,9 +2,11 @@ LICENSE
 README.md
 pyproject.toml
 booster_deploy/__init__.py
+booster_deploy/cli.py
 booster_deploy.egg-info/PKG-INFO
 booster_deploy.egg-info/SOURCES.txt
 booster_deploy.egg-info/dependency_links.txt
+booster_deploy.egg-info/entry_points.txt
 booster_deploy.egg-info/requires.txt
 booster_deploy.egg-info/top_level.txt
 booster_deploy/controllers/__init__.py
@@ -25,6 +27,8 @@ booster_deploy/utils/isaaclab/configclass.py
 booster_deploy/utils/isaaclab/dict.py
 booster_deploy/utils/isaaclab/math.py
 booster_deploy/utils/isaaclab/string.py
+scripts/__init__.py
+scripts/deploy.py
 tasks/__init__.py
 tasks/beyond_mimic/__init__.py
 tasks/beyond_mimic/beyond_mimic.py

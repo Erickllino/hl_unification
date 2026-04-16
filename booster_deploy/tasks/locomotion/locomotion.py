@@ -1,6 +1,8 @@
 from __future__ import annotations
 from dataclasses import MISSING
+import json
 import os
+from pathlib import Path
 import torch
 
 from booster_deploy.controllers.base_controller import BaseController, Policy
@@ -108,11 +110,13 @@ class LocomotionPolicy(Policy):
         obs = self.compute_observation()
 
         if self.obs_history is None:
-            self.obs_history = torch.zeros(
-                self.actor_obs_history_length,
-                obs.numel(),
-                dtype=torch.float32
-            )
+            # Warm-start: fill the entire history with the first real observation
+            # instead of zeros. Avoids extreme first-step actions caused by the
+            # policy receiving 9 all-zero frames + 1 real gravity frame, which
+            # would produce large joint targets and destabilize the robot.
+            self.obs_history = obs.clamp(-100.0, 100.0).unsqueeze(0).expand(
+                self.actor_obs_history_length, -1
+            ).clone()
 
         # Update observation history (roll and append)
         self.obs_history = self.obs_history.roll(shifts=-1, dims=0)
@@ -247,29 +251,6 @@ class T1WalkControllerCfg(ControllerCfg):
         # To revert to old models, comment this block and uncomment the LEGACY block below.
         # LEGACY order — for models trained before mjlab_playground migration.
         # Uncomment below and comment the blocks above to test old models.
-        action_scale=[
-            0.09,     # Left_Shoulder_Pitch
-            0.09,     # Right_Shoulder_Pitch
-            0.03125,  # Waist
-            0.09,     # Left_Shoulder_Roll
-            0.09,     # Right_Shoulder_Roll
-            0.05625,  # Left_Hip_Pitch
-            0.05625,  # Right_Hip_Pitch
-            0.09,     # Left_Elbow_Pitch
-            0.09,     # Right_Elbow_Pitch
-            0.03125,  # Left_Hip_Roll
-            0.03125,  # Right_Hip_Roll
-            0.09,     # Left_Elbow_Yaw
-            0.09,     # Right_Elbow_Yaw
-            0.03125,  # Left_Hip_Yaw
-            0.03125,  # Right_Hip_Yaw
-            0.075,    # Left_Knee_Pitch
-            0.075,    # Right_Knee_Pitch
-            0.12,     # Left_Ankle_Pitch
-            0.12,     # Right_Ankle_Pitch
-            0.075,    # Left_Ankle_Roll
-            0.075,    # Right_Ankle_Roll
-        ],
         policy_joint_names=[
             'Left_Shoulder_Pitch',
             'Right_Shoulder_Pitch',
@@ -296,7 +277,110 @@ class T1WalkControllerCfg(ControllerCfg):
     )
 
 @configclass
-class T1WalkControllerTest(ControllerCfg):
+class T1TestController2(ControllerCfg):
+    """T1 controller using training actuator parameters directly.
+
+    All values derived from t1_constants.py actuator model — no guessing needed:
+      kp    = reflected_inertia * NATURAL_FREQ^2          (NATURAL_FREQ = 5*2π rad/s)
+      kv    = 4 * reflected_inertia * NATURAL_FREQ        (DAMPING_RATIO = 2)
+      scale = 0.25 * effort_limit / kp
+
+    Actuator → kp / kv / scale:
+      NECK            (I=0.0018):   kp=1.78   kv=0.23   scale=0.985
+      ARM             (I=0.02825):  kp=27.9   kv=3.55   scale=0.323
+      WAIST/HIP_RY    (I=0.04781):  kp=47.2   kv=6.01   scale=0.212
+      HIP_PITCH       (I=0.05239):  kp=51.7   kv=6.58   scale=0.266
+      KNEE            (I=0.06360):  kp=62.8   kv=7.99   scale=0.259
+      ANKLE           (I=0.03396):  kp=33.5   kv=4.27   scale=0.373
+    """
+    robot = T1_23DOF_CFG.replace(  # type: ignore
+        # HOME_KEYFRAME from t1_constants.py
+        default_joint_pos=[
+            0., 0.,
+            0., -1.4, 0., -0.4,
+            0.,  1.4, 0.,  0.4,
+            0.,
+            -0.2, 0., 0., 0.4, -0.2, 0.,
+            -0.2, 0., 0., 0.4, -0.2, 0.,
+        ],
+        # kp = reflected_inertia * (5*2π)²
+        joint_stiffness=[
+            1.78, 1.78,                              # Head (NECK)
+            27.9, 27.9, 27.9, 27.9,                 # Left arm (ARM)
+            27.9, 27.9, 27.9, 27.9,                 # Right arm (ARM)
+            47.2,                                    # Waist (WAIST_HIP_RY)
+            51.7, 47.2, 47.2, 62.8, 33.5, 33.5,    # Left leg: HP HR HY K AP AR
+            51.7, 47.2, 47.2, 62.8, 33.5, 33.5,    # Right leg
+        ],
+        # kv = 4 * reflected_inertia * (5*2π)
+        joint_damping=[
+            0.23, 0.23,                              # Head
+            3.55, 3.55, 3.55, 3.55,                 # Left arm
+            3.55, 3.55, 3.55, 3.55,                 # Right arm
+            6.01,                                    # Waist
+            6.58, 6.01, 6.01, 7.99, 4.27, 4.27,    # Left leg
+            6.58, 6.01, 6.01, 7.99, 4.27, 4.27,    # Right leg
+        ],
+    )
+    vel_command: VelocityCommandCfg = VelocityCommandCfg(
+        vx_max=1.0,
+        vy_max=1.0,
+        vyaw_max=1.0,
+    )
+    policy: LocomotionPolicyCfg = LocomotionPolicyCfg(
+        obs_dof_vel_scale=1.0,
+        # scale = 0.25 * effort_limit / kp  (exact training values)
+        action_scale=[
+            0.323,   # Left_Shoulder_Pitch  (ARM)
+            0.323,   # Left_Shoulder_Roll
+            0.323,   # Left_Elbow_Pitch
+            0.323,   # Left_Elbow_Yaw
+            0.323,   # Right_Shoulder_Pitch
+            0.323,   # Right_Shoulder_Roll
+            0.323,   # Right_Elbow_Pitch
+            0.323,   # Right_Elbow_Yaw
+            0.212,   # Waist               (WAIST_HIP_RY)
+            0.266,   # Left_Hip_Pitch      (HIP_PITCH)
+            0.212,   # Left_Hip_Roll       (WAIST_HIP_RY)
+            0.212,   # Left_Hip_Yaw
+            0.259,   # Left_Knee_Pitch     (KNEE)
+            0.373,   # Left_Ankle_Pitch    (ANKLE)
+            0.373,   # Left_Ankle_Roll
+            0.266,   # Right_Hip_Pitch
+            0.212,   # Right_Hip_Roll
+            0.212,   # Right_Hip_Yaw
+            0.259,   # Right_Knee_Pitch
+            0.373,   # Right_Ankle_Pitch
+            0.373,   # Right_Ankle_Roll
+        ],
+        policy_joint_names=[
+            'Left_Shoulder_Pitch',
+            'Left_Shoulder_Roll',
+            'Left_Elbow_Pitch',
+            'Left_Elbow_Yaw',
+            'Right_Shoulder_Pitch',
+            'Right_Shoulder_Roll',
+            'Right_Elbow_Pitch',
+            'Right_Elbow_Yaw',
+            'Waist',
+            'Left_Hip_Pitch',
+            'Left_Hip_Roll',
+            'Left_Hip_Yaw',
+            'Left_Knee_Pitch',
+            'Left_Ankle_Pitch',
+            'Left_Ankle_Roll',
+            'Right_Hip_Pitch',
+            'Right_Hip_Roll',
+            'Right_Hip_Yaw',
+            'Right_Knee_Pitch',
+            'Right_Ankle_Pitch',
+            'Right_Ankle_Roll',
+        ]
+    )
+
+
+@configclass
+class T1TestController(ControllerCfg):
     robot = T1_23DOF_CFG.replace(  # type: ignore
         default_joint_pos=[
             0, 0,
@@ -360,6 +444,29 @@ class T1WalkControllerTest(ControllerCfg):
             0.12,     # Right_Ankle_Pitch
             0.075,    # Right_Ankle_Roll
         ],
+        # policy_joint_names=[
+        #     'Left_Shoulder_Pitch',
+        #     'Right_Shoulder_Pitch',
+        #     'Waist',
+        #     'Left_Shoulder_Roll',
+        #     'Right_Shoulder_Roll',
+        #     'Left_Hip_Pitch',
+        #     'Right_Hip_Pitch',
+        #     'Left_Elbow_Pitch',
+        #     'Right_Elbow_Pitch',
+        #     'Left_Hip_Roll',
+        #     'Right_Hip_Roll',
+        #     'Left_Elbow_Yaw',
+        #     'Right_Elbow_Yaw',
+        #     'Left_Hip_Yaw',
+        #     'Right_Hip_Yaw',
+        #     'Left_Knee_Pitch',
+        #     'Right_Knee_Pitch',
+        #     'Left_Ankle_Pitch',
+        #     'Right_Ankle_Pitch',
+        #     'Left_Ankle_Roll',
+        #     'Right_Ankle_Roll',
+        # ],
         policy_joint_names=[
             'Left_Shoulder_Pitch',
             'Left_Shoulder_Roll',

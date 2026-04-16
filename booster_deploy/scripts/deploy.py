@@ -1,39 +1,34 @@
-import argparse
 import sys
-
-sys.path.append(".")
-
-parser = argparse.ArgumentParser()
-# require either --task or --list (mutually exclusive)
-group = parser.add_mutually_exclusive_group(required=True)
-group.add_argument("--task", type=str, help="Name of the configuration file.")
-group.add_argument("-l", "--list", action="store_true", dest="list_tasks",
-                   default=False, help="list available tasks")
-
-parser.add_argument("--net", type=str, default="127.0.0.1",
-                    help="Network interface for SDK communication.")
-parser.add_argument("--mujoco", action="store_true", default=False,
-                    help="deploy in mujoco simulation")
-parser.add_argument("--webots", action="store_true", default=False,
-                    help="deploy in webots simulation")
-parser.add_argument(
-    "--device", type=str, default="cpu",
-    help="Device to run the evaluation on (e.g., 'cpu', 'cuda')")
-args = parser.parse_args()
 
 
 def main():
-    # load task registry and dispatch
+    import argparse
     import pkgutil
-    import tasks as tasks_pkg
 
-    # auto-import all submodules under tasks (recursive) so they can register themselves
+    parser = argparse.ArgumentParser()
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--task", type=str, help="Name of the task to run.")
+    group.add_argument("-l", "--list", action="store_true", dest="list_tasks",
+                       default=False, help="list available tasks")
+
+    parser.add_argument("--net", type=str, default="127.0.0.1",
+                        help="Network interface for SDK communication.")
+    parser.add_argument("--mujoco", action="store_true", default=False,
+                        help="deploy in mujoco simulation")
+    parser.add_argument("--webots", action="store_true", default=False,
+                        help="deploy in webots simulation")
+    parser.add_argument("--device", type=str, default="cpu",
+                        help="Device to run the evaluation on (e.g., 'cpu', 'cuda')")
+    args = parser.parse_args()
+
+    # auto-import all submodules under tasks so they can register themselves
+    import tasks as tasks_pkg
     for mod_info in pkgutil.walk_packages(tasks_pkg.__path__, prefix="tasks."):
-        full_name = mod_info.name
         try:
-            __import__(full_name)
+            __import__(mod_info.name)
         except Exception as e:
             raise e
+
     from booster_deploy.utils.registry import get_task, list_tasks
 
     if args.list_tasks:
@@ -50,21 +45,16 @@ def main():
         print(f"Unknown task '{args.task}'. Available tasks: {list(list_tasks().keys())}")
         sys.exit(1)
 
-    # Set device for policy
     task_cfg.policy.device = args.device
 
-    # decide how to run based on flags
     if args.mujoco:
-        # run mujoco controller
         from booster_deploy.controllers.mujoco_controller import MujocoController
-
         MujocoController(task_cfg).run()
     else:
-        # initialize network and run robot portal
         try:
             from booster_robotics_sdk_python import ChannelFactory  # type: ignore
             ChannelFactory.Instance().Init(0, args.net)
-        except ImportError as e:
+        except ImportError:
             print(
                 "Error: booster_robotics_sdk_python is not installed.\n"
                 "Please install it to use real robot deployment.\n"
@@ -72,9 +62,8 @@ def main():
             )
             sys.exit(1)
 
-        # adjust ankle dampings for webots
         if args.webots:
-            ankles = [-8, -7, -2, -1]  # indices of ankle joints
+            ankles = [-8, -7, -2, -1]
             for i in ankles:
                 task_cfg.robot.joint_damping[i] = 0.5
 
