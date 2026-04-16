@@ -1,0 +1,6 @@
+{
+  "package_name": "brain",
+  "non_idl_tuples": [
+    "/workspace/hsl-player/src/brain:msg/Kick.msg"
+  ]
+}

@@ -1,0 +1,237 @@
+[0.010s] Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_msgs
+[0.018s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.083s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.087s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.088s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.089s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.103s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.256s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.518s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.529s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.542s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.542s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.542s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.583s] -- Configuring done
+[0.597s] -- Generating done
+[0.602s] -- Build files have been written to: /workspace/hsl-player/build/booster_msgs
+[0.606s] Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_msgs
+[0.607s] Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_msgs -- -j20 -l20
+[0.635s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_generator_c[0m
+[0.642s] [  2%] Built target booster_msgs__cpp
+[0.643s] [  2%] Built target ament_cmake_python_symlink_booster_msgs
+[0.644s] [  4%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/rpc_req_msg__functions.c.o[0m
+[0.644s] [  6%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/rpc_resp_msg__functions.c.o[0m
+[0.648s] [  8%] Built target booster_msgs__rs
+[0.648s] [ 10%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_c.dir/rosidl_generator_c/booster_msgs/msg/detail/binary_data__functions.c.o[0m
+[0.651s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_cpp[0m
+[0.653s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.656s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.662s] [ 12%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/rpc_resp_msg__type_support.cpp.o[0m
+[0.662s] [ 14%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/binary_data__type_support.cpp.o[0m
+[0.662s] [ 16%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/rpc_req_msg__type_support.cpp.o[0m
+[0.662s] [ 18%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_msgs/msg/detail/dds_fastrtps/rpc_resp_msg__type_support.cpp.o[0m
+[0.664s] [ 20%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/binary_data__type_support.cpp.o[0m
+[0.665s] [ 22%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_msgs/msg/rpc_req_msg__type_support.cpp.o[0m
+[0.667s] [ 25%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/binary_data__type_support.cpp.o[0m
+[0.669s] [ 27%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/rpc_req_msg__type_support.cpp.o[0m
+[0.670s] [ 29%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_msgs/msg/detail/rpc_resp_msg__type_support.cpp.o[0m
+[0.728s] [ 31%] [32m[1mLinking C shared library libbooster_msgs__rosidl_generator_c.so[0m
+[0.757s] [ 33%] Built target booster_msgs__rosidl_generator_c
+[0.764s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_c[0m
+[0.764s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_introspection_c[0m
+[0.764s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.772s] [ 39%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_msgs/msg/rpc_req_msg__type_support.cpp.o[0m
+[0.772s] [ 39%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_msgs/msg/rpc_resp_msg__type_support.cpp.o[0m
+[0.772s] [ 39%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_msgs/msg/detail/rpc_resp_msg__type_support.c.o[0m
+[0.773s] [ 43%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_msgs/msg/binary_data__type_support.cpp.o[0m
+[0.773s] [ 43%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_msgs/msg/detail/rpc_req_msg__type_support.c.o[0m
+[0.778s] [ 47%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_msgs/msg/detail/rpc_req_msg__type_support_c.cpp.o[0m
+[0.778s] [ 47%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_msgs/msg/detail/binary_data__type_support.c.o[0m
+[0.778s] [ 50%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_msgs/msg/detail/binary_data__type_support_c.cpp.o[0m
+[0.778s] [ 52%] [32mBuilding CXX object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_msgs/msg/detail/rpc_resp_msg__type_support_c.cpp.o[0m
+[0.796s] [ 54%] [32m[1mLinking CXX shared library libbooster_msgs__rosidl_typesupport_c.so[0m
+[0.812s] [ 56%] [32m[1mLinking C shared library libbooster_msgs__rosidl_typesupport_introspection_c.so[0m
+[0.829s] [ 58%] Built target booster_msgs__rosidl_typesupport_c
+[0.833s] [ 60%] Built target booster_msgs__rosidl_typesupport_introspection_c
+[0.876s] running egg_info
+[0.876s] writing booster_msgs.egg-info/PKG-INFO
+[0.876s] writing dependency_links to booster_msgs.egg-info/dependency_links.txt
+[0.876s] writing top-level names to booster_msgs.egg-info/top_level.txt
+[0.876s] reading manifest file 'booster_msgs.egg-info/SOURCES.txt'
+[0.876s] writing manifest file 'booster_msgs.egg-info/SOURCES.txt'
+[0.906s] [ 60%] Built target ament_cmake_python_build_booster_msgs_egg
+[0.913s] [ 62%] [32m[1mLinking CXX shared library libbooster_msgs__rosidl_typesupport_cpp.so[0m
+[0.945s] [ 64%] Built target booster_msgs__rosidl_typesupport_cpp
+[1.035s] [ 66%] [32m[1mLinking CXX shared library libbooster_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.043s] [ 68%] [32m[1mLinking CXX shared library libbooster_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[1.129s] [ 70%] Built target booster_msgs__rosidl_typesupport_fastrtps_cpp
+[1.143s] [ 72%] [32m[1mLinking CXX shared library libbooster_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[1.143s] [ 75%] Built target booster_msgs__rosidl_typesupport_introspection_cpp
+[1.268s] [ 77%] Built target booster_msgs__rosidl_typesupport_fastrtps_c
+[1.289s] [ 77%] Built target booster_msgs
+[1.303s] [ 79%] Built target booster_msgs__py
+[1.313s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_generator_py[0m
+[1.322s] [ 81%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_py.dir/rosidl_generator_py/booster_msgs/msg/_binary_data_s.c.o[0m
+[1.323s] [ 83%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_py.dir/rosidl_generator_py/booster_msgs/msg/_rpc_req_msg_s.c.o[0m
+[1.327s] [ 85%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_generator_py.dir/rosidl_generator_py/booster_msgs/msg/_rpc_resp_msg_s.c.o[0m
+[1.472s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/booster_msgs/libbooster_msgs__rosidl_generator_py.so[0m
+[1.568s] [ 87%] Built target booster_msgs__rosidl_generator_py
+[1.590s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_c__pyext[0m
+[1.596s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.600s] [35m[1mConsolidate compiler generated dependencies of target booster_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.622s] [ 89%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.624s] [ 91%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.627s] [ 93%] [32mBuilding C object CMakeFiles/booster_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[1.794s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/booster_msgs/booster_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.794s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/booster_msgs/booster_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.854s] [ 97%] Built target booster_msgs__rosidl_typesupport_introspection_c__pyext
+[1.876s] [ 97%] Built target booster_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.929s] [100%] [32m[1mLinking C shared library rosidl_generator_py/booster_msgs/booster_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.992s] [100%] Built target booster_msgs__rosidl_typesupport_c__pyext
+[2.030s] Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_msgs -- -j20 -l20
+[2.046s] Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_msgs
+[2.063s] -- Install configuration: "Release"
+[2.066s] -- Execute custom install script
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/ament_index/resource_index/rosidl_interfaces/booster_msgs
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/binary_data.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__functions.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__struct.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__type_support.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__functions.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__struct.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__type_support.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__functions.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__struct.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__type_support.h
+[2.066s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.067s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rpc_req_msg.h
+[2.067s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rpc_resp_msg.h
+[2.067s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/library_path.sh
+[2.067s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/library_path.dsv
+[2.071s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__rosidl_typesupport_fastrtps_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__rosidl_typesupport_fastrtps_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__rosidl_typesupport_fastrtps_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__rosidl_typesupport_introspection_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__rosidl_typesupport_introspection_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__rosidl_typesupport_introspection_c.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.073s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/binary_data.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__builder.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__struct.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__traits.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__type_support.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__builder.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__struct.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__traits.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__type_support.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__builder.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__struct.hpp
+[2.074s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__traits.hpp
+[2.078s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__type_support.hpp
+[2.078s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rpc_req_msg.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rpc_resp_msg.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__rosidl_typesupport_fastrtps_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/binary_data__rosidl_typesupport_introspection_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_req_msg__rosidl_typesupport_introspection_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/include/booster_msgs/booster_msgs/msg/detail/rpc_resp_msg__rosidl_typesupport_introspection_cpp.hpp
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/pythonpath.sh
+[2.080s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/pythonpath.dsv
+[2.081s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[2.081s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.081s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.081s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[2.081s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/__init__.py
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_c.c
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/_booster_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/libbooster_msgs__rosidl_generator_py.so
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/__init__.py
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_binary_data.py
+[2.084s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_binary_data_s.c
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_rpc_req_msg.py
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_rpc_req_msg_s.c
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_rpc_resp_msg.py
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg/_rpc_resp_msg_s.c
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.085s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.086s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/booster_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.086s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/ament_index/resource_index/rust_packages/booster_msgs
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/rust/Cargo.toml
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/rust/build.rs
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/rust/src/lib.rs
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/rust/src/msg.rs
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/rust/src/msg/rmw.rs
+[2.088s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/BinaryData.idl
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/RpcReqMsg.idl
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/RpcRespMsg.idl
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/BinaryData.msg
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/RpcReqMsg.msg
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/msg/RpcRespMsg.msg
+[2.091s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/ament_index/resource_index/package_run_dependencies/booster_msgs
+[2.092s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/ament_index/resource_index/parent_prefix_path/booster_msgs
+[2.092s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/ament_prefix_path.sh
+[2.092s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/ament_prefix_path.dsv
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/path.sh
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/environment/path.dsv
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/local_setup.bash
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/local_setup.sh
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/local_setup.zsh
+[2.093s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/local_setup.dsv
+[2.093s] -- Symlinking: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.dsv
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/ament_index/resource_index/packages/booster_msgs
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/rosidl_cmake-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgsConfig.cmake
+[2.114s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgsConfig-version.cmake
+[2.118s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.xml
+[2.118s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_generator_c.so
+[2.118s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_generator_c.so" to ""
+[2.118s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_fastrtps_c.so
+[2.118s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[2.118s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_introspection_c.so
+[2.118s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_introspection_c.so" to ""
+[2.118s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_c.so
+[2.118s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_c.so" to ""
+[2.118s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.120s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.120s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_introspection_cpp.so
+[2.120s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[2.120s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_cpp.so
+[2.121s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_typesupport_cpp.so" to ""
+[2.168s] Listing '/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs'...
+[2.168s] Compiling '/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/__init__.py'...
+[2.168s] Listing '/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages/booster_msgs/msg'...
+[2.173s] -- Installing: /workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_generator_py.so
+[2.173s] -- Set runtime path of "/workspace/hsl-player/install/booster_msgs/lib/libbooster_msgs__rosidl_generator_py.so" to ""
+[2.173s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_generator_cExport.cmake
+[2.173s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_generator_cExport-release.cmake
+[2.173s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[2.173s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[2.173s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_introspection_cExport.cmake
+[2.173s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[2.173s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_cExport.cmake
+[2.173s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_cExport-release.cmake
+[2.174s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_generator_cppExport.cmake
+[2.174s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.174s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[2.174s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[2.174s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[2.174s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_cppExport.cmake
+[2.174s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/booster_msgs__rosidl_typesupport_cppExport-release.cmake
+[2.174s] -- Up-to-date: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_generator_pyExport.cmake
+[2.174s] -- Installing: /workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake/export_booster_msgs__rosidl_generator_pyExport-release.cmake
+[2.176s] Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_msgs

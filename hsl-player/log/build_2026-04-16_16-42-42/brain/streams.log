@@ -1,0 +1,173 @@
+[0.011s] Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/brain -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain
+[0.018s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.085s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.088s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.101s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.102s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.105s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.110s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.116s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.131s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.132s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.193s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.220s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.234s] -- Found behaviortree_cpp: 4.9.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)
+[0.236s] -- Rerun is using bundled arrow library.
+[0.240s] -- Found booster_interface: 0.0.0 (/workspace/hsl-player/install/booster_interface/share/booster_interface/cmake)
+[0.246s] -- Found game_controller_interface: 1.0.0 (/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake)
+[0.251s] -- Found vision_interface: 1.0.0 (/workspace/hsl-player/install/vision_interface/share/vision_interface/cmake)
+[0.261s] -- Found booster_msgs: 0.0.0 (/workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake)
+[0.267s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.278s] -- Found OpenCV: /usr (found version "4.5.4") 
+[0.280s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.286s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.332s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.337s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.337s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.337s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.477s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.668s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.752s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.764s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.765s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.778s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.778s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.778s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.778s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.789s] -- Found PythonExtra: .so  
+[0.855s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.866s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.869s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspace/hsl-player/src/brain/include>
+[0.869s] -- Configured cppcheck exclude dirs and/or files: 
+[0.869s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.870s] -- Added test 'lint_cmake' to check CMake code style
+[0.870s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.871s] -- Added test 'uncrustify' to check C / C++ code style
+[0.871s] -- Configured uncrustify additional arguments: 
+[0.871s] -- Added test 'xmllint' to check XML markup files
+[0.873s] -- Configuring done
+[0.897s] -- Generating done
+[0.904s] -- Build files have been written to: /workspace/hsl-player/build/brain
+[0.909s] Invoked command in '/workspace/hsl-player/build/brain' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/brain -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain
+[0.910s] Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[0.940s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.948s] [  4%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.948s] [  7%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.954s] [  7%] Built target ament_cmake_python_symlink_brain
+[1.081s] [  7%] Built target brain__rs
+[1.084s] [  9%] [32mBuilding C object CMakeFiles/brain__rosidl_generator_c.dir/rosidl_generator_c/brain/msg/detail/kick__functions.c.o[0m
+[1.089s] [  9%] Built target brain__cpp
+[1.092s] running egg_info
+[1.093s] creating brain.egg-info
+[1.093s] writing brain.egg-info/PKG-INFO
+[1.093s] writing dependency_links to brain.egg-info/dependency_links.txt
+[1.093s] writing top-level names to brain.egg-info/top_level.txt
+[1.093s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[1.094s] reading manifest file 'brain.egg-info/SOURCES.txt'
+[1.094s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[1.096s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.096s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.096s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.112s] [ 16%] Built target ament_cmake_python_build_brain_egg
+[1.129s] [ 19%] [32m[1mLinking C shared library libbrain__rosidl_generator_c.so[0m
+[1.148s] [ 19%] Built target brain__rosidl_generator_c
+[1.156s] [ 26%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.156s] [ 26%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.156s] [ 26%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.221s] [ 28%] [32mBuilding CXX object CMakeFiles/brain__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/brain/msg/kick__type_support.cpp.o[0m
+[1.236s] [ 30%] [32mBuilding CXX object CMakeFiles/brain__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/brain/msg/detail/dds_fastrtps/kick__type_support.cpp.o[0m
+[1.254s] [ 33%] [32mBuilding CXX object CMakeFiles/brain__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/brain/msg/detail/kick__type_support.cpp.o[0m
+[1.295s] [ 35%] [32mBuilding CXX object CMakeFiles/brain__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/brain/msg/detail/kick__type_support_c.cpp.o[0m
+[1.312s] [ 38%] [32mBuilding C object CMakeFiles/brain__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/brain/msg/detail/kick__type_support.c.o[0m
+[1.334s] [ 40%] [32m[1mLinking C shared library libbrain__rosidl_typesupport_introspection_c.so[0m
+[1.345s] [ 42%] [32m[1mLinking CXX shared library libbrain__rosidl_typesupport_cpp.so[0m
+[1.355s] [ 42%] Built target brain__rosidl_typesupport_introspection_c
+[1.367s] [ 45%] [32mBuilding CXX object CMakeFiles/brain__rosidl_typesupport_c.dir/rosidl_typesupport_c/brain/msg/kick__type_support.cpp.o[0m
+[1.370s] [ 45%] Built target brain__rosidl_typesupport_cpp
+[1.383s] [ 47%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o[0m
+[1.383s] [ 50%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o[0m
+[1.384s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o[0m
+[1.384s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o[0m
+[1.384s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_data.cpp.o[0m
+[1.384s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o[0m
+[1.384s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_config.cpp.o[0m
+[1.384s] [ 64%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o[0m
+[1.384s] [ 66%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o[0m
+[1.385s] [ 69%] [32m[1mLinking CXX shared library libbrain__rosidl_typesupport_c.so[0m
+[1.405s] [ 69%] Built target brain__rosidl_typesupport_c
+[1.413s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.413s]     2 | #include [01;31m[K<booster_internal/robot/b1/b1_loco_internal_api.hpp>[m[K
+[1.413s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.413s] compilation terminated.
+[1.414s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:188: CMakeFiles/brain_node.dir/src/robot_client.cpp.o] Error 1
+[1.414s] gmake[2]: *** Waiting for unfinished jobs....
+[1.427s] [ 71%] [32m[1mLinking CXX shared library libbrain__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.450s] [ 73%] [32m[1mLinking CXX shared library libbrain__rosidl_typesupport_fastrtps_c.so[0m
+[1.459s] [ 76%] [32m[1mLinking CXX shared library libbrain__rosidl_typesupport_introspection_cpp.so[0m
+[1.461s] [ 76%] Built target brain__rosidl_typesupport_fastrtps_cpp
+[1.485s] [ 76%] Built target brain__rosidl_typesupport_fastrtps_c
+[1.492s] [ 76%] Built target brain__rosidl_typesupport_introspection_cpp
+[1.501s] [ 76%] Built target brain
+[1.515s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.690s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.690s]                  from [01m[K/workspace/hsl-player/src/brain/src/main.cpp:6[m[K:
+[1.690s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.690s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.690s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.690s] compilation terminated.
+[1.696s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:174: CMakeFiles/brain_node.dir/src/main.cpp.o] Error 1
+[1.707s] [ 78%] Built target brain__py
+[1.708s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.709s]                  from [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:4[m[K:
+[1.709s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.709s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.709s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.709s] compilation terminated.
+[1.712s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:160: CMakeFiles/brain_node.dir/src/locator.cpp.o] Error 1
+[1.719s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.719s]                  from [01m[K/workspace/hsl-player/src/brain/src/brain_log.cpp:2[m[K:
+[1.719s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.719s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.719s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.719s] compilation terminated.
+[1.721s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:132: CMakeFiles/brain_node.dir/src/brain_log.cpp.o] Error 1
+[1.722s] [ 80%] [32mBuilding C object CMakeFiles/brain__rosidl_generator_py.dir/rosidl_generator_py/brain/msg/_kick_s.c.o[0m
+[1.794s] [ 83%] [32m[1mLinking C shared library rosidl_generator_py/brain/libbrain__rosidl_generator_py.so[0m
+[1.827s] [ 83%] Built target brain__rosidl_generator_py
+[1.832s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.832s]                  from [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:2[m[K:
+[1.832s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.832s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.833s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.833s] compilation terminated.
+[1.836s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:146: CMakeFiles/brain_node.dir/src/brain_tree.cpp.o] Error 1
+[1.843s] [ 85%] [32mBuilding C object CMakeFiles/brain__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/brain/_brain_s.ep.rosidl_typesupport_c.c.o[0m
+[1.843s] [ 90%] [32mBuilding C object CMakeFiles/brain__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/brain/_brain_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[1.844s] [ 90%] [32mBuilding C object CMakeFiles/brain__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/brain/_brain_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[1.858s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.858s]                  from [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:6[m[K:
+[1.858s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.858s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.858s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.858s] compilation terminated.
+[1.862s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:76: CMakeFiles/brain_node.dir/src/brain.cpp.o] Error 1
+[1.872s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+[1.872s]                  from [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:1[m[K:
+[1.872s] [01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+[1.873s]    10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+[1.873s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.873s] compilation terminated.
+[1.876s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:90: CMakeFiles/brain_node.dir/src/brain_communication.cpp.o] Error 1
+[1.906s] [ 92%] [32m[1mLinking C shared library rosidl_generator_py/brain/brain_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.906s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/brain/brain_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.916s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/brain/brain_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[1.932s] [ 97%] Built target brain__rosidl_typesupport_fastrtps_c__pyext
+[1.932s] [ 97%] Built target brain__rosidl_typesupport_introspection_c__pyext
+[1.937s] [ 97%] Built target brain__rosidl_typesupport_c__pyext
+[3.350s] [01m[K/workspace/hsl-player/src/brain/src/brain_data.cpp:[m[K In member function ‘[01m[Kstd::vector<FieldMarker> BrainData::getMarkersForLocator()[m[K’:
+[3.350s] [01m[K/workspace/hsl-player/src/brain/src/brain_data.cpp:44:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KmarkerType[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[3.350s]    44 |         res.push_back([01;35m[KFieldMarker{markerType, x, y, confidence}[m[K);
+[3.350s]       |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.475s] gmake[1]: *** [CMakeFiles/Makefile2:612: CMakeFiles/brain_node.dir/all] Error 2
+[3.475s] gmake: *** [Makefile:146: all] Error 2
+[3.476s] Invoked command in '/workspace/hsl-player/build/brain' returned '2': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20

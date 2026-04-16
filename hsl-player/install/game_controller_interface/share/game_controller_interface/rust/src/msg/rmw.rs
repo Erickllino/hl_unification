@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/game_controller_interface/rosidl_generator_rs/game_controller_interface/rust/src/msg/rmw.rs

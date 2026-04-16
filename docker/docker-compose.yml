@@ -1,0 +1,65 @@
+services:
+
+  # ── Deploy (booster_deploy + t1_walk.pt) ──────────────────
+  # Roda a política RL no robô real ou recebe /rl_move do brain.
+  # Não precisa de display.
+  deploy:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: hl-unification:humble
+    container_name: hl_deploy
+    network_mode: host          # ROS2 DDS enxerga tópicos do host e do robô
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../booster_deploy:/workspace/booster_deploy   # hot-reload do código
+      - ../booster_assets:/workspace/booster_assets
+      - ../hsl-player:/workspace/hsl-player
+    environment:
+      - ROS_DOMAIN_ID=0         # deve ser igual no host e no robô
+    command: >
+      bash -c "uv run deploy --task t1_walk --auto-start"
+
+  # ── Brain (hsl-player C++) ────────────────────────────────
+  # Lógica de jogo: behavior trees, visão, game controller.
+  brain:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: hl-unification:humble
+    container_name: hl_brain
+    network_mode: host
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../hsl-player:/workspace/hsl-player
+      - ../booster_internal_headers:/usr/local/include/booster_internal:ro
+    environment:
+      - ROS_DOMAIN_ID=0
+    command: >
+      bash -c "
+        source /workspace/hsl-player/install/setup.bash &&
+        ros2 launch brain launch.py tree:=game.xml
+      "
+
+  # ── Shell de desenvolvimento ──────────────────────────────
+  # Container interativo para debugar, rodar comandos ROS2, etc.
+  dev:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: hl-unification:humble
+    container_name: hl_dev
+    network_mode: host
+    stdin_open: true
+    tty: true
+    volumes:
+      - ..:/workspace                  # monta o projeto inteiro
+      - ../booster_internal_headers:/usr/local/include/booster_internal:ro
+      # X11 para rodar rviz2 ou outros visualizadores dentro do container
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - ROS_DOMAIN_ID=0
+      - DISPLAY=${DISPLAY}             # redireciona display do host
+    command: bash

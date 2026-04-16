@@ -1,0 +1,51 @@
+[01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::joystickCallback(const RemoteControllerState&)[m[K’:
+[01m[K/workspace/hsl-player/src/brain/src/brain.cpp:1134:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klog_[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+ 1134 |     auto [01;35m[Klog_[m[K = [=](string msg) {
+      |          [01;35m[K^~~~[m[K
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain_config.h:7[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/include/brain.h:35[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/utils/math.h:[m[K In member function ‘[01m[Kint RobotClient::moveToPoseOnField(double, double, double, double, double, double, double, double, double, double, double, bool)[m[K’:
+[01m[K/workspace/hsl-player/src/brain/include/utils/math.h:40:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvy[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   40 |     return sqrt(x * x + [01;35m[Ky * y[m[K);
+      |                         [01;35m[K~~^~~[m[K
+[01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:16:[m[K [01;36m[Knote: [m[K‘[01m[Kvy[m[K’ was declared here
+  274 |     double vx, [01;36m[Kvy[m[K, vtheta;
+      |                [01;36m[K^~[m[K
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain_config.h:7[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/include/brain.h:35[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/utils/math.h:40:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvx[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   40 |     return sqrt([01;35m[Kx * x[m[K + y * y);
+      |                 [01;35m[K~~^~~[m[K
+[01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:12:[m[K [01;36m[Knote: [m[K‘[01m[Kvx[m[K’ was declared here
+  274 |     double [01;36m[Kvx[m[K, vy, vtheta;
+      |            [01;36m[K^~[m[K
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:38[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:6[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:[m[K In member function ‘[01m[KT BrainTree::getEntry(const string&) [with T = bool][m[K’:
+[01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   30 |         return [01;35m[Kvalue[m[K;
+      |                [01;35m[K^~~~~[m[K
+[01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::logStatusToConsole()[m[K’:
+[01m[K/workspace/hsl-player/src/brain/src/brain.cpp:3184:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+ 3184 |         msg += [01;35m[Kformat([m[K
+      |                [01;35m[K~~~~~~^[m[K
+ 3185 | [01;35m[K            "DEBUG:\n\tcom: %s\tlogFile: %s\tlogTCP: %s\n\tvxFactor: %.2f\tyawOffset: %.2f\n\tControlState: %d\n\tTickTime: %.0fms",[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3186 | [01;35m[K            config->enableCom ? "YES" : "NO",[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3187 | [01;35m[K            config->rerunLogEnableFile ? "YES" : "NO",[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3188 | [01;35m[K            config->rerunLogEnableTCP ? "YES" : "NO",[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3189 | [01;35m[K            config->vxFactor,[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+ 3190 | [01;35m[K            config->yawOffset,[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+ 3191 | [01;35m[K            tree->getEntry<int>("control_state"),[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3192 | [01;35m[K            msecsSince(data->lastTick)[m[K
+      |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+ 3193 | [01;35m[K        )[m[K;
+      |         [01;35m[K~[m[K             

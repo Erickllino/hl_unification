@@ -1301,7 +1301,6 @@ void Brain::joystickCallback(const booster_interface::msg::RemoteControllerState
         //adicionar o resto
 
     }
-    }
 
     // else, 单键位
     if (!joy.lt && !joy.rt) {

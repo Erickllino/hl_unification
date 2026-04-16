@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/__init__.py

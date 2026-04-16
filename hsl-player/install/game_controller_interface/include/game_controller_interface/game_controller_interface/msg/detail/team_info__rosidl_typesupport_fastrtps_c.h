@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/game_controller_interface/rosidl_typesupport_fastrtps_c/game_controller_interface/msg/detail/team_info__rosidl_typesupport_fastrtps_c.h

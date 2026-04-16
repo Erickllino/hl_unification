@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-5d8346e73e5db09783a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "game_controller_interface__py",
+					"jsonFile" : "directory-game_controller_interface__py-Release-d46de4632a1ef380687e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/hsl-player/build/game_controller_interface/game_controller_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "game_controller_interface__rs",
+					"jsonFile" : "directory-game_controller_interface__rs-Release-4b3f28239820132a7880.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/workspace/hsl-player/build/game_controller_interface/game_controller_interface__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "game_controller_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_game_controller_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_game_controller_interface_egg-Release-64f4558c3db515f97df6.json",
+					"name" : "ament_cmake_python_build_game_controller_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_game_controller_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_game_controller_interface-Release-c33b7af57280bdbf0a53.json",
+					"name" : "ament_cmake_python_symlink_game_controller_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface-Release-cfeac16d8b71d4dd5cad.json",
+					"name" : "game_controller_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__cpp-Release-7c2573511d32ef6c7038.json",
+					"name" : "game_controller_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "game_controller_interface__py::@2fab39327c990ad94437",
+					"jsonFile" : "target-game_controller_interface__py-Release-1a95007244dd5101b587.json",
+					"name" : "game_controller_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_generator_c-Release-e2e88e52476655e25753.json",
+					"name" : "game_controller_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_generator_py-Release-daa5a7a448f2a1947a6d.json",
+					"name" : "game_controller_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_c-Release-90051d7e9f3e1e6e1827.json",
+					"name" : "game_controller_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_c__pyext-Release-f64340f727697e654a16.json",
+					"name" : "game_controller_interface__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_cpp-Release-16a5c47135b7258f0a2a.json",
+					"name" : "game_controller_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_fastrtps_c-Release-38bf3272ebffdfcc7de8.json",
+					"name" : "game_controller_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_fastrtps_c__pyext-Release-5c61606bb47c67ee3cd3.json",
+					"name" : "game_controller_interface__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_fastrtps_cpp-Release-6115ceec4c68723d154b.json",
+					"name" : "game_controller_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_introspection_c-Release-7608ce8900ee4df2569c.json",
+					"name" : "game_controller_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_introspection_c__pyext-Release-1886b113aa8380a9d0f5.json",
+					"name" : "game_controller_interface__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface__rosidl_typesupport_introspection_cpp-Release-80edf2e75953bbda4b4e.json",
+					"name" : "game_controller_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "game_controller_interface__rs::@1b11ac23d14f0f190272",
+					"jsonFile" : "target-game_controller_interface__rs-Release-b92aa70f3ac32378a060.json",
+					"name" : "game_controller_interface__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "game_controller_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-game_controller_interface_uninstall-Release-af12bfdcc29a37182aad.json",
+					"name" : "game_controller_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-b1c02b5a5321657dbc8f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspace/hsl-player/build/game_controller_interface",
+		"source" : "/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

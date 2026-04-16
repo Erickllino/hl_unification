@@ -1,0 +1,423 @@
+[0.015s] Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/vision_interface
+[0.016s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.081s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.084s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.099s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.100s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.103s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.107s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.113s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.129s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.129s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.191s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.226s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.231s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.237s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.430s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.737s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.948s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.968s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.988s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.988s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.988s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.168s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.180s] -- Added test 'lint_cmake' to check CMake code style
+[1.181s] -- Added test 'xmllint' to check XML markup files
+[1.186s] -- Configuring done
+[1.278s] -- Generating done
+[1.292s] -- Build files have been written to: /workspace/hsl-player/build/vision_interface
+[1.308s] Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/vision_interface
+[1.312s] Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/vision_interface -- -j20 -l20
+[1.378s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_generator_c[0m
+[1.392s] [  1%] Built target vision_interface__rs
+[1.406s] [  1%] Built target vision_interface__cpp
+[1.413s] [  2%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detected_object__functions.c.o[0m
+[1.415s] [  3%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detections__functions.c.o[0m
+[1.415s] [  3%] Built target ament_cmake_python_symlink_vision_interface
+[1.422s] [  4%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/line_segments__functions.c.o[0m
+[1.449s] [  5%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/detections_track__functions.c.o[0m
+[1.457s] [  6%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_point__functions.c.o[0m
+[1.461s] [  7%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_line__functions.c.o[0m
+[1.461s] [  8%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/cal_param__functions.c.o[0m
+[1.469s] [  9%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/segmentation_result__functions.c.o[0m
+[1.469s] [ 10%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/ball__functions.c.o[0m
+[1.472s] [ 11%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_c.dir/rosidl_generator_c/vision_interface/msg/detail/image_head_position__functions.c.o[0m
+[1.483s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_cpp[0m
+[1.487s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_introspection_cpp[0m
+[1.488s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_fastrtps_cpp[0m
+[1.534s] [ 13%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/detected_object__type_support.cpp.o[0m
+[1.534s] [ 13%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/line_segments__type_support.cpp.o[0m
+[1.534s] [ 14%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/detections__type_support.cpp.o[0m
+[1.535s] [ 15%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/cal_param__type_support.cpp.o[0m
+[1.541s] [ 16%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/detections_track__type_support.cpp.o[0m
+[1.544s] [ 17%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/segmentation_point__type_support.cpp.o[0m
+[1.549s] [ 18%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/detected_object__type_support.cpp.o[0m
+[1.549s] [ 19%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/segmentation_line__type_support.cpp.o[0m
+[1.549s] [ 20%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detected_object__type_support.cpp.o[0m
+[1.619s] [ 21%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/segmentation_result__type_support.cpp.o[0m
+[1.629s] [ 22%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections__type_support.cpp.o[0m
+[1.632s] [ 23%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/detections__type_support.cpp.o[0m
+[1.645s] [ 24%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/line_segments__type_support.cpp.o[0m
+[1.646s] [ 25%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/line_segments__type_support.cpp.o[0m
+[1.657s] [ 26%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/image_head_position__type_support.cpp.o[0m
+[1.659s] [ 27%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/cal_param__type_support.cpp.o[0m
+[1.691s] [ 28%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_interface/msg/ball__type_support.cpp.o[0m
+[1.706s] [ 29%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/cal_param__type_support.cpp.o[0m
+[1.710s] [ 30%] [32m[1mLinking C shared library libvision_interface__rosidl_generator_c.so[0m
+[1.808s] [ 31%] Built target vision_interface__rosidl_generator_c
+[1.821s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_fastrtps_c[0m
+[1.856s] [ 31%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detected_object__type_support_c.cpp.o[0m
+[1.912s] [ 32%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detections__type_support_c.cpp.o[0m
+[1.953s] [ 33%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/line_segments__type_support_c.cpp.o[0m
+[2.072s] [ 34%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/detections_track__type_support.cpp.o[0m
+[2.091s] [ 35%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/cal_param__type_support_c.cpp.o[0m
+[2.117s] [ 36%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/detections_track__type_support.cpp.o[0m
+[2.131s] [ 37%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/segmentation_point__type_support.cpp.o[0m
+[2.162s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_c[0m
+[2.171s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_introspection_c[0m
+[2.196s] [ 37%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detected_object__type_support.cpp.o[0m
+[2.209s] [ 37%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detected_object__type_support.c.o[0m
+[2.255s] [ 38%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/line_segments__type_support.cpp.o[0m
+[2.262s] [ 39%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detections__type_support.cpp.o[0m
+[2.285s] [ 40%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/detections_track__type_support_c.cpp.o[0m
+[2.289s] [ 41%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/segmentation_point__type_support.cpp.o[0m
+[2.303s] [ 42%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/segmentation_line__type_support.cpp.o[0m
+[2.313s] [ 43%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detections__type_support.c.o[0m
+[2.324s] [ 44%] [32m[1mLinking CXX shared library libvision_interface__rosidl_typesupport_cpp.so[0m
+[2.336s] [ 45%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/cal_param__type_support.cpp.o[0m
+[2.340s] [ 46%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/line_segments__type_support.c.o[0m
+[2.394s] running egg_info
+[2.394s] writing vision_interface.egg-info/PKG-INFO
+[2.394s] writing dependency_links to vision_interface.egg-info/dependency_links.txt
+[2.396s] writing top-level names to vision_interface.egg-info/top_level.txt
+[2.398s] [ 47%] Built target vision_interface__rosidl_typesupport_cpp
+[2.400s] reading manifest file 'vision_interface.egg-info/SOURCES.txt'
+[2.405s] writing manifest file 'vision_interface.egg-info/SOURCES.txt'
+[2.412s] [ 48%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/detections_track__type_support.cpp.o[0m
+[2.414s] [ 49%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_point__type_support_c.cpp.o[0m
+[2.426s] [ 50%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/segmentation_result__type_support.cpp.o[0m
+[2.434s] [ 51%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/segmentation_line__type_support.cpp.o[0m
+[2.442s] [ 52%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/cal_param__type_support.c.o[0m
+[2.459s] [ 53%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_point__type_support.cpp.o[0m
+[2.461s] [ 54%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/image_head_position__type_support.cpp.o[0m
+[2.479s] [ 55%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_line__type_support_c.cpp.o[0m
+[2.510s] [ 56%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/detections_track__type_support.c.o[0m
+[2.530s] [ 56%] Built target ament_cmake_python_build_vision_interface_egg
+[2.537s] [ 57%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_line__type_support.cpp.o[0m
+[2.546s] [ 58%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/segmentation_result__type_support_c.cpp.o[0m
+[2.549s] [ 59%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/segmentation_result__type_support.cpp.o[0m
+[2.595s] [ 60%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_point__type_support.c.o[0m
+[2.595s] [ 61%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/ball__type_support.cpp.o[0m
+[2.614s] [ 62%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/image_head_position__type_support.cpp.o[0m
+[2.650s] [ 63%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_interface/msg/ball__type_support.cpp.o[0m
+[2.670s] [ 64%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_line__type_support.c.o[0m
+[2.674s] [ 65%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/image_head_position__type_support_c.cpp.o[0m
+[2.702s] [ 66%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/segmentation_result__type_support.cpp.o[0m
+[2.707s] [ 67%] [32m[1mLinking CXX shared library libvision_interface__rosidl_typesupport_c.so[0m
+[2.740s] [ 68%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/segmentation_result__type_support.c.o[0m
+[2.749s] [ 69%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_interface/msg/detail/ball__type_support_c.cpp.o[0m
+[2.786s] [ 70%] Built target vision_interface__rosidl_typesupport_c
+[2.803s] [ 71%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/image_head_position__type_support.c.o[0m
+[2.865s] [ 72%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/image_head_position__type_support.cpp.o[0m
+[2.871s] [ 73%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_interface/msg/detail/ball__type_support.c.o[0m
+[2.894s] [ 74%] [32mBuilding CXX object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/dds_fastrtps/ball__type_support.cpp.o[0m
+[2.930s] [ 75%] [32m[1mLinking C shared library libvision_interface__rosidl_typesupport_introspection_c.so[0m
+[3.011s] [ 76%] Built target vision_interface__rosidl_typesupport_introspection_c
+[3.120s] [ 77%] [32m[1mLinking CXX shared library libvision_interface__rosidl_typesupport_fastrtps_c.so[0m
+[3.303s] [ 78%] Built target vision_interface__rosidl_typesupport_fastrtps_c
+[3.420s] [ 79%] [32m[1mLinking CXX shared library libvision_interface__rosidl_typesupport_introspection_cpp.so[0m
+[3.445s] [ 80%] [32m[1mLinking CXX shared library libvision_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.469s] [ 81%] Built target vision_interface__rosidl_typesupport_introspection_cpp
+[3.484s] [ 82%] Built target vision_interface__rosidl_typesupport_fastrtps_cpp
+[3.493s] [ 82%] Built target vision_interface
+[3.504s] [ 83%] Built target vision_interface__py
+[3.513s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_generator_py[0m
+[3.524s] [ 84%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_segmentation_point_s.c.o[0m
+[3.524s] [ 85%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_line_segments_s.c.o[0m
+[3.524s] [ 86%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_detections_track_s.c.o[0m
+[3.524s] [ 87%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_cal_param_s.c.o[0m
+[3.524s] [ 89%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_detections_s.c.o[0m
+[3.524s] [ 89%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_detected_object_s.c.o[0m
+[3.525s] [ 90%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_segmentation_result_s.c.o[0m
+[3.525s] [ 91%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_image_head_position_s.c.o[0m
+[3.525s] [ 92%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_ball_s.c.o[0m
+[3.525s] [ 93%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_generator_py.dir/rosidl_generator_py/vision_interface/msg/_segmentation_line_s.c.o[0m
+[3.668s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/vision_interface/libvision_interface__rosidl_generator_py.so[0m
+[3.696s] [ 94%] Built target vision_interface__rosidl_generator_py
+[3.704s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[3.704s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_introspection_c__pyext[0m
+[3.704s] [35m[1mConsolidate compiler generated dependencies of target vision_interface__rosidl_typesupport_c__pyext[0m
+[3.714s] [ 97%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vision_interface/_vision_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.714s] [ 97%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vision_interface/_vision_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.714s] [ 97%] [32mBuilding C object CMakeFiles/vision_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vision_interface/_vision_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[3.853s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/vision_interface/vision_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.860s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/vision_interface/vision_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.877s] [100%] [32m[1mLinking C shared library rosidl_generator_py/vision_interface/vision_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.900s] [100%] Built target vision_interface__rosidl_typesupport_introspection_c__pyext
+[3.902s] [100%] Built target vision_interface__rosidl_typesupport_fastrtps_c__pyext
+[3.910s] [100%] Built target vision_interface__rosidl_typesupport_c__pyext
+[3.917s] Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/vision_interface -- -j20 -l20
+[3.918s] Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/vision_interface
+[3.922s] -- Install configuration: "Release"
+[3.922s] -- Execute custom install script
+[3.922s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/ament_index/resource_index/rosidl_interfaces/vision_interface
+[3.922s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/ball.h
+[3.922s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/cal_param.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__type_support.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__functions.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__struct.h
+[3.923s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__type_support.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__functions.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__struct.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__type_support.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__functions.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__struct.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__type_support.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__functions.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__struct.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__type_support.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detected_object.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detections.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detections_track.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/image_head_position.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/line_segments.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/rosidl_generator_c__visibility_control.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_line.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_point.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_result.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/library_path.sh
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/library_path.dsv
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__rosidl_typesupport_fastrtps_c.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__rosidl_typesupport_fastrtps_c.h
+[3.924s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__rosidl_typesupport_fastrtps_c.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/ball.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/cal_param.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__builder.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__struct.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__traits.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__type_support.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__builder.hpp
+[3.925s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__type_support.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__builder.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__type_support.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__builder.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__type_support.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__builder.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__type_support.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__builder.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__type_support.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__builder.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__struct.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__traits.hpp
+[3.926s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__type_support.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__builder.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__struct.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__traits.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__type_support.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__builder.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__struct.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__traits.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__type_support.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__builder.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__struct.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__traits.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__type_support.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detected_object.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detections.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detections_track.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/image_head_position.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/line_segments.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_line.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_point.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/segmentation_result.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__rosidl_typesupport_fastrtps_cpp.hpp
+[3.927s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__rosidl_typesupport_fastrtps_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__rosidl_typesupport_introspection_c.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/ball__rosidl_typesupport_introspection_cpp.hpp
+[3.928s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/cal_param__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detected_object__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/detections_track__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/image_head_position__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/line_segments__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_line__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_point__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/include/vision_interface/vision_interface/msg/detail/segmentation_result__rosidl_typesupport_introspection_cpp.hpp
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/pythonpath.sh
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/pythonpath.dsv
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info/PKG-INFO
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info/SOURCES.txt
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info/dependency_links.txt
+[3.929s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info/top_level.txt
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/__init__.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/_vision_interface_s.ep.rosidl_typesupport_c.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/_vision_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/_vision_interface_s.ep.rosidl_typesupport_introspection_c.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/libvision_interface__rosidl_generator_py.so
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/__init__.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_ball.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_ball_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_cal_param.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_cal_param_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detected_object.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detected_object_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detections.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detections_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detections_track.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_detections_track_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_image_head_position.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_image_head_position_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_line_segments.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_line_segments_s.c
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_line.py
+[3.930s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_line_s.c
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_point.py
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_point_s.c
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_result.py
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg/_segmentation_result_s.c
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/vision_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/ament_index/resource_index/rust_packages/vision_interface
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/rust/Cargo.toml
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/rust/build.rs
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/rust/src/lib.rs
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/rust/src/msg.rs
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/rust/src/msg/rmw.rs
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/DetectedObject.idl
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/Detections.idl
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/LineSegments.idl
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/CalParam.idl
+[3.931s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/DetectionsTrack.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationPoint.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationLine.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationResult.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/ImageHeadPosition.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/Ball.idl
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/DetectedObject.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/Detections.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/LineSegments.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/CalParam.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/DetectionsTrack.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationPoint.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationLine.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/SegmentationResult.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/ImageHeadPosition.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/msg/Ball.msg
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/ament_index/resource_index/package_run_dependencies/vision_interface
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/ament_index/resource_index/parent_prefix_path/vision_interface
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/ament_prefix_path.sh
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/ament_prefix_path.dsv
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/path.sh
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/environment/path.dsv
+[3.932s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/local_setup.bash
+[3.933s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/local_setup.sh
+[3.933s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/local_setup.zsh
+[3.933s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/local_setup.dsv
+[3.933s] -- Symlinking: /workspace/hsl-player/install/vision_interface/share/vision_interface/package.dsv
+[3.937s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/ament_index/resource_index/packages/vision_interface
+[3.937s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/rosidl_cmake-extras.cmake
+[3.937s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.937s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/ament_cmake_export_targets-extras.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interfaceConfig.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interfaceConfig-version.cmake
+[3.938s] -- Up-to-date symlink: /workspace/hsl-player/install/vision_interface/share/vision_interface/package.xml
+[3.938s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_generator_c.so
+[3.938s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_generator_c.so" to ""
+[3.938s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_fastrtps_c.so
+[3.938s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[3.938s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_fastrtps_cpp.so
+[3.939s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.939s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_introspection_c.so
+[3.939s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_introspection_c.so" to ""
+[3.939s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_c.so
+[3.939s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_c.so" to ""
+[3.939s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_introspection_cpp.so
+[3.939s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[3.939s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_cpp.so
+[3.939s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_typesupport_cpp.so" to ""
+[3.961s] Listing '/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface'...
+[3.961s] Compiling '/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/__init__.py'...
+[3.961s] Listing '/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages/vision_interface/msg'...
+[3.964s] -- Installing: /workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_generator_py.so
+[3.964s] -- Set runtime path of "/workspace/hsl-player/install/vision_interface/lib/libvision_interface__rosidl_generator_py.so" to ""
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_generator_cExport.cmake
+[3.964s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_generator_cExport-release.cmake
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[3.964s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_typesupport_fastrtps_cExport-release.cmake
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_generator_cppExport.cmake
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.964s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_introspection_cExport.cmake
+[3.964s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_introspection_cExport-release.cmake
+[3.964s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_cExport.cmake
+[3.965s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_cExport-release.cmake
+[3.965s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_introspection_cppExport.cmake
+[3.965s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_introspection_cppExport-release.cmake
+[3.965s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_cppExport.cmake
+[3.965s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/vision_interface__rosidl_typesupport_cppExport-release.cmake
+[3.965s] -- Up-to-date: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_generator_pyExport.cmake
+[3.965s] -- Installing: /workspace/hsl-player/install/vision_interface/share/vision_interface/cmake/export_vision_interface__rosidl_generator_pyExport-release.cmake
+[3.966s] Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/vision_interface

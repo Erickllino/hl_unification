@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_cpp/vision_interface/msg/detail/segmentation_line__rosidl_typesupport_fastrtps_cpp.hpp

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_typesupport_introspection_c/booster_interface/msg/detail/booster_api_resp_msg__rosidl_typesupport_introspection_c.h

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/hand_command__rosidl_typesupport_introspection_cpp.hpp

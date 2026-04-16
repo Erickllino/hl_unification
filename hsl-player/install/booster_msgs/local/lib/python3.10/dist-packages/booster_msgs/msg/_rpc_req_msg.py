@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_msgs/rosidl_generator_py/booster_msgs/msg/_rpc_req_msg.py

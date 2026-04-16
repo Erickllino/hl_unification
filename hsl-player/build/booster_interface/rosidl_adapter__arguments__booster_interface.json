@@ -1,0 +1,23 @@
+{
+  "package_name": "booster_interface",
+  "non_idl_tuples": [
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/BoosterApiReqMsg.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/BoosterApiRespMsg.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/ButtonEventMsg.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/MotorState.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/MotorCmd.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/LowCmd.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/ImuState.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/LowState.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/RawBytesMsg.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/RawBytesStamped.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/Odometer.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/FallDownState.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/RemoteControllerState.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/HandCommand.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/HandDdsMsg.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:msg/HandParam.msg",
+    "/workspace/hsl-player/src/booster_ros2_interface:srv/RpcService.srv",
+    "/workspace/hsl-player/src/booster_ros2_interface:srv/AgentService.srv"
+  ]
+}

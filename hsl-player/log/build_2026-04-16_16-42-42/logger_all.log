@@ -1,0 +1,643 @@
+[0.056s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--packages-skip', 'vision', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '--parallel-workers', '20']
+[0.056s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=['vision'], packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=Release'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7551da5d9390>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7551da7cdf00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7551da7cdf00>>, mixin_verb=('build',))
+[0.120s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.120s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.120s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[0.121s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.121s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.121s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/hsl-player'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.121s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(configs) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'colcon_meta'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['ros']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'ros'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['cmake', 'python']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'cmake'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'python'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extensions ['python_setup_py']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(distribution) by extension 'python_setup_py'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ignore_ament_install'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_pkg']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_pkg'
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['colcon_meta']
+[0.127s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'ros'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['cmake', 'python']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'cmake'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extensions ['python_setup_py']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(scripts) by extension 'python_setup_py'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extension 'ignore'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extension 'ignore_ament_install'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extensions ['colcon_pkg']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extension 'colcon_pkg'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extensions ['colcon_meta']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extension 'colcon_meta'
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extensions ['ros']
+[0.128s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_msgs) by extension 'ros'
+[0.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/booster_msgs' with type 'ros.ament_cmake' and name 'booster_msgs'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extension 'ignore'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extension 'ignore_ament_install'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extensions ['colcon_pkg']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extension 'colcon_pkg'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extensions ['colcon_meta']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extension 'colcon_meta'
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extensions ['ros']
+[0.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/booster_ros2_interface) by extension 'ros'
+[0.130s] DEBUG:colcon.colcon_core.package_identification:Package 'src/booster_ros2_interface' with type 'ros.ament_cmake' and name 'booster_interface'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ignore', 'ignore_ament_install']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ignore_ament_install'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_pkg']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_pkg'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['colcon_meta']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'colcon_meta'
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extensions ['ros']
+[0.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/brain) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/brain' with type 'ros.ament_cmake' and name 'brain'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/game_controller) by extension 'ros'
+[0.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/game_controller' with type 'ros.ament_cmake' and name 'game_controller'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'ros'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['cmake', 'python']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'cmake'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'python'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extensions ['python_setup_py']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface) by extension 'python_setup_py'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'ros'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['cmake', 'python']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'cmake'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'python'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extensions ['python_setup_py']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src) by extension 'python_setup_py'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/game_controller_interface) by extension 'ros'
+[0.132s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robocup_ros2_interface/src/game_controller_interface' with type 'ros.ament_cmake' and name 'game_controller_interface'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extension 'ignore_ament_install'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extensions ['colcon_pkg']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extension 'colcon_pkg'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extensions ['colcon_meta']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extension 'colcon_meta'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extensions ['ros']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/robocup_ros2_interface/src/vision_interface) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robocup_ros2_interface/src/vision_interface' with type 'ros.ament_cmake' and name 'vision_interface'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/sound_play) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sound_play' with type 'ros.ament_python' and name 'sound_play'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision' with type 'ros.ament_cmake' and name 'vision'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'ros'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['cmake', 'python']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'cmake'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'python'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extensions ['python_setup_py']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(utils/service) by extension 'python_setup_py'
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.145s] INFO:colcon.colcon_core.package_selection:Skipping package 'vision' in 'src/vision'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_target' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.145s] DEBUG:colcon.colcon_core.verb:Building package 'booster_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/booster_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/booster_interface', 'merge_install': False, 'path': '/workspace/hsl-player/src/booster_ros2_interface', 'symlink_install': True, 'test_result_base': None}
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_target' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'booster_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.145s] DEBUG:colcon.colcon_core.verb:Building package 'booster_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/booster_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/booster_msgs', 'merge_install': False, 'path': '/workspace/hsl-player/src/booster_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_target' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'game_controller_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.145s] DEBUG:colcon.colcon_core.verb:Building package 'game_controller_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/game_controller_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/game_controller_interface', 'merge_install': False, 'path': '/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface', 'symlink_install': True, 'test_result_base': None}
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_target' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_clean_cache' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_clean_first' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_force_configure' from command line to 'False'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'ament_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'catkin_cmake_args' from command line to 'None'
+[0.145s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.145s] DEBUG:colcon.colcon_core.verb:Building package 'sound_play' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/sound_play', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/sound_play', 'merge_install': False, 'path': '/workspace/hsl-player/src/sound_play', 'symlink_install': True, 'test_result_base': None}
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_target' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'vision_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.146s] DEBUG:colcon.colcon_core.verb:Building package 'vision_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/vision_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/vision_interface', 'merge_install': False, 'path': '/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface', 'symlink_install': True, 'test_result_base': None}
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.146s] DEBUG:colcon.colcon_core.verb:Building package 'brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/brain', 'merge_install': False, 'path': '/workspace/hsl-player/src/brain', 'symlink_install': True, 'test_result_base': None}
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release']'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_target' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.146s] Level 5:colcon.colcon_core.verb:set package 'game_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.146s] DEBUG:colcon.colcon_core.verb:Building package 'game_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/hsl-player/build/game_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/hsl-player/install/game_controller', 'merge_install': False, 'path': '/workspace/hsl-player/src/game_controller', 'symlink_install': True, 'test_result_base': None}
+[0.146s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.147s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.147s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface' with build type 'ament_cmake'
+[0.147s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface'
+[0.148s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.148s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.148s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.150s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/booster_ros2_interface' with build type 'ament_cmake'
+[0.150s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/booster_ros2_interface'
+[0.150s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.150s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.152s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/booster_msgs' with build type 'ament_cmake'
+[0.152s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/booster_msgs'
+[0.152s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.152s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.154s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface' with build type 'ament_cmake'
+[0.154s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface'
+[0.154s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.155s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/hsl-player/src/sound_play' with build type 'ament_python'
+[0.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('sound_play', 'ament_prefix_path')
+[0.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/sound_play/share/sound_play/hook/ament_prefix_path.ps1'
+[0.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/sound_play/share/sound_play/hook/ament_prefix_path.dsv'
+[0.156s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/sound_play/share/sound_play/hook/ament_prefix_path.sh'
+[0.157s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.157s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller_interface
+[0.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_ros2_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_interface
+[0.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_msgs
+[0.169s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/vision_interface
+[0.315s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/hsl-player/src/sound_play'
+[0.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/sound_play': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/hsl-player/build/sound_play/build --no-deps symlink_data
+[0.720s] Level 1:colcon.colcon_core.shell:create_environment_hook('sound_play', 'pythonpath_develop')
+[0.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/build/sound_play/share/sound_play/hook/pythonpath_develop.ps1'
+[0.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/sound_play' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/hsl-player/build/sound_play/build --no-deps symlink_data
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/build/sound_play/share/sound_play/hook/pythonpath_develop.dsv'
+[0.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/build/sound_play/share/sound_play/hook/pythonpath_develop.sh'
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play' for CMake module files
+[0.723s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play' for CMake config files
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play/lib'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play/bin'
+[0.724s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play/lib/pkgconfig/sound_play.pc'
+[0.725s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages'
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('sound_play', 'pythonpath')
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/sound_play/share/sound_play/hook/pythonpath.ps1'
+[0.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/sound_play/share/sound_play/hook/pythonpath.dsv'
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/sound_play/share/sound_play/hook/pythonpath.sh'
+[0.726s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/sound_play/bin'
+[0.726s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sound_play)
+[0.726s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/sound_play/share/sound_play/package.ps1'
+[0.727s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/sound_play/share/sound_play/package.dsv'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/sound_play/share/sound_play/package.sh'
+[0.728s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/sound_play/share/sound_play/package.bash'
+[0.729s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/sound_play/share/sound_play/package.zsh'
+[0.729s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/sound_play/share/colcon-core/packages/sound_play)
+[0.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_msgs
+[0.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_msgs -- -j20 -l20
+[0.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller_interface
+[0.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller_interface -- -j20 -l20
+[1.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_ros2_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_interface
+[1.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_interface -- -j20 -l20
+[1.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/vision_interface
+[1.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/vision_interface -- -j20 -l20
+[2.182s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_msgs -- -j20 -l20
+[2.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_msgs
+[2.328s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(booster_msgs)
+[2.328s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs' for CMake module files
+[2.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_msgs
+[2.329s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs' for CMake config files
+[2.330s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_msgs', 'cmake_prefix_path')
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.ps1'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.dsv'
+[2.331s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.sh'
+[2.335s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib'
+[2.335s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_msgs', 'ld_library_path_lib')
+[2.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.ps1'
+[2.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.dsv'
+[2.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.sh'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/bin'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib/pkgconfig/booster_msgs.pc'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib/python3.10/site-packages'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/bin'
+[2.342s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.ps1'
+[2.343s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.dsv'
+[2.343s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.sh'
+[2.344s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.bash'
+[2.344s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.zsh'
+[2.345s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/booster_msgs/share/colcon-core/packages/booster_msgs)
+[2.345s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(booster_msgs)
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs' for CMake module files
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs' for CMake config files
+[2.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_msgs', 'cmake_prefix_path')
+[2.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.ps1'
+[2.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.dsv'
+[2.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/cmake_prefix_path.sh'
+[2.352s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib'
+[2.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_msgs', 'ld_library_path_lib')
+[2.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.ps1'
+[2.357s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.dsv'
+[2.357s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/hook/ld_library_path_lib.sh'
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/bin'
+[2.361s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib/pkgconfig/booster_msgs.pc'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/lib/python3.10/site-packages'
+[2.362s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_msgs/bin'
+[2.362s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.ps1'
+[2.363s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.dsv'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.sh'
+[2.368s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.bash'
+[2.369s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_msgs/share/booster_msgs/package.zsh'
+[2.369s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/booster_msgs/share/colcon-core/packages/booster_msgs)
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller_interface -- -j20 -l20
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller_interface
+[3.032s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(game_controller_interface)
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface' for CMake module files
+[3.033s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface' for CMake config files
+[3.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller_interface', 'cmake_prefix_path')
+[3.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.ps1'
+[3.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.dsv'
+[3.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.sh'
+[3.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller_interface
+[3.040s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib'
+[3.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller_interface', 'ld_library_path_lib')
+[3.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.ps1'
+[3.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.dsv'
+[3.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.sh'
+[3.045s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/bin'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib/pkgconfig/game_controller_interface.pc'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib/python3.10/site-packages'
+[3.046s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/bin'
+[3.047s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.ps1'
+[3.048s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.dsv'
+[3.048s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.sh'
+[3.052s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.bash'
+[3.052s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.zsh'
+[3.053s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/game_controller_interface/share/colcon-core/packages/game_controller_interface)
+[3.054s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(game_controller_interface)
+[3.054s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface' for CMake module files
+[3.055s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface' for CMake config files
+[3.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller_interface', 'cmake_prefix_path')
+[3.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.ps1'
+[3.060s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.dsv'
+[3.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/cmake_prefix_path.sh'
+[3.061s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib'
+[3.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller_interface', 'ld_library_path_lib')
+[3.062s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.ps1'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.dsv'
+[3.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/hook/ld_library_path_lib.sh'
+[3.067s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/bin'
+[3.067s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib/pkgconfig/game_controller_interface.pc'
+[3.067s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/lib/python3.10/site-packages'
+[3.067s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller_interface/bin'
+[3.068s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.ps1'
+[3.068s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.dsv'
+[3.071s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.sh'
+[3.071s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.bash'
+[3.072s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.zsh'
+[3.072s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/game_controller_interface/share/colcon-core/packages/game_controller_interface)
+[3.076s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/game_controller' with build type 'ament_cmake'
+[3.076s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/game_controller'
+[3.076s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.076s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/game_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller
+[3.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/game_controller -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller
+[3.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller -- -j20 -l20
+[4.071s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/vision_interface -- -j20 -l20
+[4.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/vision_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/vision_interface
+[4.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_interface)
+[4.120s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface' for CMake module files
+[4.120s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/vision_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/vision_interface
+[4.121s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface' for CMake config files
+[4.122s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interface', 'cmake_prefix_path')
+[4.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.ps1'
+[4.122s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.dsv'
+[4.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.sh'
+[4.123s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib'
+[4.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interface', 'ld_library_path_lib')
+[4.123s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.ps1'
+[4.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.dsv'
+[4.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.sh'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/bin'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib/pkgconfig/vision_interface.pc'
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib/python3.10/site-packages'
+[4.125s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/bin'
+[4.125s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.ps1'
+[4.126s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.dsv'
+[4.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.sh'
+[4.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.bash'
+[4.126s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.zsh'
+[4.126s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/vision_interface/share/colcon-core/packages/vision_interface)
+[4.127s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_interface)
+[4.127s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface' for CMake module files
+[4.127s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface' for CMake config files
+[4.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interface', 'cmake_prefix_path')
+[4.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.ps1'
+[4.128s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.dsv'
+[4.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/cmake_prefix_path.sh'
+[4.128s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib'
+[4.128s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_interface', 'ld_library_path_lib')
+[4.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.ps1'
+[4.128s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.dsv'
+[4.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/vision_interface/share/vision_interface/hook/ld_library_path_lib.sh'
+[4.129s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/bin'
+[4.129s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib/pkgconfig/vision_interface.pc'
+[4.129s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/lib/python3.10/site-packages'
+[4.129s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/vision_interface/bin'
+[4.129s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.ps1'
+[4.129s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.dsv'
+[4.129s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.sh'
+[4.130s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.bash'
+[4.130s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/vision_interface/share/vision_interface/package.zsh'
+[4.130s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/vision_interface/share/colcon-core/packages/vision_interface)
+[4.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_interface -- -j20 -l20
+[4.321s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_interface
+[4.379s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(booster_interface)
+[4.379s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface' for CMake module files
+[4.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/booster_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_interface
+[4.380s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface' for CMake config files
+[4.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_interface', 'cmake_prefix_path')
+[4.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.ps1'
+[4.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.dsv'
+[4.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.sh'
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib'
+[4.382s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_interface', 'ld_library_path_lib')
+[4.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.ps1'
+[4.382s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.dsv'
+[4.382s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.sh'
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/bin'
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib/pkgconfig/booster_interface.pc'
+[4.382s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib/python3.10/site-packages'
+[4.383s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/bin'
+[4.383s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.ps1'
+[4.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.dsv'
+[4.383s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.sh'
+[4.383s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.bash'
+[4.383s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.zsh'
+[4.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/booster_interface/share/colcon-core/packages/booster_interface)
+[4.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(booster_interface)
+[4.384s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface' for CMake module files
+[4.384s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface' for CMake config files
+[4.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_interface', 'cmake_prefix_path')
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.ps1'
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.dsv'
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/cmake_prefix_path.sh'
+[4.385s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib'
+[4.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('booster_interface', 'ld_library_path_lib')
+[4.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.ps1'
+[4.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.dsv'
+[4.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/booster_interface/share/booster_interface/hook/ld_library_path_lib.sh'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/bin'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib/pkgconfig/booster_interface.pc'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/lib/python3.10/site-packages'
+[4.386s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/booster_interface/bin'
+[4.386s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.ps1'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.dsv'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.sh'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.bash'
+[4.387s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/booster_interface/share/booster_interface/package.zsh'
+[4.387s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/booster_interface/share/colcon-core/packages/booster_interface)
+[4.388s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/hsl-player/src/brain' with build type 'ament_cmake'
+[4.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/hsl-player/src/brain'
+[4.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/brain -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain
+[5.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/brain' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/brain -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain
+[5.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[6.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller -- -j20 -l20
+[6.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/hsl-player/build/game_controller': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller
+[6.337s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(game_controller)
+[6.338s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller' for CMake module files
+[6.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/game_controller' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller
+[6.338s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller' for CMake config files
+[6.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller', 'cmake_prefix_path')
+[6.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.ps1'
+[6.339s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.dsv'
+[6.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.sh'
+[6.339s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib'
+[6.339s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/bin'
+[6.339s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib/pkgconfig/game_controller.pc'
+[6.339s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib/python3.10/site-packages'
+[6.340s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/bin'
+[6.340s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.ps1'
+[6.340s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/game_controller/share/game_controller/package.dsv'
+[6.340s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.sh'
+[6.340s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.bash'
+[6.340s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.zsh'
+[6.341s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/game_controller/share/colcon-core/packages/game_controller)
+[6.341s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(game_controller)
+[6.341s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller' for CMake module files
+[6.341s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller' for CMake config files
+[6.341s] Level 1:colcon.colcon_core.shell:create_environment_hook('game_controller', 'cmake_prefix_path')
+[6.341s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.ps1'
+[6.341s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.dsv'
+[6.342s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/hsl-player/install/game_controller/share/game_controller/hook/cmake_prefix_path.sh'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/bin'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib/pkgconfig/game_controller.pc'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/lib/python3.10/site-packages'
+[6.342s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/game_controller/bin'
+[6.342s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.ps1'
+[6.342s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/game_controller/share/game_controller/package.dsv'
+[6.343s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.sh'
+[6.343s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.bash'
+[6.343s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/game_controller/share/game_controller/package.zsh'
+[6.343s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/game_controller/share/colcon-core/packages/game_controller)
+[7.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/hsl-player/build/brain' returned '2': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[7.865s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(brain)
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain' for CMake module files
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain' for CMake config files
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain/bin'
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain/lib/pkgconfig/brain.pc'
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain/lib/python3.10/site-packages'
+[7.865s] Level 1:colcon.colcon_core.environment:checking '/workspace/hsl-player/install/brain/bin'
+[7.865s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/brain/share/brain/package.ps1'
+[7.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/hsl-player/install/brain/share/brain/package.dsv'
+[7.866s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/brain/share/brain/package.sh'
+[7.866s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/brain/share/brain/package.bash'
+[7.866s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/hsl-player/install/brain/share/brain/package.zsh'
+[7.866s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/hsl-player/install/brain/share/colcon-core/packages/brain)
+[7.877s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.877s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.877s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[7.877s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.880s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[7.880s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.880s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.880s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.882s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[7.882s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.883s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/hsl-player/install/local_setup.ps1'
+[7.883s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/hsl-player/install/_local_setup_util_ps1.py'
+[7.884s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/hsl-player/install/setup.ps1'
+[7.885s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/hsl-player/install/local_setup.sh'
+[7.886s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/hsl-player/install/_local_setup_util_sh.py'
+[7.886s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/hsl-player/install/setup.sh'
+[7.887s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/hsl-player/install/local_setup.bash'
+[7.888s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/hsl-player/install/setup.bash'
+[7.889s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/hsl-player/install/local_setup.zsh'
+[7.889s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/hsl-player/install/setup.zsh'

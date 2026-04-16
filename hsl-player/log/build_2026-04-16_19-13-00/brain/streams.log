@@ -1,0 +1,121 @@
+[0.010s] Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[0.041s] [  2%] Built target brain__cpp
+[0.045s] [  4%] Built target brain__rs
+[0.047s] [ 11%] Built target brain__rosidl_generator_c
+[0.049s] [ 11%] Built target ament_cmake_python_symlink_brain
+[0.051s] [ 19%] Built target brain__rosidl_typesupport_cpp
+[0.054s] [ 26%] Built target brain__rosidl_typesupport_introspection_cpp
+[0.054s] [ 33%] Built target brain__rosidl_typesupport_fastrtps_cpp
+[0.056s] [ 40%] Built target brain__rosidl_typesupport_c
+[0.056s] [ 47%] Built target brain__rosidl_typesupport_introspection_c
+[0.062s] [ 54%] Built target brain__rosidl_typesupport_fastrtps_c
+[0.068s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o[0m
+[0.068s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o[0m
+[0.068s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o[0m
+[0.068s] [ 64%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o[0m
+[0.069s] [ 66%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o[0m
+[0.069s] [ 69%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o[0m
+[0.070s] [ 71%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o[0m
+[0.074s] [ 71%] Built target brain
+[0.088s] [ 73%] Built target brain__py
+[0.105s] [ 78%] Built target brain__rosidl_generator_py
+[0.123s] [ 92%] Built target brain__rosidl_typesupport_introspection_c__pyext
+[0.123s] [ 92%] Built target brain__rosidl_typesupport_c__pyext
+[0.123s] [ 92%] Built target brain__rosidl_typesupport_fastrtps_c__pyext
+[0.187s] running egg_info
+[0.188s] writing brain.egg-info/PKG-INFO
+[0.188s] writing dependency_links to brain.egg-info/dependency_links.txt
+[0.188s] writing top-level names to brain.egg-info/top_level.txt
+[0.188s] reading manifest file 'brain.egg-info/SOURCES.txt'
+[0.189s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[0.207s] [ 92%] Built target ament_cmake_python_build_brain_egg
+[3.623s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:[m[K In member function ‘[01m[Kint RobotClient::rlKickBall(float, float)[m[K’:
+[3.624s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:102:61:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kbooster_internal::robot::b1::RLKickBallParameter::RLKickBallParameter(float&, float&)[m[K’
+[3.624s]   102 |     RLKickBallParameter kick_paramenter(kick_speed, kick_dir[01;31m[K)[m[K;
+[3.624s]       |                                                             [01;31m[K^[m[K
+[3.624s] In file included from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:2[m[K:
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:248:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbooster_internal::robot::b1::RLKickBallParameter::RLKickBallParameter(float, float, bool)[m[K’
+[3.624s]   248 |     [01;36m[KRLKickBallParameter[m[K(float kick_speed, float kick_dir, bool cancel) :
+[3.624s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:248:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:247:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbooster_internal::robot::b1::RLKickBallParameter::RLKickBallParameter()[m[K’
+[3.624s]   247 |     [01;36m[KRLKickBallParameter[m[K() = default;
+[3.624s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:247:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr booster_internal::robot::b1::RLKickBallParameter::RLKickBallParameter(const booster_internal::robot::b1::RLKickBallParameter&)[m[K’
+[3.624s]   245 | class [01;36m[KRLKickBallParameter[m[K {
+[3.624s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:245:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:245:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr booster_internal::robot::b1::RLKickBallParameter::RLKickBallParameter(booster_internal::robot::b1::RLKickBallParameter&&)[m[K’
+[3.624s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:245:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.624s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:[m[K In member function ‘[01m[Kint RobotClient::fancyKick(float, float)[m[K’:
+[3.624s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:114:65:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kbooster_internal::robot::b1::RLFancyKickBallParameter::RLFancyKickBallParameter(float&, float&)[m[K’
+[3.625s]   114 |     RLFancyKickBallParameter kick_parameter(kick_speed, kick_dir[01;31m[K)[m[K;
+[3.625s]       |                                                                 [01;31m[K^[m[K
+[3.625s] In file included from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:2[m[K:
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:274:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbooster_internal::robot::b1::RLFancyKickBallParameter::RLFancyKickBallParameter(float, float, bool)[m[K’
+[3.625s]   274 |     [01;36m[KRLFancyKickBallParameter[m[K(float kick_speed, float kick_dir, bool cancel) :
+[3.625s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:274:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:273:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbooster_internal::robot::b1::RLFancyKickBallParameter::RLFancyKickBallParameter()[m[K’
+[3.625s]   273 |     [01;36m[KRLFancyKickBallParameter[m[K() = default;
+[3.625s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:273:5:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:271:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr booster_internal::robot::b1::RLFancyKickBallParameter::RLFancyKickBallParameter(const booster_internal::robot::b1::RLFancyKickBallParameter&)[m[K’
+[3.625s]   271 | class [01;36m[KRLFancyKickBallParameter[m[K {
+[3.625s]       |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:271:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:271:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr booster_internal::robot::b1::RLFancyKickBallParameter::RLFancyKickBallParameter(booster_internal::robot::b1::RLFancyKickBallParameter&&)[m[K’
+[3.625s] [01m[K/usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp:271:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[3.782s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Adjust::onRunning()[m[K’:
+[3.782s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KleftPost[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[3.782s]   875 |   Point2D [01;35m[KleftPost[m[K, rightPost;
+[3.782s]       |           [01;35m[K^~~~~~~~[m[K
+[3.782s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrightPost[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[3.782s]   875 |   Point2D leftPost, [01;35m[KrightPost[m[K;
+[3.782s]       |                     [01;35m[K^~~~~~~~~[m[K
+[5.161s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:188: CMakeFiles/brain_node.dir/src/robot_client.cpp.o] Error 1
+[5.161s] gmake[2]: *** Waiting for unfinished jobs....
+[5.197s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::joystickCallback(const RemoteControllerState&)[m[K’:
+[5.197s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:1134:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klog_[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[5.198s]  1134 |     auto [01;35m[Klog_[m[K = [=](string msg) {
+[5.198s]       |          [01;35m[K^~~~[m[K
+[5.198s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K At global scope:
+[5.198s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:1307:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+[5.198s]  1307 |     [01;31m[Kif[m[K (!joy.lt && !joy.rt) {
+[5.198s]       |     [01;31m[K^~[m[K
+[5.198s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:1335:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[5.198s]  1335 | [01;31m[K}[m[K
+[5.198s]       | [01;31m[K^[m[K
+[6.142s] [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:[m[K In member function ‘[01m[Kvoid BrainCommunication::unicastCommunication()[m[K’:
+[6.142s] [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:362:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.142s]   362 |         [01;35m[Kmsg.ballLocationKnown = brain->tree->getEntry<bool>("ball_location_known")[m[K;
+[6.142s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[6.367s] In file included from [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:1[m[K:
+[6.367s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:[m[K In member function ‘[01m[KT BrainTree::getEntry(const string&) [with T = bool][m[K’:
+[6.367s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.367s]    30 |         return [01;35m[Kvalue[m[K;
+[6.367s]       |                [01;35m[K^~~~~[m[K
+[6.818s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus SelfLocate::tick()[m[K’:
+[6.818s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:46:[m[K [01;35m[Kwarning: [m[K‘[01m[KthetaMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.818s]   386 |     double xMin, xMax, yMin, yMax, thetaMin, [01;35m[KthetaMax[m[K;
+[6.818s]       |                                              [01;35m[K^~~~~~~~[m[K
+[6.818s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KthetaMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.818s]   386 |     double xMin, xMax, yMin, yMax, [01;35m[KthetaMin[m[K, thetaMax;
+[6.818s]       |                                    [01;35m[K^~~~~~~~[m[K
+[6.818s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:30:[m[K [01;35m[Kwarning: [m[K‘[01m[KyMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.818s]   386 |     double xMin, xMax, yMin, [01;35m[KyMax[m[K, thetaMin, thetaMax;
+[6.818s]       |                              [01;35m[K^~~~[m[K
+[6.819s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KyMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.819s]   386 |     double xMin, xMax, [01;35m[KyMin[m[K, yMax, thetaMin, thetaMax;
+[6.819s]       |                        [01;35m[K^~~~[m[K
+[6.819s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:18:[m[K [01;35m[Kwarning: [m[K‘[01m[KxMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.819s]   386 |     double xMin, [01;35m[KxMax[m[K, yMin, yMax, thetaMin, thetaMax;
+[6.819s]       |                  [01;35m[K^~~~[m[K
+[6.819s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KxMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[6.819s]   386 |     double [01;35m[KxMin[m[K, xMax, yMin, yMax, thetaMin, thetaMax;
+[6.819s]       |            [01;35m[K^~~~[m[K
+[10.209s] gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:76: CMakeFiles/brain_node.dir/src/brain.cpp.o] Error 1
+[10.209s] gmake[1]: *** [CMakeFiles/Makefile2:612: CMakeFiles/brain_node.dir/all] Error 2
+[10.210s] gmake: *** [Makefile:146: all] Error 2
+[10.211s] Invoked command in '/workspace/hsl-player/build/brain' returned '2': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20

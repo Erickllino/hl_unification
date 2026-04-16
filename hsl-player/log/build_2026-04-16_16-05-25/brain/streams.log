@@ -1,0 +1,54 @@
+[0.010s] Invoking command in '/workspace/hsl-player/build/brain': AMENT_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:${LD_LIBRARY_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/hsl-player/src/brain -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain
+[0.050s] -- The C compiler identification is GNU 11.4.0
+[0.083s] -- The CXX compiler identification is GNU 11.4.0
+[0.087s] -- Detecting C compiler ABI info
+[0.127s] -- Detecting C compiler ABI info - done
+[0.131s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.131s] -- Detecting C compile features
+[0.131s] -- Detecting C compile features - done
+[0.133s] -- Detecting CXX compiler ABI info
+[0.179s] -- Detecting CXX compiler ABI info - done
+[0.184s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.184s] -- Detecting CXX compile features
+[0.184s] -- Detecting CXX compile features - done
+[0.185s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.268s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.300s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.317s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.338s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.341s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.345s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.351s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.382s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.384s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.432s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.445s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.467s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.472s] -- Looking for pthread.h
+[0.512s] -- Looking for pthread.h - found
+[0.512s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.556s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.557s] -- Found Threads: TRUE  
+[0.585s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.600s] -- Found behaviortree_cpp: 4.9.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)
+[0.607s] -- Configuring incomplete, errors occurred!
+[0.607s] See also "/workspace/hsl-player/build/brain/CMakeFiles/CMakeOutput.log".
+[0.607s] [31mCMake Error at CMakeLists.txt:16 (find_package):
+[0.607s]   By not providing "Findrerun_sdk.cmake" in CMAKE_MODULE_PATH this project
+[0.607s]   has asked CMake to find a package configuration file provided by
+[0.607s]   "rerun_sdk", but CMake did not find one.
+[0.607s] 
+[0.607s]   Could not find a package configuration file provided by "rerun_sdk" with
+[0.607s]   any of the following names:
+[0.607s] 
+[0.607s]     rerun_sdkConfig.cmake
+[0.607s]     rerun_sdk-config.cmake
+[0.608s] 
+[0.608s]   Add the installation prefix of "rerun_sdk" to CMAKE_PREFIX_PATH or set
+[0.608s]   "rerun_sdk_DIR" to a directory containing one of the above files.  If
+[0.608s]   "rerun_sdk" provides a separate development package or SDK, be sure it has
+[0.608s]   been installed.
+[0.608s] 
+[0.608s] [0m
+[0.611s] Invoked command in '/workspace/hsl-player/build/brain' returned '1': AMENT_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:${LD_LIBRARY_PATH} PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspace/hsl-player/src/brain -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/brain

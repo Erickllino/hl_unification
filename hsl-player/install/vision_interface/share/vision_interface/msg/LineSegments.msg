@@ -1,0 +1,1 @@
+/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/LineSegments.msg

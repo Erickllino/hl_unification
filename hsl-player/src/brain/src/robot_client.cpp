@@ -99,7 +99,7 @@ int RobotClient::rlKickBall(float kick_speed, float kick_dir)
     booster_interface::msg::BoosterApiReqMsg msg;
     msg.api_id = static_cast<int64_t>(LocoInternalApiId::kRLKickBall);
 
-    RLKickBallParameter kick_paramenter(kick_speed, kick_dir);
+    RLKickBallParameter kick_paramenter(kick_speed, kick_dir, false);
     msg.body = kick_paramenter.ToJson().dump();
 
     return call(msg);
@@ -111,7 +111,7 @@ int RobotClient::fancyKick(float kick_speed, float kick_dir)
     booster_interface::msg::BoosterApiReqMsg msg;
     msg.api_id = static_cast<int64_t>(LocoInternalApiId::kRLFancyKickBall);
 
-    RLFancyKickBallParameter kick_parameter(kick_speed, kick_dir);
+    RLFancyKickBallParameter kick_parameter(kick_speed, kick_dir, false);
     msg.body = kick_parameter.ToJson().dump();
 
     return call(msg);

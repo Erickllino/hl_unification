@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/_vision_interface_s.ep.rosidl_typesupport_fastrtps_c.c

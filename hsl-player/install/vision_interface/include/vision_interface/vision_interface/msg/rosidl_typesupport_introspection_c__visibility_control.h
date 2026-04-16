@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_c/vision_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h

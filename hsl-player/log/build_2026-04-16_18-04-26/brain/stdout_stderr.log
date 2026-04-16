@@ -1,0 +1,92 @@
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_c[0m
+[  7%] Built target brain__rosidl_generator_c
+[  9%] Built target brain__rs
+[ 11%] Built target brain__cpp
+[ 11%] Built target ament_cmake_python_symlink_brain
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_cpp[0m
+[ 19%] Built target brain__rosidl_typesupport_introspection_c
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_cpp[0m
+[ 26%] Built target brain__rosidl_typesupport_fastrtps_c
+[ 33%] Built target brain__rosidl_typesupport_c
+[ 40%] Built target brain__rosidl_typesupport_cpp
+[ 54%] Built target brain__rosidl_typesupport_fastrtps_cpp
+[ 54%] Built target brain__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target brain_node[0m
+[ 54%] Built target brain
+[ 57%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o[0m
+[ 59%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o[0m
+[ 73%] Built target brain__py
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_py[0m
+[ 78%] Built target brain__rosidl_generator_py
+[01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+    2 | #include [01;31m[K<booster_internal/robot/b1/b1_loco_internal_api.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:188: CMakeFiles/brain_node.dir/src/robot_client.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c__pyext[0m
+[ 83%] Built target brain__rosidl_typesupport_introspection_c__pyext
+[ 88%] Built target brain__rosidl_typesupport_fastrtps_c__pyext
+[ 92%] Built target brain__rosidl_typesupport_c__pyext
+running egg_info
+writing brain.egg-info/PKG-INFO
+writing dependency_links to brain.egg-info/dependency_links.txt
+writing top-level names to brain.egg-info/top_level.txt
+reading manifest file 'brain.egg-info/SOURCES.txt'
+writing manifest file 'brain.egg-info/SOURCES.txt'
+[ 92%] Built target ament_cmake_python_build_brain_egg
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/main.cpp:6[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:1[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:174: CMakeFiles/brain_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:90: CMakeFiles/brain_node.dir/src/brain_communication.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:6[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:76: CMakeFiles/brain_node.dir/src/brain.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:4[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:160: CMakeFiles/brain_node.dir/src/locator.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_log.cpp:2[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:132: CMakeFiles/brain_node.dir/src/brain_log.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:2[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:146: CMakeFiles/brain_node.dir/src/brain_tree.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:612: CMakeFiles/brain_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_rs/vision_interface/rust/src/lib.rs

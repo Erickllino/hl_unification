@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/_booster_interface_s.ep.rosidl_typesupport_c.c

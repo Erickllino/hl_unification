@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_rs/booster_interface/rust/src/msg/rmw.rs

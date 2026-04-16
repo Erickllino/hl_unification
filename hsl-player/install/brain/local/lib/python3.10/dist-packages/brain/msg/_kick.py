@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/brain/rosidl_generator_py/brain/msg/_kick.py

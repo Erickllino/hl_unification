@@ -10,6 +10,9 @@ from launch.substitutions import LaunchConfiguration
 
 def handle_configuration(context, *args, **kwargs):
     vision_config_path = os.path.join(os.path.dirname(__file__), '../../../../vision/share/vision/config')
+    if not os.path.isdir(vision_config_path):
+        # fallback: vision não instalado, usa config do src/
+        vision_config_path = '/workspace/hsl-player/src/vision/config'
     vision_config_file = os.path.join(vision_config_path, 'vision.yaml')
     vision_config_local_file = os.path.join(vision_config_path, 'vision_local.yaml')
 
@@ -36,6 +39,10 @@ def handle_configuration(context, *args, **kwargs):
     role = context.perform_substitution(LaunchConfiguration('role'))
     if not role == '':
         config['game.player_role'] = role
+
+    player_id = context.perform_substitution(LaunchConfiguration('player_id'))
+    if not player_id == '':
+        config['game.player_id'] = int(player_id)
 
     sim = context.perform_substitution(LaunchConfiguration('sim'))
     if sim in ['true', 'True', '1']:
@@ -92,10 +99,15 @@ def generate_launch_description():
             #forca a desativacao do registro de logs em arquivo
         ),
         DeclareLaunchArgument(
-            'disable_com', 
+            'disable_com',
             default_value='false',
             description='强制禁用开启通信'
             #forca a desativacao da comunicacao
+        ),
+        DeclareLaunchArgument(
+            'player_id',
+            default_value='',
+            description='Sobrescreve game.player_id do config.yaml (ex: player_id:=1)'
         ),
         OpaqueFunction(function=handle_configuration) # 转到 handle_configuration 中继续处理
             #chama a funcao handle_configuration para continuar o processamento

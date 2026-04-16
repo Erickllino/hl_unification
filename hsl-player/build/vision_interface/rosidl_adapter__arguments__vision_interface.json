@@ -1,0 +1,15 @@
+{
+  "package_name": "vision_interface",
+  "non_idl_tuples": [
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/DetectedObject.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/Detections.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/LineSegments.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/CalParam.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/DetectionsTrack.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationPoint.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationLine.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/SegmentationResult.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/ImageHeadPosition.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface:msg/Ball.msg"
+  ]
+}

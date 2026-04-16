@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/msg/detail/ball__rosidl_typesupport_introspection_cpp.hpp

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_c/booster_interface/msg/detail/remote_controller_state__type_support.h

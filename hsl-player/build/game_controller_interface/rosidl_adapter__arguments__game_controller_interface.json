@@ -1,0 +1,8 @@
+{
+  "package_name": "game_controller_interface",
+  "non_idl_tuples": [
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface:msg/GameControlData.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface:msg/RobotInfo.msg",
+    "/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface:msg/TeamInfo.msg"
+  ]
+}

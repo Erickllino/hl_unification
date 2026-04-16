@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_typesupport_introspection_cpp/booster_interface/srv/detail/rpc_service__rosidl_typesupport_introspection_cpp.hpp

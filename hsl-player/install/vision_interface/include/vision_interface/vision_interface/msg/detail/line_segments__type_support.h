@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/msg/detail/line_segments__type_support.h

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_msgs/rosidl_generator_rs/booster_msgs/rust/src/msg.rs

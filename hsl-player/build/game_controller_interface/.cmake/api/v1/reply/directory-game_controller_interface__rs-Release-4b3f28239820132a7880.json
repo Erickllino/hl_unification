@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "game_controller_interface__rs",
+		"source" : "/workspace/hsl-player/build/game_controller_interface/game_controller_interface__rs"
+	}
+}

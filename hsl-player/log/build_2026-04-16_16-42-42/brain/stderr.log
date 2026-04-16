@@ -1,0 +1,54 @@
+[01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+    2 | #include [01;31m[K<booster_internal/robot/b1/b1_loco_internal_api.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:188: CMakeFiles/brain_node.dir/src/robot_client.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/main.cpp:6[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:174: CMakeFiles/brain_node.dir/src/main.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:4[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:160: CMakeFiles/brain_node.dir/src/locator.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_log.cpp:2[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:132: CMakeFiles/brain_node.dir/src/brain_log.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:2[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:146: CMakeFiles/brain_node.dir/src/brain_tree.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:6[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:76: CMakeFiles/brain_node.dir/src/brain.cpp.o] Error 1
+In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:41[m[K,
+                 from [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:1[m[K:
+[01m[K/workspace/hsl-player/src/brain/include/robot_client.h:10:10:[m[K [01;31m[Kfatal error: [m[Kbooster_internal/robot/b1/b1_loco_internal_api.hpp: No such file or directory
+   10 | #include [01;31m[K"booster_internal/robot/b1/b1_loco_internal_api.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/brain_node.dir/build.make:90: CMakeFiles/brain_node.dir/src/brain_communication.cpp.o] Error 1
+[01m[K/workspace/hsl-player/src/brain/src/brain_data.cpp:[m[K In member function ‘[01m[Kstd::vector<FieldMarker> BrainData::getMarkersForLocator()[m[K’:
+[01m[K/workspace/hsl-player/src/brain/src/brain_data.cpp:44:23:[m[K [01;35m[Kwarning: [m[K‘[01m[KmarkerType[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+   44 |         res.push_back([01;35m[KFieldMarker{markerType, x, y, confidence}[m[K);
+      |                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[1]: *** [CMakeFiles/Makefile2:612: CMakeFiles/brain_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

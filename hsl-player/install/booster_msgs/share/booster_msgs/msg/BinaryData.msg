@@ -1,0 +1,1 @@
+/workspace/hsl-player/src/booster_msgs/msg/BinaryData.msg

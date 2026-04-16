@@ -1,0 +1,206 @@
+[0.011s] Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface -Drerun_sdk_DIR=/opt/rerun_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller_interface
+[0.022s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.090s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.093s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.107s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.108s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.111s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.115s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.121s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.137s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.137s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.192s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.216s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.361s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.558s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.618s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.630s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.642s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.642s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.642s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.688s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.694s] -- Added test 'lint_cmake' to check CMake code style
+[0.694s] -- Added test 'xmllint' to check XML markup files
+[0.695s] -- Configuring done
+[0.710s] -- Generating done
+[0.712s] [33mCMake Warning:
+[0.712s]   Manually-specified variables were not used by the project:
+[0.712s] 
+[0.712s]     rerun_sdk_DIR
+[0.712s] 
+[0.712s] [0m
+[0.716s] -- Build files have been written to: /workspace/hsl-player/build/game_controller_interface
+[0.720s] Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface -Drerun_sdk_DIR=/opt/rerun_sdk -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/game_controller_interface
+[0.721s] Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller_interface -- -j20 -l20
+[0.749s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_generator_c[0m
+[0.754s] [  2%] Built target game_controller_interface__cpp
+[0.755s] [ 12%] Built target game_controller_interface__rosidl_generator_c
+[0.758s] [ 12%] Built target ament_cmake_python_symlink_game_controller_interface
+[0.758s] [ 14%] Built target game_controller_interface__rs
+[0.759s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_introspection_cpp[0m
+[0.759s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_introspection_c[0m
+[0.759s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_cpp[0m
+[0.760s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_fastrtps_cpp[0m
+[0.761s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_c[0m
+[0.762s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_fastrtps_c[0m
+[0.766s] [ 25%] Built target game_controller_interface__rosidl_typesupport_fastrtps_cpp
+[0.767s] [ 35%] Built target game_controller_interface__rosidl_typesupport_c
+[0.767s] [ 56%] Built target game_controller_interface__rosidl_typesupport_introspection_c
+[0.767s] [ 56%] Built target game_controller_interface__rosidl_typesupport_introspection_cpp
+[0.767s] [ 66%] Built target game_controller_interface__rosidl_typesupport_cpp
+[0.770s] [ 77%] Built target game_controller_interface__rosidl_typesupport_fastrtps_c
+[0.782s] [ 77%] Built target game_controller_interface
+[0.797s] [ 79%] Built target game_controller_interface__py
+[0.805s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_generator_py[0m
+[0.815s] [ 87%] Built target game_controller_interface__rosidl_generator_py
+[0.821s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.821s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_c__pyext[0m
+[0.821s] [35m[1mConsolidate compiler generated dependencies of target game_controller_interface__rosidl_typesupport_introspection_c__pyext[0m
+[0.825s] [ 91%] Built target game_controller_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.826s] [ 95%] Built target game_controller_interface__rosidl_typesupport_introspection_c__pyext
+[0.829s] [100%] Built target game_controller_interface__rosidl_typesupport_c__pyext
+[0.897s] running egg_info
+[0.897s] writing game_controller_interface.egg-info/PKG-INFO
+[0.897s] writing dependency_links to game_controller_interface.egg-info/dependency_links.txt
+[0.898s] writing top-level names to game_controller_interface.egg-info/top_level.txt
+[0.898s] reading manifest file 'game_controller_interface.egg-info/SOURCES.txt'
+[0.899s] writing manifest file 'game_controller_interface.egg-info/SOURCES.txt'
+[0.917s] [100%] Built target ament_cmake_python_build_game_controller_interface_egg
+[0.925s] Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/game_controller_interface -- -j20 -l20
+[0.925s] Invoking command in '/workspace/hsl-player/build/game_controller_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller_interface
+[0.931s] -- Install configuration: ""
+[0.932s] -- Execute custom install script
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/ament_index/resource_index/rosidl_interfaces/game_controller_interface
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__functions.h
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__struct.h
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__type_support.h
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__functions.h
+[0.932s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__struct.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__type_support.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__functions.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__struct.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__type_support.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/game_control_data.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/robot_info.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/rosidl_generator_c__visibility_control.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/team_info.h
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/library_path.sh
+[0.933s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/library_path.dsv
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__rosidl_typesupport_fastrtps_c.h
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__rosidl_typesupport_fastrtps_c.h
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__rosidl_typesupport_fastrtps_c.h
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__builder.hpp
+[0.934s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__struct.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__traits.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__type_support.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__builder.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__struct.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__traits.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__type_support.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__builder.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__struct.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__traits.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__type_support.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/game_control_data.hpp
+[0.935s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/robot_info.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/team_info.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__rosidl_typesupport_introspection_c.h
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__rosidl_typesupport_introspection_c.h
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__rosidl_typesupport_introspection_c.h
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/game_control_data__rosidl_typesupport_introspection_cpp.hpp
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/robot_info__rosidl_typesupport_introspection_cpp.hpp
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/include/game_controller_interface/game_controller_interface/msg/detail/team_info__rosidl_typesupport_introspection_cpp.hpp
+[0.937s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/pythonpath.sh
+[0.938s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/pythonpath.dsv
+[0.938s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface-1.0.0-py3.10.egg-info/PKG-INFO
+[0.938s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface-1.0.0-py3.10.egg-info/SOURCES.txt
+[0.938s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface-1.0.0-py3.10.egg-info/dependency_links.txt
+[0.938s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface-1.0.0-py3.10.egg-info/top_level.txt
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/__init__.py
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_c.c
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_introspection_c.c
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/libgame_controller_interface__rosidl_generator_py.so
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/__init__.py
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_game_control_data.py
+[0.939s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_game_control_data_s.c
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_robot_info.py
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_robot_info_s.c
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_team_info.py
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg/_team_info_s.c
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/game_controller_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.940s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/ament_index/resource_index/rust_packages/game_controller_interface
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/rust/Cargo.toml
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/rust/build.rs
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/rust/src/lib.rs
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/rust/src/msg.rs
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/rust/src/msg/rmw.rs
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/GameControlData.idl
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/RobotInfo.idl
+[0.941s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/TeamInfo.idl
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/GameControlData.msg
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/RobotInfo.msg
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/msg/TeamInfo.msg
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/ament_index/resource_index/package_run_dependencies/game_controller_interface
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/ament_index/resource_index/parent_prefix_path/game_controller_interface
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/ament_prefix_path.sh
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/ament_prefix_path.dsv
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/path.sh
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/environment/path.dsv
+[0.942s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/local_setup.bash
+[0.943s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/local_setup.sh
+[0.943s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/local_setup.zsh
+[0.943s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/local_setup.dsv
+[0.943s] -- Symlinking: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.dsv
+[0.948s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/ament_index/resource_index/packages/game_controller_interface
+[0.948s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/rosidl_cmake-extras.cmake
+[0.948s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.948s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/ament_cmake_export_targets-extras.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interfaceConfig.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interfaceConfig-version.cmake
+[0.949s] -- Up-to-date symlink: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/package.xml
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_generator_c.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_fastrtps_c.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_fastrtps_cpp.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_introspection_c.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_c.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_introspection_cpp.so
+[0.949s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_typesupport_cpp.so
+[0.970s] Listing '/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface'...
+[0.970s] Compiling '/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/__init__.py'...
+[0.970s] Listing '/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages/game_controller_interface/msg'...
+[0.972s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/lib/libgame_controller_interface__rosidl_generator_py.so
+[0.972s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_generator_cExport.cmake
+[0.972s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_generator_cExport-noconfig.cmake
+[0.972s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_generator_cppExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_introspection_cExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_cExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_cExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_introspection_cppExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_cppExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/game_controller_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_generator_pyExport.cmake
+[0.973s] -- Up-to-date: /workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake/export_game_controller_interface__rosidl_generator_pyExport-noconfig.cmake
+[0.974s] Invoked command in '/workspace/hsl-player/build/game_controller_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/game_controller_interface

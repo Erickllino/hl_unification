@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/game_controller_interface/ament_cmake_core/game_controller_interfaceConfig-version.cmake

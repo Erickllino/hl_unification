@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_c/booster_msgs/msg/detail/binary_data__rosidl_typesupport_fastrtps_c.h

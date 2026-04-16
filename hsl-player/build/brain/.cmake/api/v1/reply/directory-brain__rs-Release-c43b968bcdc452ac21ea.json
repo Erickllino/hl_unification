@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "brain__rs",
+		"source" : "/workspace/hsl-player/build/brain/brain__rs"
+	}
+}

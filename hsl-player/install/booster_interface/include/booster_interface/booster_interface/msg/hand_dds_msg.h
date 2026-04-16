@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_c/booster_interface/msg/hand_dds_msg.h

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "booster_msgs__py",
+		"source" : "/workspace/hsl-player/build/booster_msgs/booster_msgs__py"
+	}
+}

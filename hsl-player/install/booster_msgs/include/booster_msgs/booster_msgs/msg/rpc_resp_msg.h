@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/msg/rpc_resp_msg.h

@@ -1,0 +1,17 @@
+/workspace/hsl-player/install/game_controller/share/game_controller/launch/launch.py
+/workspace/hsl-player/install/game_controller/lib/game_controller/game_controller_node
+/workspace/hsl-player/install/game_controller/share/ament_index/resource_index/package_run_dependencies/game_controller
+/workspace/hsl-player/install/game_controller/share/ament_index/resource_index/parent_prefix_path/game_controller
+/workspace/hsl-player/install/game_controller/share/game_controller/environment/ament_prefix_path.sh
+/workspace/hsl-player/install/game_controller/share/game_controller/environment/ament_prefix_path.dsv
+/workspace/hsl-player/install/game_controller/share/game_controller/environment/path.sh
+/workspace/hsl-player/install/game_controller/share/game_controller/environment/path.dsv
+/workspace/hsl-player/install/game_controller/share/game_controller/local_setup.bash
+/workspace/hsl-player/install/game_controller/share/game_controller/local_setup.sh
+/workspace/hsl-player/install/game_controller/share/game_controller/local_setup.zsh
+/workspace/hsl-player/install/game_controller/share/game_controller/local_setup.dsv
+/workspace/hsl-player/install/game_controller/share/game_controller/package.dsv
+/workspace/hsl-player/install/game_controller/share/ament_index/resource_index/packages/game_controller
+/workspace/hsl-player/install/game_controller/share/game_controller/cmake/game_controllerConfig.cmake
+/workspace/hsl-player/install/game_controller/share/game_controller/cmake/game_controllerConfig-version.cmake
+/workspace/hsl-player/install/game_controller/share/game_controller/package.xml

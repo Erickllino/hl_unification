@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/game_controller_interface/rosidl_generator_py/game_controller_interface/msg/_team_info_s.c

@@ -1,0 +1,10 @@
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/DetectedObject.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/Detections.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/LineSegments.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/CalParam.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/DetectionsTrack.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationPoint.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationLine.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/SegmentationResult.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/ImageHeadPosition.idl
+/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface:msg/Ball.idl

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/msg/detail/segmentation_point__struct.h

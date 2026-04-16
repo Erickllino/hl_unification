@@ -1,0 +1,17 @@
+[0.346s] Invoking command in '/workspace/hsl-player/build/sound_play': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/hsl-player/build/sound_play/build --no-deps symlink_data
+[0.490s] running develop
+[0.545s] running egg_info
+[0.545s] writing sound_play.egg-info/PKG-INFO
+[0.545s] writing dependency_links to sound_play.egg-info/dependency_links.txt
+[0.545s] writing entry points to sound_play.egg-info/entry_points.txt
+[0.545s] writing requirements to sound_play.egg-info/requires.txt
+[0.545s] writing top-level names to sound_play.egg-info/top_level.txt
+[0.546s] reading manifest file 'sound_play.egg-info/SOURCES.txt'
+[0.547s] writing manifest file 'sound_play.egg-info/SOURCES.txt'
+[0.548s] running build_ext
+[0.548s] Creating /workspace/hsl-player/install/sound_play/lib/python3.10/site-packages/sound-play.egg-link (link to .)
+[0.548s] Installing sound_play_node script to /workspace/hsl-player/install/sound_play/lib/sound_play
+[0.548s] 
+[0.548s] Installed /workspace/hsl-player/build/sound_play
+[0.548s] running symlink_data
+[0.565s] Invoked command in '/workspace/hsl-player/build/sound_play' returned '0': PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ PYTHONPATH=/workspace/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/hsl-player/build/sound_play/build --no-deps symlink_data

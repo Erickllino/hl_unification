@@ -1,0 +1,30 @@
+[  2%] Built target brain__cpp
+[  4%] Built target brain__rs
+[ 11%] Built target brain__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_symlink_brain
+[ 19%] Built target brain__rosidl_typesupport_cpp
+[ 26%] Built target brain__rosidl_typesupport_introspection_cpp
+[ 33%] Built target brain__rosidl_typesupport_fastrtps_cpp
+[ 40%] Built target brain__rosidl_typesupport_c
+[ 47%] Built target brain__rosidl_typesupport_introspection_c
+[ 54%] Built target brain__rosidl_typesupport_fastrtps_c
+[ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o[0m
+[ 69%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o[0m
+[ 71%] Built target brain
+[ 73%] Built target brain__py
+[ 78%] Built target brain__rosidl_generator_py
+[ 92%] Built target brain__rosidl_typesupport_introspection_c__pyext
+[ 92%] Built target brain__rosidl_typesupport_c__pyext
+[ 92%] Built target brain__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing brain.egg-info/PKG-INFO
+writing dependency_links to brain.egg-info/dependency_links.txt
+writing top-level names to brain.egg-info/top_level.txt
+reading manifest file 'brain.egg-info/SOURCES.txt'
+writing manifest file 'brain.egg-info/SOURCES.txt'
+[ 92%] Built target ament_cmake_python_build_brain_egg

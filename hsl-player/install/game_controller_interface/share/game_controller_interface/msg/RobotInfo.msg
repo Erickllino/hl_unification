@@ -1,0 +1,1 @@
+/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface/msg/RobotInfo.msg

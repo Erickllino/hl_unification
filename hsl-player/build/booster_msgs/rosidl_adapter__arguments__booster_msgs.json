@@ -1,0 +1,8 @@
+{
+  "package_name": "booster_msgs",
+  "non_idl_tuples": [
+    "/workspace/hsl-player/src/booster_msgs:msg/BinaryData.msg",
+    "/workspace/hsl-player/src/booster_msgs:msg/RpcReqMsg.msg",
+    "/workspace/hsl-player/src/booster_msgs:msg/RpcRespMsg.msg"
+  ]
+}

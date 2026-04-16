@@ -1,0 +1,3 @@
+/workspace/hsl-player/build/game_controller_interface/rosidl_adapter/game_controller_interface:msg/GameControlData.idl
+/workspace/hsl-player/build/game_controller_interface/rosidl_adapter/game_controller_interface:msg/RobotInfo.idl
+/workspace/hsl-player/build/game_controller_interface/rosidl_adapter/game_controller_interface:msg/TeamInfo.idl

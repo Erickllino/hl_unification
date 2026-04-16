@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_typesupport_fastrtps_cpp/booster_interface/srv/detail/agent_service__rosidl_typesupport_fastrtps_cpp.hpp

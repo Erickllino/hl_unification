@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/msg/_image_head_position_s.c

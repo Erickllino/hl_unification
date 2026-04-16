@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/srv/detail/agent_service__builder.hpp

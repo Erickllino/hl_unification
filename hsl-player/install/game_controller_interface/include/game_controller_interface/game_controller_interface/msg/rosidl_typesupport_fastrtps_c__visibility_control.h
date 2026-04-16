@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/game_controller_interface/rosidl_typesupport_fastrtps_c/game_controller_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp

@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__builder.hpp

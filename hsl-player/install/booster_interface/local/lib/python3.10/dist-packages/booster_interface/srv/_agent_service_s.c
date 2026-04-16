@@ -1,0 +1,1 @@
+/workspace/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/srv/_agent_service_s.c

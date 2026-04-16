@@ -2,6 +2,8 @@
 
 Referência de todos os tópicos ROS2 usados no projeto, com tipo de mensagem e formato dos campos.
 
+obs: /rl_move será o topico usado para fazer movimentação
+
 ---
 
 ## Visão Geral

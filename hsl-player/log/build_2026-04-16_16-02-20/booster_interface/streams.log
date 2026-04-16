@@ -1,0 +1,671 @@
+[0.009s] Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_ros2_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_interface
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.101s] -- The CXX compiler identification is GNU 11.4.0
+[0.105s] -- Detecting C compiler ABI info
+[0.149s] -- Detecting C compiler ABI info - done
+[0.155s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.155s] -- Detecting C compile features
+[0.155s] -- Detecting C compile features - done
+[0.157s] -- Detecting CXX compiler ABI info
+[0.197s] -- Detecting CXX compiler ABI info - done
+[0.200s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.200s] -- Detecting CXX compile features
+[0.201s] -- Detecting CXX compile features - done
+[0.202s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.277s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.308s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.325s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.346s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.347s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.351s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.357s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.365s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.386s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.387s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.439s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.452s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.476s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.482s] -- Looking for pthread.h
+[0.532s] -- Looking for pthread.h - found
+[0.532s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.574s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.575s] -- Found Threads: TRUE  
+[0.602s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.786s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.001s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.096s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.111s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.112s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.127s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.127s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.127s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.127s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.143s] -- Found PythonExtra: .so  
+[1.226s] -- Configuring done
+[1.270s] -- Generating done
+[1.280s] -- Build files have been written to: /workspace/hsl-player/build/booster_interface
+[1.293s] Invoked command in '/workspace/hsl-player/build/booster_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /workspace/hsl-player/src/booster_ros2_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/hsl-player/install/booster_interface
+[1.294s] Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_interface -- -j20 -l20
+[1.339s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.339s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.347s] [  0%] Built target ament_cmake_python_symlink_booster_interface
+[1.356s] [  1%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[1.610s] running egg_info
+[1.610s] creating booster_interface.egg-info
+[1.610s] writing booster_interface.egg-info/PKG-INFO
+[1.610s] writing dependency_links to booster_interface.egg-info/dependency_links.txt
+[1.611s] writing top-level names to booster_interface.egg-info/top_level.txt
+[1.611s] writing manifest file 'booster_interface.egg-info/SOURCES.txt'
+[1.612s] reading manifest file 'booster_interface.egg-info/SOURCES.txt'
+[1.613s] writing manifest file 'booster_interface.egg-info/SOURCES.txt'
+[1.649s] [  1%] Built target ament_cmake_python_build_booster_interface_egg
+[2.040s] [  1%] Built target booster_interface__rs
+[2.444s] [  2%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/booster_api_req_msg__functions.c.o[0m
+[2.446s] [  2%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/booster_api_resp_msg__functions.c.o[0m
+[2.452s] [  2%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/motor_cmd__functions.c.o[0m
+[2.452s] [  3%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/button_event_msg__functions.c.o[0m
+[2.453s] [  4%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/motor_state__functions.c.o[0m
+[2.453s] [  4%] Built target booster_interface__cpp
+[2.457s] [  4%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/imu_state__functions.c.o[0m
+[2.457s] [  5%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/low_state__functions.c.o[0m
+[2.457s] [  6%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/low_cmd__functions.c.o[0m
+[2.461s] [  7%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/raw_bytes_msg__functions.c.o[0m
+[2.464s] [  7%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/raw_bytes_stamped__functions.c.o[0m
+[2.466s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.468s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.470s] [ 10%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/odometer__functions.c.o[0m
+[2.472s] [ 11%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.484s] [ 11%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/fall_down_state__functions.c.o[0m
+[2.492s] [ 12%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/hand_param__functions.c.o[0m
+[2.494s] [ 13%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/remote_controller_state__functions.c.o[0m
+[2.501s] [ 14%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/srv/detail/rpc_service__functions.c.o[0m
+[2.503s] [ 14%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/hand_command__functions.c.o[0m
+[2.504s] [ 14%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/msg/detail/hand_dds_msg__functions.c.o[0m
+[2.508s] [ 15%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_c.dir/rosidl_generator_c/booster_interface/srv/detail/agent_service__functions.c.o[0m
+[2.570s] [ 16%] [32m[1mLinking C shared library libbooster_interface__rosidl_generator_c.so[0m
+[2.622s] [ 16%] Built target booster_interface__rosidl_generator_c
+[2.630s] [ 17%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.635s] [ 18%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.636s] [ 19%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.418s] [ 19%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/booster_api_req_msg__type_support.cpp.o[0m
+[3.428s] [ 20%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/booster_api_resp_msg__type_support.cpp.o[0m
+[3.431s] [ 20%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/button_event_msg__type_support.cpp.o[0m
+[3.433s] [ 21%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/motor_cmd__type_support.cpp.o[0m
+[3.437s] [ 21%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/low_cmd__type_support.cpp.o[0m
+[3.438s] [ 22%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/motor_state__type_support.cpp.o[0m
+[3.441s] [ 23%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/imu_state__type_support.cpp.o[0m
+[3.444s] [ 23%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/odometer__type_support.cpp.o[0m
+[3.447s] [ 25%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/raw_bytes_msg__type_support.cpp.o[0m
+[3.447s] [ 25%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/raw_bytes_stamped__type_support.cpp.o[0m
+[3.455s] [ 25%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/low_state__type_support.cpp.o[0m
+[3.455s] [ 26%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/fall_down_state__type_support.cpp.o[0m
+[3.464s] [ 27%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/hand_dds_msg__type_support.cpp.o[0m
+[3.465s] [ 27%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/remote_controller_state__type_support.cpp.o[0m
+[3.476s] [ 28%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/hand_command__type_support.cpp.o[0m
+[3.741s] [ 28%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/msg/hand_param__type_support.cpp.o[0m
+[3.770s] [ 28%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/booster_api_req_msg__type_support.cpp.o[0m
+[3.792s] [ 28%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/srv/agent_service__type_support.cpp.o[0m
+[3.797s] [ 29%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/booster_interface/srv/rpc_service__type_support.cpp.o[0m
+[3.801s] [ 30%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/booster_api_resp_msg__type_support.cpp.o[0m
+[3.870s] [ 30%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/button_event_msg__type_support.cpp.o[0m
+[3.881s] [ 31%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/motor_state__type_support.cpp.o[0m
+[3.903s] [ 31%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/motor_cmd__type_support.cpp.o[0m
+[3.945s] [ 32%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/low_cmd__type_support.cpp.o[0m
+[3.959s] [ 33%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/imu_state__type_support.cpp.o[0m
+[3.972s] [ 33%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/low_state__type_support.cpp.o[0m
+[3.991s] [ 34%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/raw_bytes_msg__type_support.cpp.o[0m
+[4.007s] [ 34%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/raw_bytes_stamped__type_support.cpp.o[0m
+[4.023s] [ 35%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/odometer__type_support.cpp.o[0m
+[4.031s] [ 36%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/fall_down_state__type_support.cpp.o[0m
+[4.043s] [ 36%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/remote_controller_state__type_support.cpp.o[0m
+[4.044s] [ 37%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/hand_command__type_support.cpp.o[0m
+[4.050s] [ 37%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/hand_dds_msg__type_support.cpp.o[0m
+[4.073s] [ 38%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/msg/hand_param__type_support.cpp.o[0m
+[4.081s] [ 39%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/srv/rpc_service__type_support.cpp.o[0m
+[4.085s] [ 39%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/booster_interface/srv/agent_service__type_support.cpp.o[0m
+[4.132s] [ 40%] [32m[1mLinking CXX shared library libbooster_interface__rosidl_typesupport_c.so[0m
+[4.138s] [ 40%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/booster_api_req_msg__type_support.c.o[0m
+[4.142s] [ 41%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/booster_api_resp_msg__type_support.c.o[0m
+[4.143s] [ 41%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/button_event_msg__type_support.c.o[0m
+[4.143s] [ 41%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/booster_api_req_msg__type_support.cpp.o[0m
+[4.143s] [ 42%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/low_cmd__type_support.c.o[0m
+[4.146s] [ 42%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/motor_cmd__type_support.c.o[0m
+[4.146s] [ 43%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/booster_api_resp_msg__type_support.cpp.o[0m
+[4.153s] [ 43%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/booster_api_req_msg__type_support_c.cpp.o[0m
+[4.155s] [ 43%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/low_cmd__type_support.cpp.o[0m
+[4.156s] [ 44%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_cmd__type_support.cpp.o[0m
+[4.156s] [ 45%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/booster_api_req_msg__type_support.cpp.o[0m
+[4.157s] [ 44%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/low_state__type_support.c.o[0m
+[4.157s] [ 45%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/imu_state__type_support.c.o[0m
+[4.160s] [ 47%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/raw_bytes_msg__type_support.c.o[0m
+[4.161s] [ 47%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/motor_state__type_support.c.o[0m
+[4.164s] [ 47%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/button_event_msg__type_support.cpp.o[0m
+[4.167s] [ 48%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/motor_state__type_support.cpp.o[0m
+[4.183s] [ 49%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/booster_api_resp_msg__type_support_c.cpp.o[0m
+[4.184s] [ 49%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/raw_bytes_stamped__type_support.c.o[0m
+[4.201s] [ 50%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/imu_state__type_support.cpp.o[0m
+[4.203s] [ 51%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/booster_api_resp_msg__type_support.cpp.o[0m
+[4.205s] [ 51%] Built target booster_interface__rosidl_typesupport_c
+[4.219s] [ 51%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/low_state__type_support.cpp.o[0m
+[4.221s] [ 52%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_state__type_support.cpp.o[0m
+[4.222s] [ 52%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/button_event_msg__type_support.cpp.o[0m
+[4.229s] [ 52%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/button_event_msg__type_support_c.cpp.o[0m
+[4.229s] [ 53%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/motor_cmd__type_support.cpp.o[0m
+[4.237s] [ 55%] [32m[1mLinking CXX shared library libbooster_interface__rosidl_typesupport_cpp.so[0m
+[4.237s] [ 55%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/raw_bytes_msg__type_support.cpp.o[0m
+[4.239s] [ 55%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/low_cmd__type_support.cpp.o[0m
+[4.254s] [ 56%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/odometer__type_support.c.o[0m
+[4.275s] [ 56%] Built target booster_interface__rosidl_typesupport_cpp
+[4.289s] [ 57%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/imu_state__type_support.cpp.o[0m
+[4.306s] [ 58%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/fall_down_state__type_support.c.o[0m
+[4.361s] [ 58%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/remote_controller_state__type_support.c.o[0m
+[4.430s] [ 59%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/hand_command__type_support.c.o[0m
+[4.447s] [ 60%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/motor_state__type_support_c.cpp.o[0m
+[4.459s] [ 61%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/raw_bytes_stamped__type_support.cpp.o[0m
+[4.490s] [ 61%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/hand_dds_msg__type_support.c.o[0m
+[4.524s] [ 61%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/low_state__type_support.cpp.o[0m
+[4.532s] [ 62%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/msg/detail/hand_param__type_support.c.o[0m
+[4.544s] [ 63%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/srv/detail/rpc_service__type_support.c.o[0m
+[4.547s] [ 64%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.cpp.o[0m
+[4.554s] [ 64%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/odometer__type_support.cpp.o[0m
+[4.559s] [ 65%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/fall_down_state__type_support.cpp.o[0m
+[4.574s] [ 65%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/booster_interface/srv/detail/agent_service__type_support.c.o[0m
+[4.579s] [ 65%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/odometer__type_support.cpp.o[0m
+[4.582s] [ 65%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/motor_cmd__type_support_c.cpp.o[0m
+[4.583s] [ 66%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/raw_bytes_stamped__type_support.cpp.o[0m
+[4.589s] [ 67%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/fall_down_state__type_support.cpp.o[0m
+[4.591s] [ 68%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/low_cmd__type_support_c.cpp.o[0m
+[4.602s] [ 69%] [32m[1mLinking C shared library libbooster_interface__rosidl_typesupport_introspection_c.so[0m
+[4.634s] [ 70%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/imu_state__type_support_c.cpp.o[0m
+[4.642s] [ 70%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/remote_controller_state__type_support.cpp.o[0m
+[4.647s] [ 71%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/hand_command__type_support.cpp.o[0m
+[4.651s] [ 71%] Built target booster_interface__rosidl_typesupport_introspection_c
+[4.653s] [ 71%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/low_state__type_support_c.cpp.o[0m
+[4.658s] [ 72%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/raw_bytes_msg__type_support_c.cpp.o[0m
+[4.666s] [ 72%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/remote_controller_state__type_support.cpp.o[0m
+[4.674s] [ 73%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/hand_dds_msg__type_support.cpp.o[0m
+[4.693s] [ 73%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/raw_bytes_stamped__type_support_c.cpp.o[0m
+[4.701s] [ 74%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/hand_command__type_support.cpp.o[0m
+[4.739s] [ 74%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/msg/detail/dds_fastrtps/hand_param__type_support.cpp.o[0m
+[4.835s] [ 75%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/hand_dds_msg__type_support.cpp.o[0m
+[4.852s] [ 75%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/msg/detail/hand_param__type_support.cpp.o[0m
+[4.855s] [ 76%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/srv/detail/dds_fastrtps/rpc_service__type_support.cpp.o[0m
+[4.882s] [ 77%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/srv/detail/rpc_service__type_support.cpp.o[0m
+[4.926s] [ 78%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/odometer__type_support_c.cpp.o[0m
+[4.940s] [ 78%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/booster_interface/srv/detail/agent_service__type_support.cpp.o[0m
+[4.952s] [ 78%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/booster_interface/srv/detail/dds_fastrtps/agent_service__type_support.cpp.o[0m
+[4.952s] [ 79%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/fall_down_state__type_support_c.cpp.o[0m
+[4.959s] [ 80%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/hand_command__type_support_c.cpp.o[0m
+[4.964s] [ 80%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/hand_dds_msg__type_support_c.cpp.o[0m
+[4.967s] [ 80%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/remote_controller_state__type_support_c.cpp.o[0m
+[4.971s] [ 81%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/msg/detail/hand_param__type_support_c.cpp.o[0m
+[4.990s] [ 81%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/srv/detail/agent_service__type_support_c.cpp.o[0m
+[5.002s] [ 82%] [32mBuilding CXX object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/booster_interface/srv/detail/rpc_service__type_support_c.cpp.o[0m
+[5.264s] [ 83%] [32m[1mLinking CXX shared library libbooster_interface__rosidl_typesupport_introspection_cpp.so[0m
+[5.277s] [ 84%] [32m[1mLinking CXX shared library libbooster_interface__rosidl_typesupport_fastrtps_c.so[0m
+[5.310s] [ 84%] Built target booster_interface__rosidl_typesupport_introspection_cpp
+[5.324s] [ 84%] Built target booster_interface__rosidl_typesupport_fastrtps_c
+[5.334s] [ 85%] [32m[1mLinking CXX shared library libbooster_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.395s] [ 85%] Built target booster_interface__rosidl_typesupport_fastrtps_cpp
+[5.406s] [ 85%] Built target booster_interface
+[5.420s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.464s] [ 86%] Built target booster_interface__py
+[6.478s] [ 87%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_motor_state_s.c.o[0m
+[6.479s] [ 87%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_button_event_msg_s.c.o[0m
+[6.479s] [ 88%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_raw_bytes_msg_s.c.o[0m
+[6.479s] [ 88%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_booster_api_req_msg_s.c.o[0m
+[6.480s] [ 91%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_booster_api_resp_msg_s.c.o[0m
+[6.480s] [ 91%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_low_cmd_s.c.o[0m
+[6.480s] [ 91%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_hand_param_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_raw_bytes_stamped_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_low_state_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_motor_cmd_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_hand_command_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_imu_state_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_hand_dds_msg_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_odometer_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_remote_controller_state_s.c.o[0m
+[6.480s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/msg/_fall_down_state_s.c.o[0m
+[6.481s] [ 95%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/srv/_agent_service_s.c.o[0m
+[6.481s] [ 96%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_generator_py.dir/rosidl_generator_py/booster_interface/srv/_rpc_service_s.c.o[0m
+[6.605s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/booster_interface/libbooster_interface__rosidl_generator_py.so[0m
+[6.633s] [ 97%] Built target booster_interface__rosidl_generator_py
+[6.645s] [ 97%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/booster_interface/_booster_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.645s] [ 97%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/booster_interface/_booster_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[6.646s] [ 97%] [32mBuilding C object CMakeFiles/booster_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/booster_interface/_booster_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.720s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/booster_interface/booster_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.721s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/booster_interface/booster_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.724s] [100%] [32m[1mLinking C shared library rosidl_generator_py/booster_interface/booster_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[6.741s] [100%] Built target booster_interface__rosidl_typesupport_fastrtps_c__pyext
+[6.746s] [100%] Built target booster_interface__rosidl_typesupport_introspection_c__pyext
+[6.750s] [100%] Built target booster_interface__rosidl_typesupport_c__pyext
+[6.756s] Invoked command in '/workspace/hsl-player/build/booster_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/booster_interface -- -j20 -l20
+[6.757s] Invoking command in '/workspace/hsl-player/build/booster_interface': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/booster_interface
+[6.762s] -- Install configuration: ""
+[6.763s] -- Execute custom install script
+[6.763s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/ament_index/resource_index/rosidl_interfaces/booster_interface
+[6.767s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/booster_api_req_msg.h
+[6.773s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/booster_api_resp_msg.h
+[6.776s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/button_event_msg.h
+[6.781s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__functions.h
+[6.787s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__struct.h
+[6.791s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__type_support.h
+[6.795s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__functions.h
+[6.801s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__struct.h
+[6.805s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__type_support.h
+[6.811s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__functions.h
+[6.817s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__struct.h
+[6.822s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__type_support.h
+[6.825s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__functions.h
+[6.831s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__struct.h
+[6.836s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__type_support.h
+[6.840s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__functions.h
+[6.846s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__struct.h
+[6.852s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__type_support.h
+[6.857s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__functions.h
+[6.861s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__struct.h
+[6.867s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__type_support.h
+[6.873s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__functions.h
+[6.878s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__struct.h
+[6.884s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__type_support.h
+[6.889s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__functions.h
+[6.896s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__struct.h
+[6.900s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__type_support.h
+[6.906s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__functions.h
+[6.912s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__struct.h
+[6.917s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__type_support.h
+[6.922s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__functions.h
+[6.927s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__struct.h
+[6.933s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__type_support.h
+[6.938s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__functions.h
+[6.942s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__struct.h
+[6.946s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__type_support.h
+[6.949s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__functions.h
+[6.955s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__struct.h
+[6.962s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__type_support.h
+[6.965s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__functions.h
+[6.969s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__struct.h
+[6.975s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__type_support.h
+[6.980s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__functions.h
+[6.984s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__struct.h
+[6.989s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__type_support.h
+[6.993s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__functions.h
+[6.999s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__struct.h
+[7.002s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__type_support.h
+[7.008s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__functions.h
+[7.011s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__struct.h
+[7.015s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__type_support.h
+[7.019s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/fall_down_state.h
+[7.024s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_command.h
+[7.028s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_dds_msg.h
+[7.032s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_param.h
+[7.037s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/imu_state.h
+[7.042s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/low_cmd.h
+[7.046s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/low_state.h
+[7.050s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/motor_cmd.h
+[7.055s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/motor_state.h
+[7.059s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/odometer.h
+[7.063s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/raw_bytes_msg.h
+[7.068s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/raw_bytes_stamped.h
+[7.073s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/remote_controller_state.h
+[7.078s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/rosidl_generator_c__visibility_control.h
+[7.081s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/agent_service.h
+[7.087s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__functions.h
+[7.093s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__struct.h
+[7.098s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__type_support.h
+[7.102s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__functions.h
+[7.106s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__struct.h
+[7.112s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__type_support.h
+[7.116s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/rpc_service.h
+[7.121s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/library_path.sh
+[7.126s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/library_path.dsv
+[7.132s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__rosidl_typesupport_fastrtps_c.h
+[7.136s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__rosidl_typesupport_fastrtps_c.h
+[7.141s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__rosidl_typesupport_fastrtps_c.h
+[7.147s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__rosidl_typesupport_fastrtps_c.h
+[7.152s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__rosidl_typesupport_fastrtps_c.h
+[7.159s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__rosidl_typesupport_fastrtps_c.h
+[7.163s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__rosidl_typesupport_fastrtps_c.h
+[7.169s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__rosidl_typesupport_fastrtps_c.h
+[7.174s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__rosidl_typesupport_fastrtps_c.h
+[7.180s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__rosidl_typesupport_fastrtps_c.h
+[7.186s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__rosidl_typesupport_fastrtps_c.h
+[7.192s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__rosidl_typesupport_fastrtps_c.h
+[7.196s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__rosidl_typesupport_fastrtps_c.h
+[7.202s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__rosidl_typesupport_fastrtps_c.h
+[7.208s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__rosidl_typesupport_fastrtps_c.h
+[7.213s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__rosidl_typesupport_fastrtps_c.h
+[7.219s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.226s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__rosidl_typesupport_fastrtps_c.h
+[7.232s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__rosidl_typesupport_fastrtps_c.h
+[7.237s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/booster_api_req_msg.hpp
+[7.242s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/booster_api_resp_msg.hpp
+[7.248s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/button_event_msg.hpp
+[7.254s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__builder.hpp
+[7.260s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__struct.hpp
+[7.266s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__traits.hpp
+[7.272s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__type_support.hpp
+[7.276s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__builder.hpp
+[7.281s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__struct.hpp
+[7.287s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp
+[7.293s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp
+[7.299s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__builder.hpp
+[7.305s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__struct.hpp
+[7.308s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__traits.hpp
+[7.314s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__type_support.hpp
+[7.320s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__builder.hpp
+[7.325s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__struct.hpp
+[7.332s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__traits.hpp
+[7.338s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__type_support.hpp
+[7.344s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__builder.hpp
+[7.350s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__struct.hpp
+[7.355s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__traits.hpp
+[7.361s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__type_support.hpp
+[7.365s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__builder.hpp
+[7.370s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__struct.hpp
+[7.376s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__traits.hpp
+[7.380s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__type_support.hpp
+[7.384s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__builder.hpp
+[7.390s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__struct.hpp
+[7.396s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__traits.hpp
+[7.402s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__type_support.hpp
+[7.408s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__builder.hpp
+[7.414s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__struct.hpp
+[7.419s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__traits.hpp
+[7.423s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__type_support.hpp
+[7.429s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__builder.hpp
+[7.435s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__struct.hpp
+[7.440s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__traits.hpp
+[7.443s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__type_support.hpp
+[7.448s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__builder.hpp
+[7.453s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__struct.hpp
+[7.459s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__traits.hpp
+[7.463s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__type_support.hpp
+[7.469s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__builder.hpp
+[7.473s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__struct.hpp
+[7.477s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__traits.hpp
+[7.482s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__type_support.hpp
+[7.487s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__builder.hpp
+[7.493s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__struct.hpp
+[7.497s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__traits.hpp
+[7.502s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__type_support.hpp
+[7.507s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__builder.hpp
+[7.513s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__struct.hpp
+[7.517s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__traits.hpp
+[7.522s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__type_support.hpp
+[7.528s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__builder.hpp
+[7.534s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__struct.hpp
+[7.540s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__traits.hpp
+[7.544s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__type_support.hpp
+[7.549s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__builder.hpp
+[7.555s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__struct.hpp
+[7.561s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp
+[7.565s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__type_support.hpp
+[7.569s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__builder.hpp
+[7.575s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__struct.hpp
+[7.581s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__traits.hpp
+[7.586s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__type_support.hpp
+[7.592s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/fall_down_state.hpp
+[7.597s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_command.hpp
+[7.602s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_dds_msg.hpp
+[7.607s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/hand_param.hpp
+[7.613s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/imu_state.hpp
+[7.618s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/low_cmd.hpp
+[7.624s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/low_state.hpp
+[7.629s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/motor_cmd.hpp
+[7.635s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/motor_state.hpp
+[7.640s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/odometer.hpp
+[7.646s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/raw_bytes_msg.hpp
+[7.651s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/raw_bytes_stamped.hpp
+[7.657s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/remote_controller_state.hpp
+[7.663s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.669s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/agent_service.hpp
+[7.673s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__builder.hpp
+[7.679s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__struct.hpp
+[7.684s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__traits.hpp
+[7.690s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__type_support.hpp
+[7.695s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__builder.hpp
+[7.701s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__struct.hpp
+[7.704s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__traits.hpp
+[7.710s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__type_support.hpp
+[7.716s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/rpc_service.hpp
+[7.721s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.726s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.731s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.736s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.741s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__rosidl_typesupport_fastrtps_cpp.hpp
+[7.745s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.751s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__rosidl_typesupport_fastrtps_cpp.hpp
+[7.757s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.762s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.765s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.771s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[7.776s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.780s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__rosidl_typesupport_fastrtps_cpp.hpp
+[7.785s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[7.791s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[7.795s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__rosidl_typesupport_fastrtps_cpp.hpp
+[7.800s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.806s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__rosidl_typesupport_fastrtps_cpp.hpp
+[7.812s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__rosidl_typesupport_fastrtps_cpp.hpp
+[7.817s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__rosidl_typesupport_introspection_c.h
+[7.822s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__rosidl_typesupport_introspection_c.h
+[7.828s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__rosidl_typesupport_introspection_c.h
+[7.834s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__rosidl_typesupport_introspection_c.h
+[7.839s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__rosidl_typesupport_introspection_c.h
+[7.844s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__rosidl_typesupport_introspection_c.h
+[7.850s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__rosidl_typesupport_introspection_c.h
+[7.854s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__rosidl_typesupport_introspection_c.h
+[7.860s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__rosidl_typesupport_introspection_c.h
+[7.865s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__rosidl_typesupport_introspection_c.h
+[7.871s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__rosidl_typesupport_introspection_c.h
+[7.874s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__rosidl_typesupport_introspection_c.h
+[7.880s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__rosidl_typesupport_introspection_c.h
+[7.883s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__rosidl_typesupport_introspection_c.h
+[7.889s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__rosidl_typesupport_introspection_c.h
+[7.894s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__rosidl_typesupport_introspection_c.h
+[7.900s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.905s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__rosidl_typesupport_introspection_c.h
+[7.909s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__rosidl_typesupport_introspection_c.h
+[7.914s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_req_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.920s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/booster_api_resp_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.924s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/button_event_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.928s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/fall_down_state__rosidl_typesupport_introspection_cpp.hpp
+[7.934s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_command__rosidl_typesupport_introspection_cpp.hpp
+[7.940s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_dds_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.944s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/hand_param__rosidl_typesupport_introspection_cpp.hpp
+[7.949s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/imu_state__rosidl_typesupport_introspection_cpp.hpp
+[7.952s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.958s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/low_state__rosidl_typesupport_introspection_cpp.hpp
+[7.964s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_cmd__rosidl_typesupport_introspection_cpp.hpp
+[7.968s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/motor_state__rosidl_typesupport_introspection_cpp.hpp
+[7.971s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/odometer__rosidl_typesupport_introspection_cpp.hpp
+[7.977s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_msg__rosidl_typesupport_introspection_cpp.hpp
+[7.982s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/raw_bytes_stamped__rosidl_typesupport_introspection_cpp.hpp
+[7.988s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/msg/detail/remote_controller_state__rosidl_typesupport_introspection_cpp.hpp
+[7.991s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/agent_service__rosidl_typesupport_introspection_cpp.hpp
+[7.996s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include/booster_interface/booster_interface/srv/detail/rpc_service__rosidl_typesupport_introspection_cpp.hpp
+[8.002s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/pythonpath.sh
+[8.007s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/pythonpath.dsv
+[8.011s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[8.015s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.018s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.023s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface-0.0.0-py3.10.egg-info/top_level.txt
+[8.028s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/__init__.py
+[8.032s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/_booster_interface_s.ep.rosidl_typesupport_c.c
+[8.036s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/_booster_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.039s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/_booster_interface_s.ep.rosidl_typesupport_introspection_c.c
+[8.044s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.049s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.054s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.058s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/libbooster_interface__rosidl_generator_py.so
+[8.064s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/__init__.py
+[8.069s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_req_msg.py
+[8.073s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_req_msg_s.c
+[8.077s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_resp_msg.py
+[8.081s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_resp_msg_s.c
+[8.087s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_button_event_msg.py
+[8.091s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_button_event_msg_s.c
+[8.095s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_fall_down_state.py
+[8.098s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_fall_down_state_s.c
+[8.103s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_command.py
+[8.108s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_command_s.c
+[8.113s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_dds_msg.py
+[8.117s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_dds_msg_s.c
+[8.122s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_param.py
+[8.128s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_param_s.c
+[8.133s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_imu_state.py
+[8.137s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_imu_state_s.c
+[8.142s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_cmd.py
+[8.147s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_cmd_s.c
+[8.151s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_state.py
+[8.156s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_state_s.c
+[8.162s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_cmd.py
+[8.168s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_cmd_s.c
+[8.174s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_state.py
+[8.178s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_state_s.c
+[8.181s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_odometer.py
+[8.187s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_odometer_s.c
+[8.192s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_msg.py
+[8.198s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_msg_s.c
+[8.201s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_stamped.py
+[8.205s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_stamped_s.c
+[8.210s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_remote_controller_state.py
+[8.214s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_remote_controller_state_s.c
+[8.218s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/__init__.py
+[8.221s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_agent_service.py
+[8.225s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_agent_service_s.c
+[8.230s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_rpc_service.py
+[8.234s] -- Symlinking: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_rpc_service_s.c
+[8.237s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.238s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.238s] -- Up-to-date symlink: /workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/booster_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.238s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/ament_index/resource_index/rust_packages/booster_interface
+[8.244s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/Cargo.toml
+[8.250s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/build.rs
+[8.253s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/src/lib.rs
+[8.259s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/src/msg.rs
+[8.262s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/src/msg/rmw.rs
+[8.268s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/src/srv.rs
+[8.272s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/rust/src/srv/rmw.rs
+[8.277s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/BoosterApiReqMsg.idl
+[8.280s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/BoosterApiRespMsg.idl
+[8.285s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/ButtonEventMsg.idl
+[8.290s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/MotorState.idl
+[8.294s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/MotorCmd.idl
+[8.297s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/LowCmd.idl
+[8.301s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/ImuState.idl
+[8.305s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/LowState.idl
+[8.309s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RawBytesMsg.idl
+[8.313s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RawBytesStamped.idl
+[8.316s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/Odometer.idl
+[8.321s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/FallDownState.idl
+[8.327s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RemoteControllerState.idl
+[8.332s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandCommand.idl
+[8.337s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandDdsMsg.idl
+[8.341s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandParam.idl
+[8.345s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/RpcService.idl
+[8.349s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/AgentService.idl
+[8.354s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/BoosterApiReqMsg.msg
+[8.358s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/BoosterApiRespMsg.msg
+[8.363s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/ButtonEventMsg.msg
+[8.370s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/MotorState.msg
+[8.377s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/MotorCmd.msg
+[8.381s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/LowCmd.msg
+[8.387s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/ImuState.msg
+[8.391s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/LowState.msg
+[8.398s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RawBytesMsg.msg
+[8.404s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RawBytesStamped.msg
+[8.409s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/Odometer.msg
+[8.414s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/FallDownState.msg
+[8.419s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/RemoteControllerState.msg
+[8.425s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandCommand.msg
+[8.431s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandDdsMsg.msg
+[8.437s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/msg/HandParam.msg
+[8.443s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/RpcService.srv
+[8.448s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/RpcService_Request.msg
+[8.451s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/RpcService_Response.msg
+[8.457s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/AgentService.srv
+[8.463s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/AgentService_Request.msg
+[8.469s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/srv/AgentService_Response.msg
+[8.474s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include//booster_interface/booster_interface/message_utils.hpp
+[8.479s] -- Symlinking: /workspace/hsl-player/install/booster_interface/include//booster_interface/booster_interface/third_party/nlohmann_json/json.hpp
+[8.482s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/ament_index/resource_index/package_run_dependencies/booster_interface
+[8.487s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/ament_index/resource_index/parent_prefix_path/booster_interface
+[8.492s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/ament_prefix_path.sh
+[8.497s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/ament_prefix_path.dsv
+[8.501s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/path.sh
+[8.505s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/environment/path.dsv
+[8.510s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/local_setup.bash
+[8.514s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/local_setup.sh
+[8.517s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/local_setup.zsh
+[8.521s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/local_setup.dsv
+[8.526s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/package.dsv
+[8.530s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/ament_index/resource_index/packages/booster_interface
+[8.536s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/rosidl_cmake-extras.cmake
+[8.540s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.545s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.548s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[8.551s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/ament_cmake_export_targets-extras.cmake
+[8.557s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.563s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.566s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interfaceConfig.cmake
+[8.570s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interfaceConfig-version.cmake
+[8.574s] -- Symlinking: /workspace/hsl-player/install/booster_interface/share/booster_interface/package.xml
+[8.578s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_generator_c.so
+[8.578s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_generator_c.so" to ""
+[8.578s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_fastrtps_c.so
+[8.578s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[8.578s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_fastrtps_cpp.so
+[8.579s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.579s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_introspection_c.so
+[8.579s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_introspection_c.so" to ""
+[8.579s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_c.so
+[8.579s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_c.so" to ""
+[8.579s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_introspection_cpp.so
+[8.579s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[8.579s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_cpp.so
+[8.580s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_typesupport_cpp.so" to ""
+[8.606s] Listing '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface'...
+[8.606s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/__init__.py'...
+[8.606s] Listing '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg'...
+[8.606s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/__init__.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_req_msg.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_booster_api_resp_msg.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_button_event_msg.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_fall_down_state.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_command.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_dds_msg.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_hand_param.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_imu_state.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_cmd.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_low_state.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_cmd.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_motor_state.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_odometer.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_msg.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_raw_bytes_stamped.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/msg/_remote_controller_state.py'...
+[8.607s] Listing '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/__init__.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_agent_service.py'...
+[8.607s] Compiling '/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages/booster_interface/srv/_rpc_service.py'...
+[8.608s] -- Installing: /workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_generator_py.so
+[8.609s] -- Set runtime path of "/workspace/hsl-player/install/booster_interface/lib/libbooster_interface__rosidl_generator_py.so" to ""
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_generator_cExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_generator_cExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_generator_cppExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_introspection_cExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_cExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_cExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_introspection_cppExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_cppExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/booster_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_generator_pyExport.cmake
+[8.609s] -- Installing: /workspace/hsl-player/install/booster_interface/share/booster_interface/cmake/export_booster_interface__rosidl_generator_pyExport-noconfig.cmake
