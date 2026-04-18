@@ -1,0 +1,621 @@
+[0.000000] (-) TimerEvent: {}
+[0.000181] (-) JobUnselected: {'identifier': 'booster_interface'}
+[0.000236] (-) JobUnselected: {'identifier': 'booster_msgs'}
+[0.000260] (-) JobUnselected: {'identifier': 'game_controller'}
+[0.000276] (-) JobUnselected: {'identifier': 'game_controller_interface'}
+[0.000369] (-) JobUnselected: {'identifier': 'sound_play'}
+[0.000409] (-) JobUnselected: {'identifier': 'vision'}
+[0.000426] (-) JobUnselected: {'identifier': 'vision_interface'}
+[0.000447] (brain) JobQueued: {'identifier': 'brain', 'dependencies': OrderedDict([('booster_interface', '/workspace/hsl-player/install/booster_interface'), ('booster_msgs', '/workspace/hsl-player/install/booster_msgs'), ('game_controller_interface', '/workspace/hsl-player/install/game_controller_interface'), ('vision_interface', '/workspace/hsl-player/install/vision_interface')])}
+[0.000475] (brain) JobStarted: {'identifier': 'brain'}
+[0.016185] (brain) JobProgress: {'identifier': 'brain', 'progress': 'cmake'}
+[0.017243] (brain) JobProgress: {'identifier': 'brain', 'progress': 'build'}
+[0.017779] (brain) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspace/hsl-player/build/brain', '--', '-j20', '-l20'], 'cwd': '/workspace/hsl-player/build/brain', 'env': OrderedDict([('HOSTNAME', 'erick-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$'), ('COLCON_PREFIX_PATH', '/workspace/hsl-player/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yienvee/Documents/hl_unification/.venv/bin:/opt/ros/humble/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('VIRTUAL_ENV_PROMPT', 'hl-unification'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/hsl-player/install/brain:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/sound_play:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/opt/ros/humble'), ('VIRTUAL_ENV', '/home/yienvee/Documents/hl_unification/.venv'), ('PWD', '/workspace/hsl-player/build/brain'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/build/sound_play:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble')]), 'shell': False}
+[0.041839] (brain) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099728] (-) TimerEvent: {}
+[0.122296] (brain) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.126493] (brain) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.140821] (brain) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.141898] (brain) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.145026] (brain) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.151359] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.157132] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.175022] (brain) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.175719] (brain) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199824] (-) TimerEvent: {}
+[0.244282] (brain) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.269812] (brain) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.282846] (brain) StdoutLine: {'line': b'-- Found behaviortree_cpp: 4.9.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)\n'}
+[0.285448] (brain) StdoutLine: {'line': b'-- Rerun is using bundled arrow library.\n'}
+[0.288513] (brain) StdoutLine: {'line': b'-- Found booster_interface: 0.0.0 (/workspace/hsl-player/install/booster_interface/share/booster_interface/cmake)\n'}
+[0.299241] (brain) StdoutLine: {'line': b'-- Found game_controller_interface: 1.0.0 (/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake)\n'}
+[0.299873] (-) TimerEvent: {}
+[0.306679] (brain) StdoutLine: {'line': b'-- Found vision_interface: 1.0.0 (/workspace/hsl-player/install/vision_interface/share/vision_interface/cmake)\n'}
+[0.320215] (brain) StdoutLine: {'line': b'-- Found booster_msgs: 0.0.0 (/workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake)\n'}
+[0.329307] (brain) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.338196] (brain) StdoutLine: {'line': b'-- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.340480] (brain) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.396484] (brain) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.399088] (brain) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.399874] (brain) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.399944] (-) TimerEvent: {}
+[0.500098] (-) TimerEvent: {}
+[0.569453] (brain) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.600243] (-) TimerEvent: {}
+[0.701234] (-) TimerEvent: {}
+[0.801510] (-) TimerEvent: {}
+[0.825505] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.902271] (-) TimerEvent: {}
+[0.907580] (brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.926397] (brain) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[0.941455] (brain) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.941551] (brain) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[0.941579] (brain) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.002333] (-) TimerEvent: {}
+[1.009119] (brain) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.017607] (brain) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.020436] (brain) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspace/hsl-player/src/brain/include>\n'}
+[1.020467] (brain) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.020688] (brain) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.021035] (brain) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.021274] (brain) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.022265] (brain) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.022296] (brain) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.022516] (brain) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.024578] (brain) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.061253] (brain) StdoutLine: {'line': b'-- Generating done\n'}
+[1.068964] (brain) StdoutLine: {'line': b'-- Build files have been written to: /workspace/hsl-player/build/brain\n'}
+[1.095917] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_c\x1b[0m\n'}
+[1.103241] (-) TimerEvent: {}
+[1.105280] (brain) StdoutLine: {'line': b'[  4%] Built target brain__rs\n'}
+[1.105432] (brain) StdoutLine: {'line': b'[  4%] Built target brain__cpp\n'}
+[1.105473] (brain) StdoutLine: {'line': b'[ 11%] Built target brain__rosidl_generator_c\n'}
+[1.111622] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c\x1b[0m\n'}
+[1.111820] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.111906] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.112291] (brain) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_symlink_brain\n'}
+[1.114242] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.114388] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.114806] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.119981] (brain) StdoutLine: {'line': b'[ 19%] Built target brain__rosidl_typesupport_fastrtps_cpp\n'}
+[1.120252] (brain) StdoutLine: {'line': b'[ 26%] Built target brain__rosidl_typesupport_c\n'}
+[1.120539] (brain) StdoutLine: {'line': b'[ 33%] Built target brain__rosidl_typesupport_introspection_cpp\n'}
+[1.121759] (brain) StdoutLine: {'line': b'[ 40%] Built target brain__rosidl_typesupport_introspection_c\n'}
+[1.125812] (brain) StdoutLine: {'line': b'[ 50%] Built target brain__rosidl_typesupport_cpp\n'}
+[1.125912] (brain) StdoutLine: {'line': b'[ 54%] Built target brain__rosidl_typesupport_fastrtps_c\n'}
+[1.145769] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain_node\x1b[0m\n'}
+[1.178137] (brain) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o\x1b[0m\n'}
+[1.178318] (brain) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o\x1b[0m\n'}
+[1.178411] (brain) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o\x1b[0m\n'}
+[1.181133] (brain) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.181824] (brain) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o\x1b[0m\n'}
+[1.181910] (brain) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o\x1b[0m\n'}
+[1.182518] (brain) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o\x1b[0m\n'}
+[1.203326] (-) TimerEvent: {}
+[1.304278] (-) TimerEvent: {}
+[1.368251] (brain) StdoutLine: {'line': b'running egg_info\n'}
+[1.369100] (brain) StdoutLine: {'line': b'writing brain.egg-info/PKG-INFO\n'}
+[1.369371] (brain) StdoutLine: {'line': b'writing dependency_links to brain.egg-info/dependency_links.txt\n'}
+[1.369547] (brain) StdoutLine: {'line': b'writing top-level names to brain.egg-info/top_level.txt\n'}
+[1.371420] (brain) StdoutLine: {'line': b"reading manifest file 'brain.egg-info/SOURCES.txt'\n"}
+[1.372576] (brain) StdoutLine: {'line': b"writing manifest file 'brain.egg-info/SOURCES.txt'\n"}
+[1.405281] (-) TimerEvent: {}
+[1.408215] (brain) StdoutLine: {'line': b'[ 71%] Built target ament_cmake_python_build_brain_egg\n'}
+[1.429707] (brain) StdoutLine: {'line': b'[ 71%] Built target brain\n'}
+[1.454290] (brain) StdoutLine: {'line': b'[ 73%] Built target brain__py\n'}
+[1.465028] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_py\x1b[0m\n'}
+[1.478948] (brain) StdoutLine: {'line': b'[ 78%] Built target brain__rosidl_generator_py\n'}
+[1.485729] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[1.488257] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[1.488425] (brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[1.494127] (brain) StdoutLine: {'line': b'[ 83%] Built target brain__rosidl_typesupport_introspection_c__pyext\n'}
+[1.501252] (brain) StdoutLine: {'line': b'[ 92%] Built target brain__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.501455] (brain) StdoutLine: {'line': b'[ 92%] Built target brain__rosidl_typesupport_c__pyext\n'}
+[1.506278] (-) TimerEvent: {}
+[1.608427] (-) TimerEvent: {}
+[1.708719] (-) TimerEvent: {}
+[1.809165] (-) TimerEvent: {}
+[1.910958] (-) TimerEvent: {}
+[2.011272] (-) TimerEvent: {}
+[2.111552] (-) TimerEvent: {}
+[2.211886] (-) TimerEvent: {}
+[2.312284] (-) TimerEvent: {}
+[2.412696] (-) TimerEvent: {}
+[2.513025] (-) TimerEvent: {}
+[2.613357] (-) TimerEvent: {}
+[2.714272] (-) TimerEvent: {}
+[2.814606] (-) TimerEvent: {}
+[2.914978] (-) TimerEvent: {}
+[3.015279] (-) TimerEvent: {}
+[3.118269] (-) TimerEvent: {}
+[3.218603] (-) TimerEvent: {}
+[3.318924] (-) TimerEvent: {}
+[3.419264] (-) TimerEvent: {}
+[3.519532] (-) TimerEvent: {}
+[3.619811] (-) TimerEvent: {}
+[3.720100] (-) TimerEvent: {}
+[3.821280] (-) TimerEvent: {}
+[3.921635] (-) TimerEvent: {}
+[4.021905] (-) TimerEvent: {}
+[4.122212] (-) TimerEvent: {}
+[4.222481] (-) TimerEvent: {}
+[4.322764] (-) TimerEvent: {}
+[4.423055] (-) TimerEvent: {}
+[4.523354] (-) TimerEvent: {}
+[4.623629] (-) TimerEvent: {}
+[4.723925] (-) TimerEvent: {}
+[4.824267] (-) TimerEvent: {}
+[4.924594] (-) TimerEvent: {}
+[5.024893] (-) TimerEvent: {}
+[5.125223] (-) TimerEvent: {}
+[5.225489] (-) TimerEvent: {}
+[5.325788] (-) TimerEvent: {}
+[5.426090] (-) TimerEvent: {}
+[5.526382] (-) TimerEvent: {}
+[5.626664] (-) TimerEvent: {}
+[5.726946] (-) TimerEvent: {}
+[5.827247] (-) TimerEvent: {}
+[5.927598] (-) TimerEvent: {}
+[6.027903] (-) TimerEvent: {}
+[6.062027] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Brain::joystickCallback(const RemoteControllerState&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.062251] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain.cpp:1134:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Klog_\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[6.062324] (brain) StderrLine: {'line': b' 1134 |     auto \x1b[01;35m\x1b[Klog_\x1b[m\x1b[K = [=](string msg) {\n'}
+[6.062382] (brain) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.128014] (-) TimerEvent: {}
+[6.228373] (-) TimerEvent: {}
+[6.328811] (-) TimerEvent: {}
+[6.430828] (-) TimerEvent: {}
+[6.531255] (-) TimerEvent: {}
+[6.631713] (-) TimerEvent: {}
+[6.732301] (-) TimerEvent: {}
+[6.832694] (-) TimerEvent: {}
+[6.933052] (-) TimerEvent: {}
+[7.033474] (-) TimerEvent: {}
+[7.133980] (-) TimerEvent: {}
+[7.234229] (-) TimerEvent: {}
+[7.334492] (-) TimerEvent: {}
+[7.434742] (-) TimerEvent: {}
+[7.534993] (-) TimerEvent: {}
+[7.635251] (-) TimerEvent: {}
+[7.736612] (-) TimerEvent: {}
+[7.837221] (-) TimerEvent: {}
+[7.937494] (-) TimerEvent: {}
+[7.964347] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid BrainCommunication::unicastCommunication()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.964820] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:362:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[7.965122] (brain) StderrLine: {'line': b'  362 |         \x1b[01;35m\x1b[Kmsg.ballLocationKnown = brain->tree->getEntry<bool>("ball_location_known")\x1b[m\x1b[K;\n'}
+[7.965436] (brain) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.037583] (-) TimerEvent: {}
+[8.137854] (-) TimerEvent: {}
+[8.238201] (-) TimerEvent: {}
+[8.338458] (-) TimerEvent: {}
+[8.341506] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual BT::NodeStatus Adjust::onRunning()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.341692] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KleftPost\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[8.341792] (brain) StderrLine: {'line': b'  875 |   Point2D \x1b[01;35m\x1b[KleftPost\x1b[m\x1b[K, rightPost;\n'}
+[8.341852] (brain) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[8.341907] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[KrightPost\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K-Wunused-but-set-variable\x1b[m\x1b[K]\n'}
+[8.341964] (brain) StderrLine: {'line': b'  875 |   Point2D leftPost, \x1b[01;35m\x1b[KrightPost\x1b[m\x1b[K;\n'}
+[8.342020] (brain) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[8.438583] (-) TimerEvent: {}
+[8.538886] (-) TimerEvent: {}
+[8.639204] (-) TimerEvent: {}
+[8.739596] (-) TimerEvent: {}
+[8.839869] (-) TimerEvent: {}
+[8.942446] (-) TimerEvent: {}
+[9.042790] (-) TimerEvent: {}
+[9.143249] (-) TimerEvent: {}
+[9.243772] (-) TimerEvent: {}
+[9.344087] (-) TimerEvent: {}
+[9.444547] (-) TimerEvent: {}
+[9.512820] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual BT::NodeStatus SelfLocate::tick()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.512990] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KthetaMax\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513052] (brain) StderrLine: {'line': b'  386 |     double xMin, xMax, yMin, yMax, thetaMin, \x1b[01;35m\x1b[KthetaMax\x1b[m\x1b[K;\n'}
+[9.513106] (brain) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.513158] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:36:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KthetaMin\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513216] (brain) StderrLine: {'line': b'  386 |     double xMin, xMax, yMin, yMax, \x1b[01;35m\x1b[KthetaMin\x1b[m\x1b[K, thetaMax;\n'}
+[9.513268] (brain) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.513320] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KyMax\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513370] (brain) StderrLine: {'line': b'  386 |     double xMin, xMax, yMin, \x1b[01;35m\x1b[KyMax\x1b[m\x1b[K, thetaMin, thetaMax;\n'}
+[9.513421] (brain) StderrLine: {'line': b'      |                              \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.513473] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KyMin\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513523] (brain) StderrLine: {'line': b'  386 |     double xMin, xMax, \x1b[01;35m\x1b[KyMin\x1b[m\x1b[K, yMax, thetaMin, thetaMax;\n'}
+[9.513574] (brain) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.513625] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:18:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KxMax\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513677] (brain) StderrLine: {'line': b'  386 |     double xMin, \x1b[01;35m\x1b[KxMax\x1b[m\x1b[K, yMin, yMax, thetaMin, thetaMax;\n'}
+[9.513732] (brain) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.513783] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/locator.cpp:386:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KxMin\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[9.513834] (brain) StderrLine: {'line': b'  386 |     double \x1b[01;35m\x1b[KxMin\x1b[m\x1b[K, xMax, yMin, yMax, thetaMin, thetaMax;\n'}
+[9.513888] (brain) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[9.544663] (-) TimerEvent: {}
+[9.644946] (-) TimerEvent: {}
+[9.745330] (-) TimerEvent: {}
+[9.845830] (-) TimerEvent: {}
+[9.946120] (-) TimerEvent: {}
+[10.046423] (-) TimerEvent: {}
+[10.146691] (-) TimerEvent: {}
+[10.246951] (-) TimerEvent: {}
+[10.347344] (-) TimerEvent: {}
+[10.447602] (-) TimerEvent: {}
+[10.548057] (-) TimerEvent: {}
+[10.651285] (-) TimerEvent: {}
+[10.751804] (-) TimerEvent: {}
+[10.774436] (brain) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_config.h:7\x1b[m\x1b[K,\n'}
+[10.774602] (brain) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain.h:35\x1b[m\x1b[K,\n'}
+[10.774665] (brain) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3\x1b[m\x1b[K:\n'}
+[10.774721] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/utils/math.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint RobotClient::moveToPoseOnField(double, double, double, double, double, double, double, double, double, double, double, bool)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.774777] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/utils/math.h:40:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvy\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[10.774832] (brain) StderrLine: {'line': b'   40 |     return sqrt(x * x + \x1b[01;35m\x1b[Ky * y\x1b[m\x1b[K);\n'}
+[10.774883] (brain) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~\x1b[m\x1b[K\n'}
+[10.774936] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvy\x1b[m\x1b[K\xe2\x80\x99 was declared here\n'}
+[10.774989] (brain) StderrLine: {'line': b'  274 |     double vx, \x1b[01;36m\x1b[Kvy\x1b[m\x1b[K, vtheta;\n'}
+[10.775041] (brain) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[10.775092] (brain) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_config.h:7\x1b[m\x1b[K,\n'}
+[10.775143] (brain) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain.h:35\x1b[m\x1b[K,\n'}
+[10.775202] (brain) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3\x1b[m\x1b[K:\n'}
+[10.775254] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/utils/math.h:40:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvx\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[10.775312] (brain) StderrLine: {'line': b'   40 |     return sqrt(\x1b[01;35m\x1b[Kx * x\x1b[m\x1b[K + y * y);\n'}
+[10.775364] (brain) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~^~~\x1b[m\x1b[K\n'}
+[10.775415] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvx\x1b[m\x1b[K\xe2\x80\x99 was declared here\n'}
+[10.775471] (brain) StderrLine: {'line': b'  274 |     double \x1b[01;36m\x1b[Kvx\x1b[m\x1b[K, vy, vtheta;\n'}
+[10.775522] (brain) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[10.851926] (-) TimerEvent: {}
+[10.953063] (-) TimerEvent: {}
+[11.053576] (-) TimerEvent: {}
+[11.153834] (-) TimerEvent: {}
+[11.254239] (-) TimerEvent: {}
+[11.356352] (-) TimerEvent: {}
+[11.456599] (-) TimerEvent: {}
+[11.556892] (-) TimerEvent: {}
+[11.564545] (brain) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:1\x1b[m\x1b[K:\n'}
+[11.564718] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_tree.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KT BrainTree::getEntry(const string&) [with T = bool]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.564781] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[11.564838] (brain) StderrLine: {'line': b'   30 |         return \x1b[01;35m\x1b[Kvalue\x1b[m\x1b[K;\n'}
+[11.564890] (brain) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.656986] (-) TimerEvent: {}
+[11.757261] (-) TimerEvent: {}
+[11.859247] (-) TimerEvent: {}
+[11.959558] (-) TimerEvent: {}
+[12.059862] (-) TimerEvent: {}
+[12.160186] (-) TimerEvent: {}
+[12.260434] (-) TimerEvent: {}
+[12.360676] (-) TimerEvent: {}
+[12.460942] (-) TimerEvent: {}
+[12.562321] (-) TimerEvent: {}
+[12.663263] (-) TimerEvent: {}
+[12.763520] (-) TimerEvent: {}
+[12.863806] (-) TimerEvent: {}
+[12.964043] (-) TimerEvent: {}
+[13.064307] (-) TimerEvent: {}
+[13.164850] (-) TimerEvent: {}
+[13.265438] (-) TimerEvent: {}
+[13.366036] (-) TimerEvent: {}
+[13.466425] (-) TimerEvent: {}
+[13.566876] (-) TimerEvent: {}
+[13.667253] (-) TimerEvent: {}
+[13.767513] (-) TimerEvent: {}
+[13.869255] (-) TimerEvent: {}
+[13.969634] (-) TimerEvent: {}
+[14.070022] (-) TimerEvent: {}
+[14.170390] (-) TimerEvent: {}
+[14.270716] (-) TimerEvent: {}
+[14.370989] (-) TimerEvent: {}
+[14.471285] (-) TimerEvent: {}
+[14.571630] (-) TimerEvent: {}
+[14.671853] (-) TimerEvent: {}
+[14.772066] (-) TimerEvent: {}
+[14.872325] (-) TimerEvent: {}
+[14.972590] (-) TimerEvent: {}
+[15.073258] (-) TimerEvent: {}
+[15.173752] (-) TimerEvent: {}
+[15.274088] (-) TimerEvent: {}
+[15.374370] (-) TimerEvent: {}
+[15.474558] (-) TimerEvent: {}
+[15.574804] (-) TimerEvent: {}
+[15.675000] (-) TimerEvent: {}
+[15.775267] (-) TimerEvent: {}
+[15.875476] (-) TimerEvent: {}
+[15.975697] (-) TimerEvent: {}
+[16.075950] (-) TimerEvent: {}
+[16.176211] (-) TimerEvent: {}
+[16.276418] (-) TimerEvent: {}
+[16.376637] (-) TimerEvent: {}
+[16.476840] (-) TimerEvent: {}
+[16.577043] (-) TimerEvent: {}
+[16.677241] (-) TimerEvent: {}
+[16.777584] (-) TimerEvent: {}
+[16.877867] (-) TimerEvent: {}
+[16.978081] (-) TimerEvent: {}
+[17.078236] (-) TimerEvent: {}
+[17.178555] (-) TimerEvent: {}
+[17.278763] (-) TimerEvent: {}
+[17.380237] (-) TimerEvent: {}
+[17.480466] (-) TimerEvent: {}
+[17.580674] (-) TimerEvent: {}
+[17.680881] (-) TimerEvent: {}
+[17.781148] (-) TimerEvent: {}
+[17.881500] (-) TimerEvent: {}
+[17.981717] (-) TimerEvent: {}
+[18.083245] (-) TimerEvent: {}
+[18.183773] (-) TimerEvent: {}
+[18.284041] (-) TimerEvent: {}
+[18.384260] (-) TimerEvent: {}
+[18.484486] (-) TimerEvent: {}
+[18.584902] (-) TimerEvent: {}
+[18.685108] (-) TimerEvent: {}
+[18.785291] (-) TimerEvent: {}
+[18.885476] (-) TimerEvent: {}
+[18.985661] (-) TimerEvent: {}
+[19.085839] (-) TimerEvent: {}
+[19.186044] (-) TimerEvent: {}
+[19.286268] (-) TimerEvent: {}
+[19.386470] (-) TimerEvent: {}
+[19.486686] (-) TimerEvent: {}
+[19.586976] (-) TimerEvent: {}
+[19.687192] (-) TimerEvent: {}
+[19.787382] (-) TimerEvent: {}
+[19.887638] (-) TimerEvent: {}
+[19.989251] (-) TimerEvent: {}
+[20.089480] (-) TimerEvent: {}
+[20.189719] (-) TimerEvent: {}
+[20.290001] (-) TimerEvent: {}
+[20.391345] (-) TimerEvent: {}
+[20.492077] (-) TimerEvent: {}
+[20.592245] (-) TimerEvent: {}
+[20.692513] (-) TimerEvent: {}
+[20.792726] (-) TimerEvent: {}
+[20.892922] (-) TimerEvent: {}
+[20.993241] (-) TimerEvent: {}
+[21.093431] (-) TimerEvent: {}
+[21.193632] (-) TimerEvent: {}
+[21.294154] (-) TimerEvent: {}
+[21.394683] (-) TimerEvent: {}
+[21.495114] (-) TimerEvent: {}
+[21.595371] (-) TimerEvent: {}
+[21.695716] (-) TimerEvent: {}
+[21.795942] (-) TimerEvent: {}
+[21.897846] (-) TimerEvent: {}
+[21.998165] (-) TimerEvent: {}
+[22.098408] (-) TimerEvent: {}
+[22.198757] (-) TimerEvent: {}
+[22.299330] (-) TimerEvent: {}
+[22.399829] (-) TimerEvent: {}
+[22.500110] (-) TimerEvent: {}
+[22.600351] (-) TimerEvent: {}
+[22.700599] (-) TimerEvent: {}
+[22.800835] (-) TimerEvent: {}
+[22.901158] (-) TimerEvent: {}
+[23.001412] (-) TimerEvent: {}
+[23.059022] (brain) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain.h:38\x1b[m\x1b[K,\n'}
+[23.059187] (brain) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain.cpp:6\x1b[m\x1b[K:\n'}
+[23.059259] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_tree.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KT BrainTree::getEntry(const string&) [with T = bool]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[23.059316] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[23.059370] (brain) StderrLine: {'line': b'   30 |         return \x1b[01;35m\x1b[Kvalue\x1b[m\x1b[K;\n'}
+[23.059422] (brain) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[23.101545] (-) TimerEvent: {}
+[23.201814] (-) TimerEvent: {}
+[23.302095] (-) TimerEvent: {}
+[23.402347] (-) TimerEvent: {}
+[23.502583] (-) TimerEvent: {}
+[23.602824] (-) TimerEvent: {}
+[23.703068] (-) TimerEvent: {}
+[23.803410] (-) TimerEvent: {}
+[23.903653] (-) TimerEvent: {}
+[24.003960] (-) TimerEvent: {}
+[24.104231] (-) TimerEvent: {}
+[24.204483] (-) TimerEvent: {}
+[24.304742] (-) TimerEvent: {}
+[24.404978] (-) TimerEvent: {}
+[24.505261] (-) TimerEvent: {}
+[24.605495] (-) TimerEvent: {}
+[24.705786] (-) TimerEvent: {}
+[24.806407] (-) TimerEvent: {}
+[24.906911] (-) TimerEvent: {}
+[25.007193] (-) TimerEvent: {}
+[25.107402] (-) TimerEvent: {}
+[25.207598] (-) TimerEvent: {}
+[25.250337] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Brain::logStatusToConsole()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[25.250449] (brain) StderrLine: {'line': b'\x1b[01m\x1b[K/workspace/hsl-player/src/brain/src/brain.cpp:3186:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvalue\x1b[m\x1b[K\xe2\x80\x99 may be used uninitialized in this function [\x1b[01;35m\x1b[K-Wmaybe-uninitialized\x1b[m\x1b[K]\n'}
+[25.250476] (brain) StderrLine: {'line': b' 3186 |         msg += \x1b[01;35m\x1b[Kformat(\x1b[m\x1b[K\n'}
+[25.250497] (brain) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K~~~~~~^\x1b[m\x1b[K\n'}
+[25.250517] (brain) StderrLine: {'line': b' 3187 | \x1b[01;35m\x1b[K            "DEBUG:\\n\\tcom: %s\\tlogFile: %s\\tlogTCP: %s\\n\\tvxFactor: %.2f\\tyawOffset: %.2f\\n\\tControlState: %d\\n\\tTickTime: %.0fms",\x1b[m\x1b[K\n'}
+[25.250539] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250567] (brain) StderrLine: {'line': b' 3188 | \x1b[01;35m\x1b[K            config->enableCom ? "YES" : "NO",\x1b[m\x1b[K\n'}
+[25.250587] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250606] (brain) StderrLine: {'line': b' 3189 | \x1b[01;35m\x1b[K            config->rerunLogEnableFile ? "YES" : "NO",\x1b[m\x1b[K\n'}
+[25.250626] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250644] (brain) StderrLine: {'line': b' 3190 | \x1b[01;35m\x1b[K            config->rerunLogEnableTCP ? "YES" : "NO",\x1b[m\x1b[K\n'}
+[25.250664] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250683] (brain) StderrLine: {'line': b' 3191 | \x1b[01;35m\x1b[K            config->vxFactor,\x1b[m\x1b[K\n'}
+[25.250702] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250721] (brain) StderrLine: {'line': b' 3192 | \x1b[01;35m\x1b[K            config->yawOffset,\x1b[m\x1b[K\n'}
+[25.250740] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250758] (brain) StderrLine: {'line': b' 3193 | \x1b[01;35m\x1b[K            tree->getEntry<int>("control_state"),\x1b[m\x1b[K\n'}
+[25.250775] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250793] (brain) StderrLine: {'line': b' 3194 | \x1b[01;35m\x1b[K            msecsSince(data->lastTick)\x1b[m\x1b[K\n'}
+[25.250812] (brain) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[25.250830] (brain) StderrLine: {'line': b' 3195 | \x1b[01;35m\x1b[K        )\x1b[m\x1b[K;\n'}
+[25.250849] (brain) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~\x1b[m\x1b[K             \n'}
+[25.307686] (-) TimerEvent: {}
+[25.407980] (-) TimerEvent: {}
+[25.508175] (-) TimerEvent: {}
+[25.608391] (-) TimerEvent: {}
+[25.708622] (-) TimerEvent: {}
+[25.808908] (-) TimerEvent: {}
+[25.909383] (-) TimerEvent: {}
+[26.009748] (-) TimerEvent: {}
+[26.110082] (-) TimerEvent: {}
+[26.210399] (-) TimerEvent: {}
+[26.310654] (-) TimerEvent: {}
+[26.411261] (-) TimerEvent: {}
+[26.511477] (-) TimerEvent: {}
+[26.611693] (-) TimerEvent: {}
+[26.711990] (-) TimerEvent: {}
+[26.812279] (-) TimerEvent: {}
+[26.912474] (-) TimerEvent: {}
+[27.012745] (-) TimerEvent: {}
+[27.112971] (-) TimerEvent: {}
+[27.213197] (-) TimerEvent: {}
+[27.313380] (-) TimerEvent: {}
+[27.413566] (-) TimerEvent: {}
+[27.513772] (-) TimerEvent: {}
+[27.613986] (-) TimerEvent: {}
+[27.714234] (-) TimerEvent: {}
+[27.814549] (-) TimerEvent: {}
+[27.914739] (-) TimerEvent: {}
+[28.015055] (-) TimerEvent: {}
+[28.115303] (-) TimerEvent: {}
+[28.215539] (-) TimerEvent: {}
+[28.315825] (-) TimerEvent: {}
+[28.416092] (-) TimerEvent: {}
+[28.516471] (-) TimerEvent: {}
+[28.616720] (-) TimerEvent: {}
+[28.716962] (-) TimerEvent: {}
+[28.817288] (-) TimerEvent: {}
+[28.917538] (-) TimerEvent: {}
+[29.017807] (-) TimerEvent: {}
+[29.107484] (brain) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable brain_node\x1b[0m\n'}
+[29.117888] (-) TimerEvent: {}
+[29.218130] (-) TimerEvent: {}
+[29.318398] (-) TimerEvent: {}
+[29.419256] (-) TimerEvent: {}
+[29.519615] (-) TimerEvent: {}
+[29.621342] (-) TimerEvent: {}
+[29.721847] (-) TimerEvent: {}
+[29.822221] (-) TimerEvent: {}
+[29.922467] (-) TimerEvent: {}
+[30.022724] (-) TimerEvent: {}
+[30.123003] (-) TimerEvent: {}
+[30.223268] (-) TimerEvent: {}
+[30.323525] (-) TimerEvent: {}
+[30.423821] (-) TimerEvent: {}
+[30.524247] (-) TimerEvent: {}
+[30.624735] (-) TimerEvent: {}
+[30.725329] (-) TimerEvent: {}
+[30.825803] (-) TimerEvent: {}
+[30.926142] (-) TimerEvent: {}
+[31.026445] (-) TimerEvent: {}
+[31.126915] (-) TimerEvent: {}
+[31.227195] (-) TimerEvent: {}
+[31.306823] (brain) StdoutLine: {'line': b'[100%] Built target brain_node\n'}
+[31.318916] (brain) CommandEnded: {'returncode': 0}
+[31.320120] (brain) JobProgress: {'identifier': 'brain', 'progress': 'install'}
+[31.326061] (brain) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspace/hsl-player/build/brain'], 'cwd': '/workspace/hsl-player/build/brain', 'env': OrderedDict([('HOSTNAME', 'erick-pc'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/workspace'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '\\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$'), ('COLCON_PREFIX_PATH', '/workspace/hsl-player/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/yienvee/Documents/hl_unification/.venv/bin:/opt/ros/humble/bin:/root/.local/bin:/root/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'C.UTF-8'), ('VIRTUAL_ENV_PROMPT', 'hl-unification'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/workspace/hsl-player/install/brain:/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/sound_play:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/opt/ros/humble'), ('VIRTUAL_ENV', '/home/yienvee/Documents/hl_unification/.venv'), ('PWD', '/workspace/hsl-player/build/brain'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/usr/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/build/sound_play:/workspace/hsl-player/install/sound_play/lib/python3.10/site-packages:/workspace/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_msgs/local/lib/python3.10/dist-packages:/workspace/hsl-player/install/booster_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble')]), 'shell': False}
+[31.327200] (-) TimerEvent: {}
+[31.333096] (brain) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[31.333429] (brain) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[31.333549] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/rosidl_interfaces/brain\n'}
+[31.333697] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__functions.h\n'}
+[31.333772] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__struct.h\n'}
+[31.333854] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__type_support.h\n'}
+[31.333924] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/kick.h\n'}
+[31.333981] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_generator_c__visibility_control.h\n'}
+[31.334121] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/library_path.sh\n'}
+[31.334224] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/library_path.dsv\n'}
+[31.334393] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_fastrtps_c.h\n'}
+[31.334457] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[31.334575] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__builder.hpp\n'}
+[31.334642] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__struct.hpp\n'}
+[31.334714] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__traits.hpp\n'}
+[31.334785] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__type_support.hpp\n'}
+[31.334839] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/kick.hpp\n'}
+[31.334892] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[31.334956] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[31.335020] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[31.335095] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_introspection_c.h\n'}
+[31.335158] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[31.335349] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_introspection_cpp.hpp\n'}
+[31.336182] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/pythonpath.sh\n'}
+[31.336411] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/pythonpath.dsv\n'}
+[31.336547] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[31.336627] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[31.336736] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[31.336829] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[31.336912] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/__init__.py\n'}
+[31.337062] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_c.c\n'}
+[31.337246] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[31.337391] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[31.337490] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.337567] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.337655] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.337781] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/libbrain__rosidl_generator_py.so\n'}
+[31.337868] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/__init__.py\n'}
+[31.338026] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/_kick.py\n'}
+[31.338161] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/_kick_s.c\n'}
+[31.338240] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.338509] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.338992] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[31.339063] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/rust_packages/brain\n'}
+[31.339507] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/Cargo.toml\n'}
+[31.339679] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/build.rs\n'}
+[31.339920] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/lib.rs\n'}
+[31.340095] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/msg.rs\n'}
+[31.340172] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/msg/rmw.rs\n'}
+[31.340459] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/msg/Kick.idl\n'}
+[31.340522] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/msg/Kick.msg\n'}
+[31.340845] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/lib/brain/brain_node\n'}
+[31.340998] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/launch/launch.py\n'}
+[31.341192] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/config/config.yaml\n'}
+[31.341467] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/assist.xml\n'}
+[31.341540] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/chase.xml\n'}
+[31.341611] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/game.xml\n'}
+[31.341817] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_auto_standup_and_locate.xml\n'}
+[31.342014] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_cam_find_and_track_ball.xml\n'}
+[31.342225] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_find_ball.xml\n'}
+[31.342353] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_goal_keeper_freekick.xml\n'}
+[31.342552] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_goal_keeper_play.xml\n'}
+[31.342677] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_locate.xml\n'}
+[31.342797] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_striker_freekick.xml\n'}
+[31.342923] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_striker_play.xml\n'}
+[31.342998] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/teste.xml\n'}
+[31.343122] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/package_run_dependencies/brain\n'}
+[31.343247] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/parent_prefix_path/brain\n'}
+[31.343422] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/ament_prefix_path.sh\n'}
+[31.343581] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/ament_prefix_path.dsv\n'}
+[31.343744] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/path.sh\n'}
+[31.343850] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/path.dsv\n'}
+[31.344084] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.bash\n'}
+[31.344239] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.sh\n'}
+[31.344393] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.zsh\n'}
+[31.344544] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.dsv\n'}
+[31.344623] (brain) StdoutLine: {'line': b'-- Symlinking: /workspace/hsl-player/install/brain/share/brain/package.dsv\n'}
+[31.351955] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/packages/brain\n'}
+[31.352051] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake-extras.cmake\n'}
+[31.352145] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[31.352257] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[31.352407] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[31.352512] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[31.352811] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[31.352914] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[31.353024] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/brainConfig.cmake\n'}
+[31.353098] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/brainConfig-version.cmake\n'}
+[31.353198] (brain) StdoutLine: {'line': b'-- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/package.xml\n'}
+[31.353387] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_generator_c.so\n'}
+[31.353603] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_fastrtps_c.so\n'}
+[31.354121] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_fastrtps_cpp.so\n'}
+[31.354297] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_introspection_c.so\n'}
+[31.354472] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_c.so\n'}
+[31.354652] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_introspection_cpp.so\n'}
+[31.354982] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_cpp.so\n'}
+[31.378865] (brain) StdoutLine: {'line': b"Listing '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain'...\n"}
+[31.379025] (brain) StdoutLine: {'line': b"Compiling '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/__init__.py'...\n"}
+[31.379095] (brain) StdoutLine: {'line': b"Listing '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg'...\n"}
+[31.381610] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_generator_py.so\n'}
+[31.382155] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cExport.cmake\n'}
+[31.382227] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cExport-release.cmake\n'}
+[31.382572] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[31.382633] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[31.383051] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cppExport.cmake\n'}
+[31.383356] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[31.383431] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[31.383560] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cExport.cmake\n'}
+[31.383629] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[31.383849] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cExport.cmake\n'}
+[31.383917] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cExport-release.cmake\n'}
+[31.384100] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[31.384167] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[31.384392] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cppExport.cmake\n'}
+[31.384459] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cppExport-release.cmake\n'}
+[31.384622] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_pyExport.cmake\n'}
+[31.384689] (brain) StdoutLine: {'line': b'-- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_pyExport-release.cmake\n'}
+[31.386206] (brain) CommandEnded: {'returncode': 0}
+[31.408155] (brain) JobEnded: {'identifier': 'brain', 'rc': 0}
+[31.408679] (-) EventReactorShutdown: {}

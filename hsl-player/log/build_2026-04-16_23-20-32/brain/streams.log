@@ -1,0 +1,294 @@
+[0.018s] Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[0.041s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.122s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.126s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.140s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.141s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.145s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.151s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.157s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.175s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.175s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.244s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.269s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.282s] -- Found behaviortree_cpp: 4.9.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)
+[0.285s] -- Rerun is using bundled arrow library.
+[0.288s] -- Found booster_interface: 0.0.0 (/workspace/hsl-player/install/booster_interface/share/booster_interface/cmake)
+[0.299s] -- Found game_controller_interface: 1.0.0 (/workspace/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake)
+[0.306s] -- Found vision_interface: 1.0.0 (/workspace/hsl-player/install/vision_interface/share/vision_interface/cmake)
+[0.320s] -- Found booster_msgs: 0.0.0 (/workspace/hsl-player/install/booster_msgs/share/booster_msgs/cmake)
+[0.329s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.338s] -- Found tf2: 0.25.20 (/opt/ros/humble/share/tf2/cmake)
+[0.340s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.396s] -- Found tf2_geometry_msgs: 0.25.20 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.399s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.399s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.569s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.825s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.907s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.926s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.941s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.941s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.941s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.009s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.017s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.020s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/workspace/hsl-player/src/brain/include>
+[1.020s] -- Configured cppcheck exclude dirs and/or files: 
+[1.020s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.021s] -- Added test 'lint_cmake' to check CMake code style
+[1.021s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.022s] -- Added test 'uncrustify' to check C / C++ code style
+[1.022s] -- Configured uncrustify additional arguments: 
+[1.022s] -- Added test 'xmllint' to check XML markup files
+[1.024s] -- Configuring done
+[1.061s] -- Generating done
+[1.068s] -- Build files have been written to: /workspace/hsl-player/build/brain
+[1.095s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_c[0m
+[1.105s] [  4%] Built target brain__rs
+[1.105s] [  4%] Built target brain__cpp
+[1.105s] [ 11%] Built target brain__rosidl_generator_c
+[1.111s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c[0m
+[1.111s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_cpp[0m
+[1.111s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_cpp[0m
+[1.112s] [ 11%] Built target ament_cmake_python_symlink_brain
+[1.114s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c[0m
+[1.114s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c[0m
+[1.114s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_cpp[0m
+[1.120s] [ 19%] Built target brain__rosidl_typesupport_fastrtps_cpp
+[1.120s] [ 26%] Built target brain__rosidl_typesupport_c
+[1.120s] [ 33%] Built target brain__rosidl_typesupport_introspection_cpp
+[1.121s] [ 40%] Built target brain__rosidl_typesupport_introspection_c
+[1.125s] [ 50%] Built target brain__rosidl_typesupport_cpp
+[1.125s] [ 54%] Built target brain__rosidl_typesupport_fastrtps_c
+[1.145s] [35m[1mConsolidate compiler generated dependencies of target brain_node[0m
+[1.178s] [ 57%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain.cpp.o[0m
+[1.178s] [ 59%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_communication.cpp.o[0m
+[1.178s] [ 61%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_log.cpp.o[0m
+[1.181s] [ 64%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/main.cpp.o[0m
+[1.181s] [ 69%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/robot_client.cpp.o[0m
+[1.181s] [ 69%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/brain_tree.cpp.o[0m
+[1.182s] [ 71%] [32mBuilding CXX object CMakeFiles/brain_node.dir/src/locator.cpp.o[0m
+[1.368s] running egg_info
+[1.369s] writing brain.egg-info/PKG-INFO
+[1.369s] writing dependency_links to brain.egg-info/dependency_links.txt
+[1.369s] writing top-level names to brain.egg-info/top_level.txt
+[1.371s] reading manifest file 'brain.egg-info/SOURCES.txt'
+[1.372s] writing manifest file 'brain.egg-info/SOURCES.txt'
+[1.408s] [ 71%] Built target ament_cmake_python_build_brain_egg
+[1.429s] [ 71%] Built target brain
+[1.454s] [ 73%] Built target brain__py
+[1.465s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_generator_py[0m
+[1.479s] [ 78%] Built target brain__rosidl_generator_py
+[1.485s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_introspection_c__pyext[0m
+[1.488s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.488s] [35m[1mConsolidate compiler generated dependencies of target brain__rosidl_typesupport_c__pyext[0m
+[1.494s] [ 83%] Built target brain__rosidl_typesupport_introspection_c__pyext
+[1.501s] [ 92%] Built target brain__rosidl_typesupport_fastrtps_c__pyext
+[1.501s] [ 92%] Built target brain__rosidl_typesupport_c__pyext
+[6.062s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::joystickCallback(const RemoteControllerState&)[m[K’:
+[6.062s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:1134:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klog_[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[6.062s]  1134 |     auto [01;35m[Klog_[m[K = [=](string msg) {
+[6.062s]       |          [01;35m[K^~~~[m[K
+[7.964s] [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:[m[K In member function ‘[01m[Kvoid BrainCommunication::unicastCommunication()[m[K’:
+[7.965s] [01m[K/workspace/hsl-player/src/brain/src/brain_communication.cpp:362:31:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[7.965s]   362 |         [01;35m[Kmsg.ballLocationKnown = brain->tree->getEntry<bool>("ball_location_known")[m[K;
+[7.965s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[8.341s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Adjust::onRunning()[m[K’:
+[8.341s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KleftPost[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[8.341s]   875 |   Point2D [01;35m[KleftPost[m[K, rightPost;
+[8.341s]       |           [01;35m[K^~~~~~~~[m[K
+[8.341s] [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:875:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrightPost[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[8.341s]   875 |   Point2D leftPost, [01;35m[KrightPost[m[K;
+[8.342s]       |                     [01;35m[K^~~~~~~~~[m[K
+[9.512s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus SelfLocate::tick()[m[K’:
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:46:[m[K [01;35m[Kwarning: [m[K‘[01m[KthetaMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double xMin, xMax, yMin, yMax, thetaMin, [01;35m[KthetaMax[m[K;
+[9.513s]       |                                              [01;35m[K^~~~~~~~[m[K
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:36:[m[K [01;35m[Kwarning: [m[K‘[01m[KthetaMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double xMin, xMax, yMin, yMax, [01;35m[KthetaMin[m[K, thetaMax;
+[9.513s]       |                                    [01;35m[K^~~~~~~~[m[K
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:30:[m[K [01;35m[Kwarning: [m[K‘[01m[KyMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double xMin, xMax, yMin, [01;35m[KyMax[m[K, thetaMin, thetaMax;
+[9.513s]       |                              [01;35m[K^~~~[m[K
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:24:[m[K [01;35m[Kwarning: [m[K‘[01m[KyMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double xMin, xMax, [01;35m[KyMin[m[K, yMax, thetaMin, thetaMax;
+[9.513s]       |                        [01;35m[K^~~~[m[K
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:18:[m[K [01;35m[Kwarning: [m[K‘[01m[KxMax[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double xMin, [01;35m[KxMax[m[K, yMin, yMax, thetaMin, thetaMax;
+[9.513s]       |                  [01;35m[K^~~~[m[K
+[9.513s] [01m[K/workspace/hsl-player/src/brain/src/locator.cpp:386:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KxMin[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[9.513s]   386 |     double [01;35m[KxMin[m[K, xMax, yMin, yMax, thetaMin, thetaMax;
+[9.513s]       |            [01;35m[K^~~~[m[K
+[10.774s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain_config.h:7[m[K,
+[10.774s]                  from [01m[K/workspace/hsl-player/src/brain/include/brain.h:35[m[K,
+[10.774s]                  from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3[m[K:
+[10.774s] [01m[K/workspace/hsl-player/src/brain/include/utils/math.h:[m[K In member function ‘[01m[Kint RobotClient::moveToPoseOnField(double, double, double, double, double, double, double, double, double, double, double, bool)[m[K’:
+[10.774s] [01m[K/workspace/hsl-player/src/brain/include/utils/math.h:40:27:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvy[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[10.774s]    40 |     return sqrt(x * x + [01;35m[Ky * y[m[K);
+[10.774s]       |                         [01;35m[K~~^~~[m[K
+[10.774s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:16:[m[K [01;36m[Knote: [m[K‘[01m[Kvy[m[K’ was declared here
+[10.774s]   274 |     double vx, [01;36m[Kvy[m[K, vtheta;
+[10.775s]       |                [01;36m[K^~[m[K
+[10.775s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain_config.h:7[m[K,
+[10.775s]                  from [01m[K/workspace/hsl-player/src/brain/include/brain.h:35[m[K,
+[10.775s]                  from [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:3[m[K:
+[10.775s] [01m[K/workspace/hsl-player/src/brain/include/utils/math.h:40:19:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvx[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[10.775s]    40 |     return sqrt([01;35m[Kx * x[m[K + y * y);
+[10.775s]       |                 [01;35m[K~~^~~[m[K
+[10.775s] [01m[K/workspace/hsl-player/src/brain/src/robot_client.cpp:274:12:[m[K [01;36m[Knote: [m[K‘[01m[Kvx[m[K’ was declared here
+[10.775s]   274 |     double [01;36m[Kvx[m[K, vy, vtheta;
+[10.775s]       |            [01;36m[K^~[m[K
+[11.564s] In file included from [01m[K/workspace/hsl-player/src/brain/src/brain_tree.cpp:1[m[K:
+[11.564s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:[m[K In member function ‘[01m[KT BrainTree::getEntry(const string&) [with T = bool][m[K’:
+[11.564s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[11.564s]    30 |         return [01;35m[Kvalue[m[K;
+[11.564s]       |                [01;35m[K^~~~~[m[K
+[23.059s] In file included from [01m[K/workspace/hsl-player/src/brain/include/brain.h:38[m[K,
+[23.059s]                  from [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:6[m[K:
+[23.059s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:[m[K In member function ‘[01m[KT BrainTree::getEntry(const string&) [with T = bool][m[K’:
+[23.059s] [01m[K/workspace/hsl-player/src/brain/include/brain_tree.h:30:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[23.059s]    30 |         return [01;35m[Kvalue[m[K;
+[23.059s]       |                [01;35m[K^~~~~[m[K
+[25.250s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::logStatusToConsole()[m[K’:
+[25.250s] [01m[K/workspace/hsl-player/src/brain/src/brain.cpp:3186:22:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvalue[m[K’ may be used uninitialized in this function [[01;35m[K-Wmaybe-uninitialized[m[K]
+[25.250s]  3186 |         msg += [01;35m[Kformat([m[K
+[25.250s]       |                [01;35m[K~~~~~~^[m[K
+[25.250s]  3187 | [01;35m[K            "DEBUG:\n\tcom: %s\tlogFile: %s\tlogTCP: %s\n\tvxFactor: %.2f\tyawOffset: %.2f\n\tControlState: %d\n\tTickTime: %.0fms",[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3188 | [01;35m[K            config->enableCom ? "YES" : "NO",[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3189 | [01;35m[K            config->rerunLogEnableFile ? "YES" : "NO",[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3190 | [01;35m[K            config->rerunLogEnableTCP ? "YES" : "NO",[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3191 | [01;35m[K            config->vxFactor,[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3192 | [01;35m[K            config->yawOffset,[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3193 | [01;35m[K            tree->getEntry<int>("control_state"),[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3194 | [01;35m[K            msecsSince(data->lastTick)[m[K
+[25.250s]       |             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[25.250s]  3195 | [01;35m[K        )[m[K;
+[25.250s]       |         [01;35m[K~[m[K             
+[29.107s] [ 95%] [32m[1mLinking CXX executable brain_node[0m
+[31.306s] [100%] Built target brain_node
+[31.319s] Invoked command in '/workspace/hsl-player/build/brain' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --build /workspace/hsl-player/build/brain -- -j20 -l20
+[31.326s] Invoking command in '/workspace/hsl-player/build/brain': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/brain
+[31.333s] -- Install configuration: "Release"
+[31.333s] -- Execute custom install script
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/rosidl_interfaces/brain
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__functions.h
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__struct.h
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__type_support.h
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/kick.h
+[31.333s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_generator_c__visibility_control.h
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/library_path.sh
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/library_path.dsv
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_fastrtps_c.h
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__builder.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__struct.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__traits.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__type_support.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/kick.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_generator_cpp__visibility_control.hpp
+[31.334s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_fastrtps_cpp.hpp
+[31.335s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[31.335s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_introspection_c.h
+[31.335s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[31.335s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/include/brain/brain/msg/detail/kick__rosidl_typesupport_introspection_cpp.hpp
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/pythonpath.sh
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/pythonpath.dsv
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/PKG-INFO
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/SOURCES.txt
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/dependency_links.txt
+[31.336s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info/top_level.txt
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/__init__.py
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_c.c
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_fastrtps_c.c
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/_brain_s.ep.rosidl_typesupport_introspection_c.c
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/libbrain__rosidl_generator_py.so
+[31.337s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/__init__.py
+[31.338s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/_kick.py
+[31.338s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg/_kick_s.c
+[31.338s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[31.338s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[31.339s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/brain_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[31.339s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/rust_packages/brain
+[31.339s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/Cargo.toml
+[31.339s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/build.rs
+[31.339s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/lib.rs
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/msg.rs
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/rust/src/msg/rmw.rs
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/msg/Kick.idl
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/msg/Kick.msg
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/lib/brain/brain_node
+[31.340s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/launch/launch.py
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/config/config.yaml
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/assist.xml
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/chase.xml
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/game.xml
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_auto_standup_and_locate.xml
+[31.341s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_cam_find_and_track_ball.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_find_ball.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_goal_keeper_freekick.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_goal_keeper_play.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_locate.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_striker_freekick.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/subtrees/subtree_striker_play.xml
+[31.342s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/behavior_trees/teste.xml
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/package_run_dependencies/brain
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/parent_prefix_path/brain
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/ament_prefix_path.sh
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/ament_prefix_path.dsv
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/path.sh
+[31.343s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/environment/path.dsv
+[31.344s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.bash
+[31.344s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.sh
+[31.344s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.zsh
+[31.344s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/local_setup.dsv
+[31.344s] -- Symlinking: /workspace/hsl-player/install/brain/share/brain/package.dsv
+[31.351s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/ament_index/resource_index/packages/brain
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_dependencies-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_include_directories-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_libraries-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/ament_cmake_export_targets-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[31.352s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[31.353s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/brainConfig.cmake
+[31.353s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/cmake/brainConfig-version.cmake
+[31.353s] -- Up-to-date symlink: /workspace/hsl-player/install/brain/share/brain/package.xml
+[31.353s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_generator_c.so
+[31.353s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_fastrtps_c.so
+[31.354s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_fastrtps_cpp.so
+[31.354s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_introspection_c.so
+[31.354s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_c.so
+[31.354s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_introspection_cpp.so
+[31.354s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_typesupport_cpp.so
+[31.378s] Listing '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain'...
+[31.379s] Compiling '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/__init__.py'...
+[31.379s] Listing '/workspace/hsl-player/install/brain/local/lib/python3.10/dist-packages/brain/msg'...
+[31.381s] -- Up-to-date: /workspace/hsl-player/install/brain/lib/libbrain__rosidl_generator_py.so
+[31.382s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cExport.cmake
+[31.382s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cExport-release.cmake
+[31.382s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cExport.cmake
+[31.382s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cExport-release.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_cppExport.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cppExport.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cExport.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cExport-release.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cExport.cmake
+[31.383s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cExport-release.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cppExport.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_introspection_cppExport-release.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cppExport.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/brain__rosidl_typesupport_cppExport-release.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_pyExport.cmake
+[31.384s] -- Up-to-date: /workspace/hsl-player/install/brain/share/brain/cmake/export_brain__rosidl_generator_pyExport-release.cmake
+[31.386s] Invoked command in '/workspace/hsl-player/build/brain' returned '0': CMAKE_PREFIX_PATH=/workspace/hsl-player/install/vision_interface:/workspace/hsl-player/install/game_controller_interface:/workspace/hsl-player/install/booster_msgs:/workspace/hsl-player/install/booster_interface:/workspace/hsl-player/install/brain:/workspace/hsl-player/install/game_controller:/workspace/hsl-player/install/sound_play:/opt/ros/humble LD_LIBRARY_PATH=/workspace/hsl-player/install/vision_interface/lib:/workspace/hsl-player/install/game_controller_interface/lib:/workspace/hsl-player/install/booster_msgs/lib:/workspace/hsl-player/install/booster_interface/lib:/workspace/hsl-player/install/brain/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PS1=\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake --install /workspace/hsl-player/build/brain

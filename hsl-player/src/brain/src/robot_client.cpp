@@ -3,6 +3,7 @@
 #include "brain.h"
 #include "robot_client.h"
 #include "booster_interface/message_utils.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 #include "utils/math.h"
 #include "utils/print.h"
 #include "utils/misc.h"
@@ -10,6 +11,7 @@
 void RobotClient::init()
 {
     publisher = brain->create_publisher<booster_msgs::msg::RpcReqMsg>("LocoApiTopicReq", 10);
+    rl_move_publisher = brain->create_publisher<geometry_msgs::msg::Twist>("/rl_move", 10);
 }
 
 int RobotClient::call(booster_interface::msg::BoosterApiReqMsg msg)
@@ -219,12 +221,17 @@ int RobotClient::setVelocity(double x, double y, double theta, bool applyMinX, b
                 .with_draw_order(40)
         );
     }
-    _vx = x; _vy = y; _vtheta = theta; // remember last command. 可以近似作为当前机器人的速度使用. 
+    _vx = x; _vy = y; _vtheta = theta; // remember last command. 可以近似作为当前机器人的速度使用.
     _lastCmdTime = brain->get_clock()->now();
     if (fabs(_vx) > 1e-3 || fabs(_vy) > 1e-3 || fabs(_vtheta) > 1e-3) _lastNonZeroCmdTime = brain->get_clock()->now();
     brain->log->log("RobotClient/setVelocity_out",
         rerun::TextLog(format("vx: %.2f  vy: %.2f  vtheta: %.2f", x, y, theta)));
-    return call(booster_interface::CreateMoveMsg(x, y, theta));
+    auto twist = geometry_msgs::msg::Twist();
+    twist.linear.x = x;
+    twist.linear.y = y;
+    twist.angular.z = theta;
+    rl_move_publisher->publish(twist);
+    return 0;
 }
 
 int RobotClient::crabWalk(double angle, double speed) {     

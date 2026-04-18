@@ -121,15 +121,48 @@ uv run deploy --list
 
 ---
 
-## 3. Rodar a simulação (MuJoCo)
+## 3. Rodar a simulação (MuJoCo via Docker)
 
-Testa a política RL localmente sem o robô físico.
+A simulação completa integra três camadas:
 
-```bash
-uv run deploy --task t1_walk --mujoco
+```
+brain_node  →  /rl_move (Twist)  →  deploy (t1_walk.pt)  →  /joint_ctrl (LowCmd)  →  hl_sim  →  MuJoCo
 ```
 
-O viewer do MuJoCo abrirá com o T1. Use os mesmos controles de teclado da seção anterior.
+- **Container `brain`**: `brain_node` (behaviour trees) + `deploy` com flag `--sim` (rede neural, sem hardware)
+- **Container `sim`**: `hl_sim` — recebe `/joint_ctrl`, aplica nas juntas MuJoCo, publica `/low_state` e detecções
+
+### Pré-requisito: `hl_sim` ao lado deste repositório
+
+```
+~/Documents/
+├── hl_unification/   ← este repo
+└── hl_sim/           ← simulador MuJoCo (deve estar neste caminho)
+```
+
+### Iniciar a simulação
+
+```bash
+# Permitir X11 (necessário para o viewer MuJoCo)
+xhost +local:docker
+
+cd ~/Documents/hl_unification
+docker compose -f docker/docker-compose.yml up sim brain
+```
+
+O viewer MuJoCo abrirá com o robô T1. O brain controlará os movimentos em tempo real.
+
+### Recompilar o brain (após mudanças no código C++)
+
+```bash
+docker compose -f docker/docker-compose.yml run --rm dev bash -c "
+  cd /workspace/hsl-player &&
+  colcon build --symlink-install --packages-select brain \
+    --cmake-args -DCMAKE_BUILD_TYPE=Release
+"
+```
+
+> Para documentação completa da simulação via Docker, veja [docs/docker_guide.md](docs/docker_guide.md).
 
 ### Limites conhecidos do `t1_walk.pt`
 
@@ -140,14 +173,6 @@ O viewer do MuJoCo abrirá com o T1. Use os mesmos controles de teclado da seç�
 | vyaw | 0.25 rad/s  | ~2.0 rad/s    | > 2.0 instável |
 
 > Convenção: vx+ = frente, vy+ = esquerda, vyaw+ = anti-horário.
-
-### Teste de limites automático
-
-```bash
-uv run python3 booster_deploy/inject_values.py
-```
-
-Incrementa automaticamente `vx`, `vy` ou `vyaw` a cada 10s para mapear os limites do modelo.
 
 ---
 
@@ -180,20 +205,26 @@ python3 -c "import booster_robotics_sdk_python; print('SDK OK')"
 ```
 hl_unification/
 ├── booster_assets/            # Modelos do robô (URDF/MJCF) e motion data
-├── booster_deploy/            # Políticas RL + controllers (MuJoCo e robô real)
+├── booster_deploy/            # Políticas RL + controllers (deploy real e --sim)
 ├── booster_robotics_sdk/      # SDK C++ + bindings Python (interface hardware)
 ├── hsl-player/                # ROS2 — behaviour trees, visão, game controller
+├── docker/
+│   ├── Dockerfile             # Imagem Ubuntu 22.04 + ROS2 Humble
+│   └── docker-compose.yml     # Serviços: brain (brain+deploy), sim, dev
 ├── docs/                      # Documentação detalhada de cada módulo
+│   ├── docker_guide.md        # Guia Docker + simulação via Docker
 │   ├── booster_deploy.md
 │   ├── booster_assets.md
 │   ├── booster_robotics_sdk.md
 │   ├── hsl_player.md
 │   └── dev_guide.md
-├── install_remote.sh          # Instalação para PC (simulação)
+├── install_remote.sh          # Instalação para PC (simulação nativa)
 ├── install_robot.sh           # Instalação para o robô
 ├── pyproject.toml             # UV workspace Python
 └── .python-version            # Python 3.10
 ```
+
+> O simulador MuJoCo (`hl_sim`) fica em `../hl_sim` — repositório separado, montado pelo docker-compose.
 
 ---
 

@@ -1370,6 +1370,11 @@ CMakeFiles/brain_node.dir/src/brain_log.cpp.o: \
  /usr/local/include/booster_internal/robot/b1/b1_loco_internal_api.hpp \
  /usr/local/include/booster/third_party/nlohmann_json/json.hpp \
  /usr/local/include/booster_internal/robot/b1/b1_internal_api_const.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/twist.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
  /workspace/hsl-player/src/brain/include/utils/misc.h \
  /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \

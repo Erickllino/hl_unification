@@ -8,6 +8,7 @@
 #include "booster_interface/msg/booster_api_req_msg.hpp"
 #include "booster_msgs/msg/rpc_req_msg.hpp"
 #include "booster_internal/robot/b1/b1_loco_internal_api.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 
 using namespace std;
 
@@ -139,6 +140,7 @@ public:
 private:
     int call(booster_interface::msg::BoosterApiReqMsg msg);
     rclcpp::Publisher<booster_msgs::msg::RpcReqMsg>::SharedPtr publisher;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr rl_move_publisher;
     Brain *brain;
     double _vx, _vy, _vtheta;
     rclcpp::Time _lastCmdTime;

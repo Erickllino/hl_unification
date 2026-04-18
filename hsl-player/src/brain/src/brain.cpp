@@ -2350,7 +2350,7 @@ void Brain::detectProcessRobots(const vector<GameObject> &robotObjs) {
 }
 
 
-void Brain::detectProcessVisionBox(const vision_interface::msg::Detections &msg) {    
+void Brain::detectProcessVisionBox(const vision_interface::msg::Detections &msg) {
     // auto detection_time_stamp = msg.header.stamp;
     // rclcpp::Time timePoint(detection_time_stamp.sec, detection_time_stamp.nanosec);
     auto timePoint = timePointFromHeader(msg.header);

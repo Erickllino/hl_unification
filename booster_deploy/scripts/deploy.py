@@ -17,8 +17,12 @@ def main():
                         help="deploy in mujoco simulation")
     parser.add_argument("--webots", action="store_true", default=False,
                         help="deploy in webots simulation")
+    parser.add_argument("--sim", action="store_true", default=False,
+                        help="sim mode: skip B1LocoClient, publish /joint_ctrl for hl_sim")
     parser.add_argument("--device", type=str, default="cpu",
                         help="Device to run the evaluation on (e.g., 'cpu', 'cuda')")
+    parser.add_argument("--auto-start", action="store_true", default=False,
+                        help="Inicia custom mode e RL gait automaticamente sem precisar de joystick/teclado")
     args = parser.parse_args()
 
     # auto-import all submodules under tasks so they can register themselves
@@ -50,6 +54,10 @@ def main():
     if args.mujoco:
         from booster_deploy.controllers.mujoco_controller import MujocoController
         MujocoController(task_cfg).run()
+    elif args.sim:
+        from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
+        with BoosterRobotPortal(task_cfg, use_sim_time=False, auto_start=args.auto_start, use_sim=True) as portal:
+            portal.run()
     else:
         try:
             from booster_robotics_sdk_python import ChannelFactory  # type: ignore
@@ -68,7 +76,7 @@ def main():
                 task_cfg.robot.joint_damping[i] = 0.5
 
         from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
-        with BoosterRobotPortal(task_cfg, use_sim_time=args.webots) as portal:
+        with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
             portal.run()
 
 

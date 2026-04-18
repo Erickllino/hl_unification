@@ -18,7 +18,8 @@ bash install_docker.sh
 # Após instalar, aplicar grupo docker sem reiniciar
 newgrp docker
 
-# Permitir X11 do container (para visualizadores)
+# Permitir X11 do container (para visualizadores — MuJoCo viewer, RViz2, etc.)
+# IMPORTANTE: rodar isso toda vez que abrir uma nova sessão
 xhost +local:docker
 ```
 

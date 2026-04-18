@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y \
     # Python 3.10
     python3.10 python3.10-venv python3.10-dev python3-pip \
     # ROS2 extras
+    ros-humble-rmw-cyclonedds-cpp \
     ros-humble-behaviortree-cpp \
     ros-humble-backward-ros \
     ros-humble-tf2 \
@@ -79,6 +80,9 @@ RUN apt-get update && \
 RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 ENV PATH="/root/.local/bin:/root/.cargo/bin:${PATH}"
 
+# ── 4b. MuJoCo (simulador) ───────────────────────────────
+RUN pip install mujoco
+
 # ── 5. Workspace Python (booster_deploy + booster_assets) ─
 WORKDIR /workspace
 
@@ -110,7 +114,13 @@ RUN source /opt/ros/humble/setup.bash && \
         --parallel-workers "$(nproc)" \
     || echo "[AVISO] Alguns pacotes falharam ao compilar (ex: brain sem booster_internal)"
 
-# ── 7. Entrypoint ─────────────────────────────────────────
+# ── 7. Bashrc — auto-source ROS2 em todo shell interativo ─
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc && \
+    echo "[ -f /workspace/hsl-player/install/setup.bash ] && source /workspace/hsl-player/install/setup.bash" >> /root/.bashrc && \
+    echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> /root/.bashrc && \
+    echo "export ROS_DOMAIN_ID=0" >> /root/.bashrc
+
+# ── 8. Entrypoint ─────────────────────────────────────────
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 

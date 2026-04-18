@@ -3,7 +3,7 @@
 import launch
 import os
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, OpaqueFunction
+from launch.actions import DeclareLaunchArgument, OpaqueFunction, ExecuteProcess
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 
@@ -57,9 +57,9 @@ def handle_configuration(context, *args, **kwargs):
     if disableCom in ['true', 'True', '1']:
         config['enable_com'] = False
 
-    return [
+    actions = [
         Node(
-            package ='brain',
+            package='brain',
             executable='brain_node',
             output='screen',
             parameters=[
@@ -69,6 +69,19 @@ def handle_configuration(context, *args, **kwargs):
             ]
         )
     ]
+
+    deploy = context.perform_substitution(LaunchConfiguration('deploy'))
+    if deploy in ['true', 'True', '1']:
+        deploy_script = os.path.abspath(
+            os.path.join(os.path.dirname(__file__), '../../../../booster_deploy/scripts/deploy.py')
+        )
+        actions.append(ExecuteProcess(
+            cmd=['python3', deploy_script, '--task', 't1_walk', '--auto-start'],
+            output='screen',
+            name='booster_deploy',
+        ))
+
+    return actions
 
 
 def generate_launch_description():
@@ -108,6 +121,11 @@ def generate_launch_description():
             'player_id',
             default_value='',
             description='Sobrescreve game.player_id do config.yaml (ex: player_id:=1)'
+        ),
+        DeclareLaunchArgument(
+            'deploy',
+            default_value='true',
+            description='Inicia o booster_deploy (t1_walk) automaticamente. Use deploy:=false para desativar (ex: simulação sem deploy)'
         ),
         OpaqueFunction(function=handle_configuration) # 转到 handle_configuration 中继续处理
             #chama a funcao handle_configuration para continuar o processamento
