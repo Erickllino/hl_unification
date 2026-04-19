@@ -212,12 +212,14 @@ hl_unification/
 │   ├── Dockerfile             # Imagem Ubuntu 22.04 + ROS2 Humble
 │   └── docker-compose.yml     # Serviços: brain (brain+deploy), sim, dev
 ├── docs/                      # Documentação detalhada de cada módulo
-│   ├── docker_guide.md        # Guia Docker + simulação via Docker
-│   ├── booster_deploy.md
-│   ├── booster_assets.md
-│   ├── booster_robotics_sdk.md
-│   ├── hsl_player.md
-│   └── dev_guide.md
+│   ├── docker_guide.md        # Docker + simulação via Docker
+│   ├── ros2_topics.md         # Referência completa de tópicos ROS2
+│   ├── dev_guide.md           # Guia de desenvolvimento do t1_walk
+│   ├── hsl_player.md          # hsl-player: build, launch, behaviour trees
+│   ├── booster_deploy.md      # Framework booster_deploy: tasks, estrutura
+│   ├── booster_assets.md      # Modelos URDF/MJCF e motion data
+│   ├── booster_robotics_sdk.md # SDK C++/Python — instalação e uso
+│   └── limites_t1_walk.md     # Limites e instabilidades do t1_walk.pt
 ├── install_remote.sh          # Instalação para PC (simulação nativa)
 ├── install_robot.sh           # Instalação para o robô
 ├── pyproject.toml             # UV workspace Python
@@ -233,4 +235,5 @@ hl_unification/
 - **booster_robotics_sdk** está excluído do UV workspace porque requer compilação C++. No robô, use `install_robot.sh`.
 - **hsl-player** é compilado com colcon (ROS2) e não faz parte do `.venv` Python.
 - **CUDA**: se o driver NVIDIA for antigo, o torch roda em CPU. Para GPU, instale uma versão de torch compatível com o driver.
-- Para integração `hsl-player` ↔ `booster_deploy` via ROS2 (`/booster/cmd_vel`), consulte [BACKLOG.md](BACKLOG.md).
+- **`--sim` no deploy**: a flag `--sim` faz o `booster_deploy` rodar sem o SDK de hardware — apenas inferência da rede neural e publicação de `/joint_ctrl`. Necessário quando não há robô físico.
+- **Simulação Docker**: o brain e o deploy rodam no container `brain`; o MuJoCo roda no container `sim`. Ver [docs/docker_guide.md](docs/docker_guide.md).

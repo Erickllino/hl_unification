@@ -1,114 +1,130 @@
-# Booster Deploy
+# Booster Deploy — Referência do Framework
 
-Booster Deploy is a lightweight deployment framework that supports running control policies on Booster robots (sim2real), MuJoCo (sim2sim), and Webots (internal sim2sim). The system adopts many well-established designs from IsaacLab to provide modular abstractions, allowing unified policy execution across both simulated and real robotic platforms.
+O `booster_deploy` é um framework leve para executar políticas de controle em robôs Booster (sim2real), MuJoCo (sim2sim) e Webots (sim2sim interno). O sistema adota abstrações modulares baseadas no IsaacLab, permitindo execução unificada de políticas em plataformas simuladas e reais.
 
+---
 
-## Prerequisites
+## Pré-requisitos
 
-| Environment | Notes |
-|-------------|-------|
-| Booster firmware >= v1.4 | Required for real robot deployments. |
-| Python 3.10+ | Already installed on the robot |
-| ROS 2 Humble | Required for `/low_state` + `/joint_ctrl` topics. Already installed on the robot. |
-| MuJoCo / Webots | Optional; install if you plan to run the respective simulators. |
+| Ambiente | Observação |
+|----------|------------|
+| Booster Firmware >= v1.4 | Obrigatório para deploy no robô real |
+| Python 3.10+ | Já instalado no robô |
+| ROS 2 Humble | Necessário para os tópicos `/low_state` e `/joint_ctrl`. Já instalado no robô. |
+| MuJoCo / Webots | Opcional — instale se for usar os respectivos simuladores |
 
+---
 
-## Running Deployments
+## Executando Deployments
 
-### Add and list tasks:
-   1. Create a subfolder under `tasks/` for your task.
-   2. Implement a `Policy`/`PolicyCfg` and provide a `ControllerCfg` referencing the policy.
-   3. Place policy checkpoints under `models/` and reference the path in the config.
-   4. Register your `ControllerCfg` config in the task registry (see existing tasks for the registration pattern).
-   5. Check all available tasks:
-      ```bash
-      python3 scripts/deploy.py --list
-      ```
+### Adicionar e listar tasks
 
-### Run Sim2Sim (MuJoCo)
+1. Crie uma subpasta em `tasks/` para a sua task.
+2. Implemente uma classe `Policy`/`PolicyCfg` e forneça um `ControllerCfg` referenciando a policy.
+3. Coloque os checkpoints da policy em `models/` e referencie o caminho no config.
+4. Registre o `ControllerCfg` no registry de tasks (veja as tasks existentes para o padrão de registro).
+5. Verifique as tasks disponíveis:
 
-- Download and install BoosterAssets:
-   - Clone the [booster_assets](https://github.com/BoosterRobotics/booster_assets) which contains Booster robot models and resources.
-   - Install booster_assets python helper following the instructions in the repository.
+```bash
+python3 scripts/deploy.py --list
+```
 
-- Install Python dependencies on local machine:
-   ```
-   pip install -r requirements.txt
-   ```
+### Sim2Sim (MuJoCo)
 
-- Launch the task in mujoco:
-   ```bash
-   python scripts/deploy.py --task <TASK_NAME> --mujoco
-   ```
+- Clone o `booster_assets` (modelos do robô) e instale o helper Python:
 
-### Run Sim2Real (Real Robots)
+```bash
+git clone https://github.com/BoosterRobotics/booster_assets
+pip install -e booster_assets
+```
 
-**IMPORTANT**: Make sure to install [Booster Firmware](https://booster.feishu.cn/wiki/E3q5wF5SnitXZgkY18Uc8odBnXb) >= v1.4 on the robot before proceeding.
+- Instale as dependências Python no PC:
 
-**NOTE**: If you plan to deploy on the T1 Standard Edition robot, you need to choose to deploy on the **motion board** rather than the perception board.
+```bash
+pip install -r requirements.txt
+```
 
-- After you finish testing your task with Sim2Sim locally, copy the project to the robot.
+- Inicie a task no MuJoCo:
 
-- Install Booster Robotic SDK on robot:
-   - Clone the latest [Booster Robotics SDK](https://github.com/BoosterRobotics/booster_robotics_sdk) repository into the robot.
-   - Follow the build instructions in the SDK repository.
-   - **Important**: Make sure to build and install the Python bindings:
-     ```bash
-     cd booster_robotics_sdk
-     mkdir build && cd build
-     cmake .. -DBUILD_PYTHON_BINDING=ON
-     make -j$(nproc)
-     sudo make install
-     ```
+```bash
+python scripts/deploy.py --task <NOME_DA_TASK> --mujoco
+```
 
-- Install Python dependencies on the robot:
-   ```
-   pip install -r requirements.txt
-   ```
+### Sim2Real (Robô real)
 
-- SSH into the robot and start the ROS 2 environment by sourcing the provided setup script:
-   ```bash
-   source /opt/booster/BoosterRos2Interface/install/setup.bash
-   ```
+> **IMPORTANTE:** Certifique-se de instalar o [Booster Firmware](https://booster.feishu.cn/wiki/E3q5wF5SnitXZgkY18Uc8odBnXb) >= v1.4 no robô antes de continuar.
+>
+> No T1 Standard Edition, instale na **motion board** (não na perception board).
 
-- Launch the task on the robot and follow the prompts shown in the command line..
-   ```bash
-   python3 scripts/deploy.py --task <TASK_NAME>
-   ```
+1. Após testar com Sim2Sim, copie o projeto para o robô.
 
+2. Instale o Booster Robotics SDK no robô:
 
-## Repository Layout
+```bash
+git clone https://github.com/BoosterRobotics/booster_robotics_sdk
+cd booster_robotics_sdk
+mkdir build && cd build
+cmake .. -DBUILD_PYTHON_BINDING=ON
+make -j$(nproc)
+sudo make install
+```
+
+3. Instale as dependências Python no robô:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Inicie o ambiente ROS 2:
+
+```bash
+source /opt/booster/BoosterRos2Interface/install/setup.bash
+```
+
+5. Execute a task no robô:
+
+```bash
+python3 scripts/deploy.py --task <NOME_DA_TASK>
+```
+
+---
+
+## Estrutura do Repositório
 
 ```
 booster_deploy/
-├─ booster_deploy/           # Controllers, policies, utilities
-├─ scripts/                  # Entry-point scripts (deploy.py)
-├─ tasks/                    # Task registry and configs
-├─ requirements.txt          # Python dependencies
-└─ fastdds_profile.xml       # Default FastDDS settings for ROS 2
+├─ booster_deploy/           # Controllers, policies, utilitários
+├─ scripts/                  # Entry-points (deploy.py)
+├─ tasks/                    # Registry e configs de tasks
+├─ requirements.txt          # Dependências Python
+└─ fastdds_profile.xml       # Configuração padrão FastDDS para ROS 2
 ```
 
-Key modules:
-- `booster_deploy/`: Core module providing a unified abstraction for both simulators and physical robots, and handling communication via ROS 2 (implements a /low_state subscriber and a /low_cmd publisher to bridge policies to hardware).
-- `booster_deploy/robots/`: Robot configuration modules. This folder contains booster robot configs by defining a `RobotCfg` describing:
-    - joint names and body names
-    - default joint positions
-    - default joint stiffness (`joint_stiffness`) and damping (`joint_damping`)
-    - effort limits
-    - `mjcf_path` for MuJoCo model loading
-    - `prepare_state` (prepare pose, stiffness and damping used when entering custom mode)
+**Módulos principais:**
 
- - `tasks/`: User task definitions and implementations. Each task module contains:
-    - `Policy`/`PolicyCfg` class implementing the inference logic;
-    - a `ControllerCfg` class describing the task configuration including the policy;
-    - registering a task with a `ControllerCfg` instance.
+- `booster_deploy/`: Módulo central com abstração unificada para simuladores e robô físico. Gerencia comunicação via ROS 2 (subscreve `/low_state`, publica `/joint_ctrl`).
 
-   Typical task layout (example):
+- `booster_deploy/robots/`: Configurações de robô. Cada arquivo define um `RobotCfg` com:
+  - nomes de joints e bodies
+  - posições padrão de joint
+  - stiffness (`joint_stiffness`) e damping (`joint_damping`) padrão
+  - limites de esforço
+  - `mjcf_path` para carregamento do modelo MuJoCo
+  - `prepare_state` (pose de preparo e ganhos ao entrar no modo custom)
 
-   ```text
-   tasks/my_task/
-   ├─ __init__.py        # registers the task via utils.register.register_task
-   ├─ task.py            # Policy and ControllerCfg implementation
-   ├─ models/            # optional policy checkpoints
-   └─ motions/           # optional motion primitives or recordings
-   ```
+- `tasks/`: Definições de tasks. Cada módulo contém:
+  - Classe `Policy`/`PolicyCfg` com a lógica de inferência
+  - Classe `ControllerCfg` com a configuração da task
+  - Registro da task com uma instância de `ControllerCfg`
+
+```
+tasks/minha_task/
+├─ __init__.py        # registra a task via utils.register.register_task
+├─ task.py            # implementação de Policy e ControllerCfg
+├─ models/            # checkpoints da policy (opcional)
+└─ motions/           # primitivas de movimento (opcional)
+```
+
+---
+
+> Para o guia prático de desenvolvimento do `t1_walk.pt` (setup local, testes de limite, integração RoboCup), veja [dev_guide.md](dev_guide.md).

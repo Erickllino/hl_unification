@@ -24,7 +24,6 @@ services:
       - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
     command: >
       bash -c "
-        python3 /workspace/booster_deploy/scripts/deploy.py --task t1_walk --sim --auto-start &
         source /workspace/hsl-player/install/setup.bash &&
         ros2 launch brain launch.py tree:=game.xml sim:=true disable_log:=true role:=striker
       "
@@ -51,6 +50,27 @@ services:
       - LIBGL_ALWAYS_SOFTWARE=1 # software rendering — sem GPU no container
       - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
     command: bash -c "cd /workspace/hl_sim && uv run python scripts/run_ros2.py --duration 0 --viewer"
+
+  # ── GameController (RoboCup HL) ──────────────────────────
+  # Recebe pacotes UDP do GameController oficial (porta 3838)
+  # e publica em /robocup/game_controller para o brain.
+  # network_mode: host é obrigatório para receber UDP broadcast.
+  game_controller:
+    image: hl-uni
+    container_name: hl_game_controller
+    network_mode: host
+    stdin_open: true
+    tty: true
+    volumes:
+      - ../hsl-player:/workspace/hsl-player
+    environment:
+      - ROS_DOMAIN_ID=0
+      - RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+    command: >
+      bash -c "
+        source /workspace/hsl-player/install/setup.bash &&
+        ros2 launch game_controller launch.py
+      "
 
   # ── Shell de desenvolvimento ──────────────────────────────
   # Container interativo para debugar, rodar comandos ROS2, etc.

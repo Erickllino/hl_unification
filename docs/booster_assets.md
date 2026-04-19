@@ -1,105 +1,73 @@
 # Booster Assets
 
-This repository contains Booster robot models, motion data, and a simple helper package `booster_assets` for local development and tooling.
+Contém os modelos do robô Booster (URDF/MJCF), motion data e o pacote Python auxiliar `booster_assets` para desenvolvimento local.
 
-Robot Configurations
---------------------
+---
 
-### K1 Robot Models
+## Configurações de Robô
 
-| Configuration                 | Description                                         | Available Formats    |
-|------------------------------|-----------------------------------------------------|----------------------|
-| K1 (22 DoF)                  | 22-DoF layout: head 2 joints, arms 4 joints ×2, legs 6 joints ×2 | URDF (`robots/K1/K1_22dof.urdf`), XML (`robots/K1/K1_22dof.xml`) |
-| K1 Locomotion                | Locomotion variant (fixed heads and arms)          | URDF (`robots/K1/K1_locomotion.urdf`) |
-| K1 with ZED (22 DoF)         | 22-DoF variant integrated with ZED camera mounts   | URDF (`robots/K1/K1_22dof-ZED.urdf`) |
+### Modelos K1
 
-### T1 Robot Models
+| Configuração | Descrição | Formatos |
+|---|---|---|
+| K1 (22 DoF) | 22 DoF: cabeça 2 joints, braços 4 joints ×2, pernas 6 joints ×2 | URDF (`robots/K1/K1_22dof.urdf`), XML (`robots/K1/K1_22dof.xml`) |
+| K1 Locomotion | Variante de locomoção (cabeça e braços fixos) | URDF (`robots/K1/K1_locomotion.urdf`) |
+| K1 com ZED (22 DoF) | Variante 22 DoF integrada com suportes de câmera ZED | URDF (`robots/K1/K1_22dof-ZED.urdf`) |
 
-| Configuration                 | Description                                         | Available Formats    |
-|------------------------------|-----------------------------------------------------|----------------------|
-| T1 (23 DoF)           | 23-DoF layout: head 2 joints, arms 4 joints ×2, waist 1 joint, legs 6 joints ×2 | URDF (`robots/T1/T1_23dof.urdf`), XML (`robots/T1/T1_23dof.xml`) |
-| T1 Locomotion (23 DoF)       | 23-DoF locomotion variant (fixed head, arms, waist where applicable)    | URDF (`robots/T1/T1_locomotion.urdf`), XML (`robots/T1/T1_locomotion.xml`) |
-| T1 with 7-DoF Arms (29 DoF)       | 29-DoF layout: arm joints become 7 per arm (head 2, arms 7×2, waist 1, legs 6×2) | URDF (`robots/T1/T1_29dof.urdf`) |
+### Modelos T1
 
-Motion and Data Files
----------------------
+| Configuração | Descrição | Formatos |
+|---|---|---|
+| T1 (23 DoF) | 23 DoF: cabeça 2, braços 4×2, cintura 1, pernas 6×2 | URDF (`robots/T1/T1_23dof.urdf`), XML (`robots/T1/T1_23dof.xml`) |
+| T1 Locomotion (23 DoF) | Variante de locomoção 23 DoF | URDF (`robots/T1/T1_locomotion.urdf`), XML (`robots/T1/T1_locomotion.xml`) |
+| T1 com braços 7 DoF (29 DoF) | 29 DoF: braços 7×2, cabeça 2, cintura 1, pernas 6×2 | URDF (`robots/T1/T1_29dof.urdf`) |
 
-- `motions/` contains retargeted motion data for booster robots. Currently only a few K1 example motions are provided.
+---
 
-### Motion CSV Format
+## Motion Data
 
-- Each row represents one frame of a trajectory.
-- The first 7 columns are the generalized base pose: base position `x, y, z` and base orientation quaternion `x, y, z, w`.
-- The remaining columns are joint positions (radians).
+A pasta `motions/` contém dados de movimento retargetados para robôs Booster. Atualmente disponíveis apenas alguns movimentos de exemplo do K1.
 
-- K1 joint order (`booster_assets.motions.K1_JOINT_NAMES`):
+### Formato CSV
 
-```text
-AAHead_yaw,
-Head_pitch,
-ALeft_Shoulder_Pitch,
-Left_Shoulder_Roll,
-Left_Elbow_Pitch,
-Left_Elbow_Yaw,
-ARight_Shoulder_Pitch,
-Right_Shoulder_Roll,
-Right_Elbow_Pitch,
-Right_Elbow_Yaw,
-Left_Hip_Pitch,
-Left_Hip_Roll,
-Left_Hip_Yaw,
-Left_Knee_Pitch,
-Left_Ankle_Pitch,
-Left_Ankle_Roll,
-Right_Hip_Pitch,
-Right_Hip_Roll,
-Right_Hip_Yaw,
-Right_Knee_Pitch,
-Right_Ankle_Pitch,
-Right_Ankle_Roll
+- Cada linha representa um frame da trajetória.
+- As primeiras 7 colunas são a pose da base: posição `x, y, z` + quaternion de orientação `x, y, z, w`.
+- As colunas restantes são posições de joint (radianos).
+
+### Ordem dos Joints — K1 (`booster_assets.motions.K1_JOINT_NAMES`)
+
+```
+AAHead_yaw, Head_pitch,
+ALeft_Shoulder_Pitch, Left_Shoulder_Roll, Left_Elbow_Pitch, Left_Elbow_Yaw,
+ARight_Shoulder_Pitch, Right_Shoulder_Roll, Right_Elbow_Pitch, Right_Elbow_Yaw,
+Left_Hip_Pitch, Left_Hip_Roll, Left_Hip_Yaw, Left_Knee_Pitch, Left_Ankle_Pitch, Left_Ankle_Roll,
+Right_Hip_Pitch, Right_Hip_Roll, Right_Hip_Yaw, Right_Knee_Pitch, Right_Ankle_Pitch, Right_Ankle_Roll
 ```
 
-- T1 joint order (`booster_assets.motions.T1_JOINT_NAMES`):
+### Ordem dos Joints — T1 (`booster_assets.motions.T1_JOINT_NAMES`)
 
-```text
-AAHead_yaw,
-Head_pitch,
-Left_Shoulder_Pitch,
-Left_Shoulder_Roll,
-Left_Elbow_Pitch,
-Left_Elbow_Yaw,
-Right_Shoulder_Pitch,
-Right_Shoulder_Roll,
-Right_Elbow_Pitch,
-Right_Elbow_Yaw,
+```
+AAHead_yaw, Head_pitch,
+Left_Shoulder_Pitch, Left_Shoulder_Roll, Left_Elbow_Pitch, Left_Elbow_Yaw,
+Right_Shoulder_Pitch, Right_Shoulder_Roll, Right_Elbow_Pitch, Right_Elbow_Yaw,
 Waist,
-Left_Hip_Pitch,
-Left_Hip_Roll,
-Left_Hip_Yaw,
-Left_Knee_Pitch,
-Left_Ankle_Pitch,
-Left_Ankle_Roll,
-Right_Hip_Pitch,
-Right_Hip_Roll,
-Right_Hip_Yaw,
-Right_Knee_Pitch,
-Right_Ankle_Pitch,
-Right_Ankle_Roll
+Left_Hip_Pitch, Left_Hip_Roll, Left_Hip_Yaw, Left_Knee_Pitch, Left_Ankle_Pitch, Left_Ankle_Roll,
+Right_Hip_Pitch, Right_Hip_Roll, Right_Hip_Yaw, Right_Knee_Pitch, Right_Ankle_Pitch, Right_Ankle_Roll
 ```
 
-### Motion List
+### Movimentos Disponíveis
 
-| File Name                  | Fps | Description                                        |
-|----------------------------|-----|----------------------------------------------------|
-| k1_fight_001_30fps.csv           | 30  | Fighting motion sequence                           |
-| k1_mj2_seg1_50fps.csv            | 50  | MJ dance segment                                   |
+| Arquivo | FPS | Descrição |
+|---------|-----|-----------|
+| `k1_fight_001_30fps.csv` | 30 | Sequência de luta |
+| `k1_mj2_seg1_50fps.csv` | 50 | Segmento de dança MJ |
 
+---
 
-Python installation and usage
------------------------------
-
-Install the package in editable (development) mode:
+## Instalação do Pacote Python
 
 ```bash
 python3 -m pip install -e .
 ```
+
+Permite usar `booster_assets.motions.K1_JOINT_NAMES`, `T1_JOINT_NAMES` e utilitários de carregamento de motion data no código Python.

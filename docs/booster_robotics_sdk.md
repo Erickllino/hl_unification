@@ -1,81 +1,98 @@
 # Booster Robotics SDK
-Booster Robotics SDK aims to provide a simple and easy-to-use interface for developers to control the Booster Robotics products.
-Booster Robotics SDK provides APIs for both C++ and Python.
 
-## Prebuild environment
-* OS  (Ubuntu 22.04 LTS)  
-* CPU  (aarch64 and x86_64)   
-* Compiler  (gcc version 11.4.0) 
+O SDK da Booster Robotics fornece uma interface para controlar os robôs Booster diretamente. Expõe APIs para C++ e Python.
 
-## Installation of deps
+> Necessário **apenas no robô real**. Em simulação, o `booster_deploy` roda com a flag `--sim` e não precisa do SDK.
+
+---
+
+## Ambiente Suportado
+
+| Requisito | Versão |
+|-----------|--------|
+| OS | Ubuntu 22.04 LTS |
+| Arquitetura | aarch64 e x86_64 |
+| Compilador | gcc 11.4.0 |
+
+---
+
+## Instalação
+
+O `install_robot.sh` já compila e instala automaticamente. Para instalação manual:
+
 ```bash
-sudo ./install.sh
+cd booster_robotics_sdk
+sudo ./install.sh   # dependências do sistema
+mkdir build && cd build
+cmake .. -DBUILD_PYTHON_BINDING=ON
+make -j$(nproc)
+sudo make install
 ```
-## C++ SDK Usage
-### Build C++ examples
+
+### Verificar instalação
+
 ```bash
-mkdir build
-cd build
-cmake ..
-make
+python3 -c "import booster_robotics_sdk_python; print('SDK OK')"
 ```
 
-### Run examples
-#### 1. run b1_loco_example_client locally
-```
-cd build
-./b1_loco_example_client 127.0.0.1
-```
-#### 2. run b1_low_level_subscriber locally
-```
-cd build
-./b1_low_level_subscriber
-```
-#### 3. run other example xxx locally
-```
-cd build
-./xxx 127.0.0.1
-```
+---
 
-## Python SDK Usage
-### Option 1: Install via pip (Recommended)
-The easiest way to use the SDK with Python is to install the pre-built package.
+## SDK Python
+
+### Instalação via pip (recomendado)
 
 ```bash
 pip install booster_robotics_sdk_python --user
 ```
 
-### Option 2: Build from Source
-If you need to build the Python binding locally for development or debugging purposes, follow these steps:
-#### Install build dependencies
+### Build a partir do fonte
+
 ```bash
-pip3 install pybind11
-pip3 install pybind11-stubgen
-```
-if pybind11-stubgen cannot be found even after pip install, export PATH
-```bash
-export PATH=/home/[user name]/.local/bin:$PATH
-```
-#### Build and install
-```bash
-mkdir build
-cd build
+pip3 install pybind11 pybind11-stubgen
+# Se pybind11-stubgen não for encontrado após o pip install:
+export PATH=/home/<usuario>/.local/bin:$PATH
+
+mkdir build && cd build
 cmake .. -DBUILD_PYTHON_BINDING=on
 make
 sudo make install
 ```
 
-### Python example
+### Exemplo Python
+
 ```bash
 python3 python_example/sdk_pybind_b1_exmaple.py 127.0.0.1
 ```
-Note: If you installed via pip, you can find the examples at ~/.local/lib/python3.10/site-packages/python_example.
 
-## License
+> Se instalado via pip, os exemplos ficam em `~/.local/lib/python3.10/site-packages/python_example`.
 
-This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.
+---
 
-This project uses the following third-party libraries:
-- fastDDS (Apache License 2.0)
-- pybind11 (BSD 3-Clause License)
-- pybind11-stubgen (MIT License)
+## SDK C++
+
+### Build dos exemplos
+
+```bash
+mkdir build && cd build
+cmake ..
+make
+```
+
+### Executar exemplos
+
+```bash
+# Exemplo de locomotion
+./build/b1_loco_example_client 127.0.0.1
+
+# Subscriber de baixo nível
+./build/b1_low_level_subscriber
+
+# Qualquer outro exemplo
+./build/<nome_do_exemplo> 127.0.0.1
+```
+
+---
+
+## Licença
+
+Apache License 2.0. Dependências de terceiros: fastDDS (Apache 2.0), pybind11 (BSD 3-Clause), pybind11-stubgen (MIT).

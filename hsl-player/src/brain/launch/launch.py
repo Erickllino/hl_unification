@@ -72,13 +72,16 @@ def handle_configuration(context, *args, **kwargs):
 
     deploy = context.perform_substitution(LaunchConfiguration('deploy'))
     if deploy in ['true', 'True', '1']:
-        deploy_script = os.path.abspath(
-            os.path.join(os.path.dirname(__file__), '../../../../booster_deploy/scripts/deploy.py')
-        )
+        deploy_script = '/workspace/booster_deploy/scripts/deploy.py'
+        booster_deploy_dir = '/workspace/booster_deploy'
+        cmd = ['python3', deploy_script, '--task', 't1_walk', '--auto-start']
+        if sim in ['true', 'True', '1']:
+            cmd.append('--sim')
         actions.append(ExecuteProcess(
-            cmd=['python3', deploy_script, '--task', 't1_walk', '--auto-start'],
+            cmd=cmd,
             output='screen',
             name='booster_deploy',
+            additional_env={'PYTHONPATH': booster_deploy_dir + ':' + os.environ.get('PYTHONPATH', '')},
         ))
 
     return actions

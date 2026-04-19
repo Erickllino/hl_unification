@@ -1,31 +1,53 @@
+# Limites de Velocidade — t1_walk.pt
 
-Comando puro;
+Referência dos limites de comando para o modelo `t1_walk.pt` (locomotion RL do Booster T1).
 
-Direçoes dos comandos;
-vx -> positivo frente, negativo trás
-vy -> positivo esquerda, negativo direita
-vyaw -> positivo antihorario, negativo antihorario
+---
 
+## Convenção de Direções
 
+| Variável | Positivo | Negativo |
+|----------|----------|----------|
+| `vx` | Frente | Trás |
+| `vy` | Esquerda | Direita |
+| `vyaw` | Anti-horário | Horário |
 
-Limites dos Comandos puros;
+---
 
-|    Comando    |  vx |  vy  | vyaw |
-|:-------------:|:---:|:----:|:----:|
-|Maximo positivo| 2.8 | 1.15 | 4.60 |
-|Maximo Negativo|-1.6 | -1.8 | -5.2 |
-|Minimo Positivo| 0.4 | 0.40 | 0.25 |
-|Minimo Negativo|-0.5 |-0.45 | -0.3 |
+## Limites dos Comandos
 
+| Comando | Mín. Negativo | Mín. Positivo | Máx. Positivo | Máx. Negativo |
+|---------|:-------------:|:-------------:|:-------------:|:-------------:|
+| `vx` (m/s) | -1.6 | 0.4 | 2.8 | -0.5 |
+| `vy` (m/s) | -1.8 | 0.4 | 1.15 | -0.45 |
+| `vyaw` (rad/s) | -5.2 | 0.25 | 4.60 | -0.3 |
 
-vx positivos a partir de 1.35 o robo começa a "virar" para esquerda
-vx positivos a partir de 2 ficam bem instaveis
-vx negativos a de -0.8 fazem o robo "virar" para a direita
-vx negativos a partir de -1.5 ficam bem instaveis
+> Comandos abaixo do mínimo são ignorados pelo modelo (sem movimento).
 
-vy positivo a partir de 1 fica instavel
-vy negativo a partir de  -1 fica instavel
+---
 
-vyaw positivo a partir de 2 fica instavel
-vayaw negativo a partir de -2.15 fica instavel
+## Faixas de Instabilidade
 
+| Variável | Condição | Comportamento Observado |
+|----------|----------|------------------------|
+| `vx` | ≥ 1.35 m/s | Robô começa a derivar para esquerda |
+| `vx` | ≥ 2.0 m/s | Instável |
+| `vx` | ≤ -0.8 m/s | Robô começa a derivar para direita |
+| `vx` | ≤ -1.5 m/s | Instável |
+| `vy` | ≥ 1.0 m/s | Instável |
+| `vy` | ≤ -1.0 m/s | Instável |
+| `vyaw` | ≥ 2.0 rad/s | Instável |
+| `vyaw` | ≤ -2.15 rad/s | Instável |
+
+---
+
+## Testar Limites (simulação)
+
+O script `inject_values.py` incrementa um dos comandos automaticamente a cada 10s — útil para mapear os limites em simulação MuJoCo:
+
+```bash
+cd booster_deploy
+uv run python inject_values.py
+```
+
+Escolha qual variável (`v1=vx`, `v2=vy`, `v3=vyaw`) e a direção (`+/-`) ao iniciar.
