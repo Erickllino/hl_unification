@@ -101,6 +101,8 @@ else
         echo "[AVISO] Pasta hsl-player não encontrada — pulando."
     else
         cd "$HSL_DIR"
+        echo "      Limpando build anterior (evita conflitos de CMakeCache e install)..."
+        rm -rf build install log
         colcon build --symlink-install --parallel-workers "$(nproc)"
         cd "$SCRIPT_DIR"
         echo "      hsl-player compilado — OK"
