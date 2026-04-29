@@ -56,10 +56,6 @@ def main():
     if args.mujoco:
         from booster_deploy.controllers.mujoco_controller import MujocoController
         MujocoController(task_cfg).run()
-    elif args.sim:
-        from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
-        with BoosterRobotPortal(task_cfg, use_sim_time=False, auto_start=args.auto_start, use_sim=True) as portal:
-            portal.run()
     else:
         try:
             from booster_robotics_sdk_python import ChannelFactory  # type: ignore
@@ -82,9 +78,13 @@ def main():
             from booster_deploy.controllers.rl_game_controller import BoosterRobotPortal
             with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
                 portal.run()
+        elif args.sim:
+            from booster_deploy.controllers.sim_controller import BoosterRobotPortal
+            with BoosterRobotPortal(task_cfg, use_sim_time=False, auto_start=args.auto_start, use_sim=True) as portal:
+                portal.run()
         else:
             from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
-            with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
+            with BoosterRobotPortal(task_cfg, use_sim_time=args.webots) as portal:
                 portal.run()
 
         

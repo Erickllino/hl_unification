@@ -62,10 +62,10 @@ class BoosterRobotPortal:
     synced_action: SyncedArray
     exit_event: synchronize.Event
 
-    def __init__(self, cfg: ControllerCfg, use_sim_time: bool = False, auto_start: bool = False, use_sim: bool = False) -> None:
+    def __init__(self, cfg: ControllerCfg, use_sim_time: bool = False, auto_start: bool = False) -> None:
         self.cfg = cfg
         self.auto_start = auto_start
-        self.use_sim = use_sim
+        
 
         self.robot = BoosterRobot(cfg.robot)
 
@@ -163,12 +163,7 @@ class BoosterRobotPortal:
 
     def _init_communication(self) -> None:
         try:
-            if self.use_sim:
-                self.client = None
-            else:
-                if not _SDK_AVAILABLE:
-                    raise ImportError("booster_robotics_sdk_python is required for real robot mode")
-                self.client = B1LocoClient()
+            self.client = B1LocoClient()
             self.create_low_cmd_publisher("booster_deploy_low_cmd_pub")
             self._start_low_state_subscription()
             self._start_rl_move_subscription()

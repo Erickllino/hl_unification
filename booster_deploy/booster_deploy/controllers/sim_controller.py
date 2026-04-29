@@ -13,11 +13,15 @@ import rclpy
 from rclpy.executors import SingleThreadedExecutor, ExternalShutdownException
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 from booster_interface.msg import LowState, LowCmd, MotorCmd
+from geometry_msgs.msg import Twist
 
-from booster_robotics_sdk_python import (  # type: ignore
-    B1LocoClient,
-    RobotMode,
-)
+try:
+    from booster_robotics_sdk_python import B1LocoClient, RobotMode  # type: ignore
+    _SDK_AVAILABLE = True
+except ImportError:
+    B1LocoClient = None  # type: ignore
+    RobotMode    = None  # type: ignore
+    _SDK_AVAILABLE = False
 
 from .controller_cfg import ControllerCfg
 from .base_controller import BaseController, BoosterRobot
@@ -58,8 +62,10 @@ class BoosterRobotPortal:
     synced_action: SyncedArray
     exit_event: synchronize.Event
 
-    def __init__(self, cfg: ControllerCfg, use_sim_time: bool = False) -> None:
+    def __init__(self, cfg: ControllerCfg, use_sim_time: bool = False, auto_start: bool = False, use_sim: bool = False) -> None:
         self.cfg = cfg
+        self.auto_start = auto_start
+        self.use_sim = use_sim
 
         self.robot = BoosterRobot(cfg.robot)
 
@@ -88,7 +94,9 @@ class BoosterRobotPortal:
         self.inference_process = None  # Inference process reference
         self.low_cmd_publisher: rclpy.publisher.Publisher = None
         self.low_state_thread = None
+        self.rl_move_thread = None
         self.low_cmd_process: mp.Process | None = None
+        self._rl_move_active = False
 
         rclpy.init()
         # Initialize communication. Callbacks may start immediately and
@@ -155,10 +163,17 @@ class BoosterRobotPortal:
 
     def _init_communication(self) -> None:
         try:
-            self.client = B1LocoClient()
+            if self.use_sim:
+                self.client = None
+            else:
+                if not _SDK_AVAILABLE:
+                    raise ImportError("booster_robotics_sdk_python is required for real robot mode")
+                self.client = B1LocoClient()
             self.create_low_cmd_publisher("booster_deploy_low_cmd_pub")
             self._start_low_state_subscription()
-            self.client.Init()
+            self._start_rl_move_subscription()
+            if self.client is not None:
+                self.client.Init()
         except Exception as e:
             self.logger.error(f"Failed to initialize communication: {e}")
             raise
@@ -218,6 +233,56 @@ class BoosterRobotPortal:
         )
         self.low_state_thread.start()
 
+    def _start_rl_move_subscription(self) -> None:
+        """Start ROS 2 subscription for /rl_move (velocity commands from brain)."""
+
+        def rl_move_executor():
+            self.logger.info("RL move subscription started")
+            self.rl_move_node = rclpy.create_node("rl_move_sub")
+            self.rl_move_node.create_subscription(
+                Twist,
+                "/rl_move",
+                self._rl_move_handler,
+                QoSProfile(
+                    depth=1,
+                    reliability=ReliabilityPolicy.BEST_EFFORT,
+                    history=HistoryPolicy.KEEP_LAST,
+                ),
+            )
+
+            executor = SingleThreadedExecutor()
+            executor.add_node(self.rl_move_node)
+
+            try:
+                while rclpy.ok() and not self.exit_event.is_set():
+                    executor.spin_once(timeout_sec=0.1)
+            except ExternalShutdownException:
+                pass
+            except Exception as exc:
+                is_rcl_error = "RCLError" in type(exc).__name__
+                is_shutting_down = self.exit_event.is_set() or not rclpy.ok()
+                if not (is_rcl_error and is_shutting_down):
+                    self.logger.error("RL move executor stopped: %s", exc, exc_info=True)
+            finally:
+                executor.shutdown()
+                self.rl_move_node.destroy_node()
+            self.logger.info("RL move subscription stopped")
+
+        self.rl_move_thread = threading.Thread(
+            target=rl_move_executor,
+            name="rl_move_executor",
+            daemon=True,
+        )
+        self.rl_move_thread.start()
+
+    def _rl_move_handler(self, msg: Twist):
+        self._rl_move_active = True
+        cmd = np.zeros((1,), dtype=self.synced_command.dtype)
+        cmd[0]["vx"]   = msg.linear.x  / self.cfg.vel_command.vx_max
+        cmd[0]["vy"]   = msg.linear.y  / self.cfg.vel_command.vy_max
+        cmd[0]["vyaw"] = msg.angular.z / self.cfg.vel_command.vyaw_max
+        self.synced_command.write(cmd)
+
     def _low_state_handler(self, low_state_msg: LowState):
         self.metrics["low_state_handler"].mark()
         try:
@@ -253,11 +318,13 @@ class BoosterRobotPortal:
             self.synced_state.write(self._state_buf)
 
             # update velocity commands to synced_command
-            cmd = np.zeros((1,), dtype=self.synced_command.dtype)
-            cmd[0]["vx"] = self.remoteControlService.get_vx_cmd()
-            cmd[0]["vy"] = self.remoteControlService.get_vy_cmd()
-            cmd[0]["vyaw"] = self.remoteControlService.get_vyaw_cmd()
-            self.synced_command.write(cmd)
+            # when brain is active via /rl_move, skip joystick to avoid overwriting
+            if not self._rl_move_active:
+                cmd = np.zeros((1,), dtype=self.synced_command.dtype)
+                cmd[0]["vx"] = self.remoteControlService.get_vx_cmd()
+                cmd[0]["vy"] = self.remoteControlService.get_vy_cmd()
+                cmd[0]["vyaw"] = self.remoteControlService.get_vyaw_cmd()
+                self.synced_command.write(cmd)
 
         except Exception as e:
             self.logger.error(f"Error in _low_state_handler: {e}")
@@ -265,6 +332,7 @@ class BoosterRobotPortal:
             self.exit_event.set()
 
     def create_low_cmd_publisher(self, name):
+        # TODO: Find bug-> ros2 topic echo /joint_ctrl The message Type "booster_interface/msg/LowCmd" is invalid
         self.publish_node = rclpy.create_node(name)
         publisher = self.publish_node.create_publisher(
             LowCmd,
@@ -296,11 +364,12 @@ class BoosterRobotPortal:
         return publisher
 
     def start_custom_mode_conditionally(self):
-        print(f"{self.remoteControlService.get_custom_mode_operation_hint()}")
-        while not self.exit_event.is_set():
-            if self.remoteControlService.start_custom_mode():
-                break
-            time.sleep(0.1)
+        if not self.auto_start:
+            print(f"{self.remoteControlService.get_custom_mode_operation_hint()}")
+            while not self.exit_event.is_set():
+                if self.remoteControlService.start_custom_mode():
+                    break
+                time.sleep(0.1)
 
         if self.exit_event.is_set():
             return False
@@ -321,8 +390,9 @@ class BoosterRobotPortal:
         self.low_cmd_publisher.publish(self.low_cmd)
         time.sleep(0.1)
 
-        # change to custom mode
-        self.client.ChangeMode(RobotMode.kCustom)
+        # change to custom mode (skip on sim — MuJoCo has no hardware mode)
+        if self.client is not None:
+            self.client.ChangeMode(RobotMode.kCustom)
         # for i in range(20):  # try multiple times to make sure mode is changed
         #     self.client.ChangeMode(RobotMode.kCustom)
         #     time.sleep(0.5)
@@ -345,11 +415,12 @@ class BoosterRobotPortal:
 
     def start_rl_gait_conditionally(self):
         """Start RL gait and spawn inference process and publisher thread."""
-        print(f"{self.remoteControlService.get_rl_gait_operation_hint()}")
-        while not self.exit_event.is_set():
-            if self.remoteControlService.start_rl_gait():
-                break
-            time.sleep(0.1)
+        if not self.auto_start:
+            print(f"{self.remoteControlService.get_rl_gait_operation_hint()}")
+            while not self.exit_event.is_set():
+                if self.remoteControlService.start_rl_gait():
+                    break
+                time.sleep(0.1)
 
         if self.exit_event.is_set():
             return False
@@ -458,7 +529,8 @@ class BoosterRobotPortal:
 
         # exit and switch to walking mode
         self.logger.info("Exiting controller, switching to walking mode...")
-        self.client.ChangeMode(RobotMode.kWalking)
+        if self.client is not None:
+            self.client.ChangeMode(RobotMode.kWalking)
 
     def __enter__(self) -> BoosterRobotPortal:
         return self
