@@ -22,4 +22,4 @@ echo "[DONE]"
 (cd "$WORKSPACE_ROOT/booster_deploy" && \
   source /opt/ros/humble/setup.bash && \
   source "$WORKSPACE_ROOT/hsl-player/install/setup.bash" && \
-  PYTHONPATH="$WORKSPACE_ROOT/booster_deploy${PYTHONPATH:+:$PYTHONPATH}" python3 scripts/deploy.py --task t1_walk --auto-start --sim)
+  PYTHONPATH="$WORKSPACE_ROOT/booster_deploy${PYTHONPATH:+:$PYTHONPATH}" python3 scripts/deploy.py --task t1_walk --auto-start --game)

@@ -96,7 +96,8 @@ class BoosterRobotPortal:
         self.low_state_thread = None
         self.rl_move_thread = None
         self.low_cmd_process: mp.Process | None = None
-        self._rl_move_active = False
+        self._last_rl_move_time: float = 0.0
+        self._rl_move_timeout: float = 0.5
 
         rclpy.init()
         # Initialize communication. Callbacks may start immediately and
@@ -271,7 +272,7 @@ class BoosterRobotPortal:
         self.rl_move_thread.start()
 
     def _rl_move_handler(self, msg: Twist):
-        self._rl_move_active = True
+        self._last_rl_move_time = time.monotonic()
         cmd = np.zeros((1,), dtype=self.synced_command.dtype)
         cmd[0]["vx"]   = msg.linear.x  / self.cfg.vel_command.vx_max
         cmd[0]["vy"]   = msg.linear.y  / self.cfg.vel_command.vy_max
@@ -314,7 +315,8 @@ class BoosterRobotPortal:
 
             # update velocity commands to synced_command
             # when brain is active via /rl_move, skip joystick to avoid overwriting
-            if not self._rl_move_active:
+            rl_move_active = (time.monotonic() - self._last_rl_move_time) < self._rl_move_timeout
+            if not rl_move_active:
                 cmd = np.zeros((1,), dtype=self.synced_command.dtype)
                 cmd[0]["vx"] = self.remoteControlService.get_vx_cmd()
                 cmd[0]["vy"] = self.remoteControlService.get_vy_cmd()
@@ -323,7 +325,7 @@ class BoosterRobotPortal:
 
         except Exception as e:
             self.logger.error(f"Error in _low_state_handler: {e}")
-            self.running = False
+            self.is_running = False
             self.exit_event.set()
 
     def create_low_cmd_publisher(self, name):
