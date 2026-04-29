@@ -59,8 +59,29 @@ if ! command -v uv &>/dev/null; then
     fi
 fi
 echo "      $(uv --version) — OK"
+
+# IMPORTANTE: No Jetson (JetPack), o torch precisa ser o da NVIDIA com CUDA,
+# não a wheel padrão do PyPI. O torch da NVIDIA é instalado em
+# /usr/lib/python3/dist-packages e DEVE ser reaproveitado pelo venv via
+# --system-site-packages. Sem isso, `uv sync` tenta instalar o torch do PyPI
+# que NÃO funciona no aarch64+CUDA do Jetson.
+echo "      Criando .venv com acesso aos pacotes do sistema (torch da NVIDIA)..."
+uv venv --system-site-packages --clear .venv
+
+echo "      Sincronizando dependências do workspace..."
 uv sync
 echo "      Dependências Python — OK"
+
+# Verifica se o torch da NVIDIA está acessível
+echo "      Verificando torch (deve ser versão NVIDIA/JetPack)..."
+if .venv/bin/python -c "import torch; print(f'        torch={torch.__version__}, cuda={torch.version.cuda}')" 2>/dev/null; then
+    echo "      torch — OK"
+else
+    echo "[AVISO] torch não acessível no .venv."
+    echo "        Verifique se o torch da NVIDIA está instalado no sistema:"
+    echo "          python3 -c 'import torch; print(torch.__version__)'"
+    echo "        Se não estiver, instale via JetPack (apt) ou wheel oficial da NVIDIA."
+fi
 
 # --- 4. hsl-player (ROS2 / colcon) ---
 echo ""

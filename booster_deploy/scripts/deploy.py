@@ -23,6 +23,8 @@ def main():
                         help="Device to run the evaluation on (e.g., 'cpu', 'cuda')")
     parser.add_argument("--auto-start", action="store_true", default=False,
                         help="Inicia custom mode e RL gait automaticamente sem precisar de joystick/teclado")
+    parser.add_argument("--game", action="store_true", default=False,
+                        help="Inicia modo para rodar modelos de RL junto com hsl-player sem uso de joystick/teclado")
     args = parser.parse_args()
 
     # auto-import all submodules under tasks so they can register themselves
@@ -74,10 +76,18 @@ def main():
             ankles = [-8, -7, -2, -1]
             for i in ankles:
                 task_cfg.robot.joint_damping[i] = 0.5
+        
 
-        from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
-        with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
-            portal.run()
+        if args.game:
+            from booster_deploy.controllers.rl_game_controller import BoosterRobotPortal
+            with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
+                portal.run()
+        else:
+            from booster_deploy.controllers.booster_robot_controller import BoosterRobotPortal
+            with BoosterRobotPortal(task_cfg, use_sim_time=args.webots, auto_start=args.auto_start) as portal:
+                portal.run()
+
+        
 
 
 if __name__ == "__main__":
