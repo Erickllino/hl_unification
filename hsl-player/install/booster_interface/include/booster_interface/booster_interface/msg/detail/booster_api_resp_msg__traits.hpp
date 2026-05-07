@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp

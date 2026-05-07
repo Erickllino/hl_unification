@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/booster_ros2_interface/msg/HandDdsMsg.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface/msg/HandDdsMsg.msg

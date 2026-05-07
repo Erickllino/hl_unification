@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller_interface/rosidl_generator_py/game_controller_interface/msg/_game_control_data.py
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_py/game_controller_interface/msg/_game_control_data.py

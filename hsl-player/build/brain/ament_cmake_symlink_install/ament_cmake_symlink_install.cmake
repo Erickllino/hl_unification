@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/brain/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/brain/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -55,11 +55,6 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
-      
-      # Create destination directory.
-      # This does *not* solve the problem of empty directories WITHIN the install tree,
-      # but does make sure that the top-level directory specified by the caller gets created.
-      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -128,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/brain/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/brain/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/brain/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/brain/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/workspace/hsl-player/install/brain/${destination}")
+      set(destination "/home/booster/Workspace/hl_unification/hsl-player/install/brain/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,137 +310,131 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/brain" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/brain" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/brain" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/brain" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/brain/environment")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/brain/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/brain/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_fastrtps_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_fastrtps_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_fastrtps_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_fastrtps_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_introspection_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_introspection_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_introspection_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_introspection_c/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.h")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_introspection_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_typesupport_introspection_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_introspection_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_introspection_cpp/brain/" "DESTINATION" "include/brain/brain" "PATTERN" "*.hpp")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/brain/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/brain/environment")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/brain/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/brain/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/brain-0.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_py/brain/" "DESTINATION" "local/lib/python3.10/dist-packages/brain" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_py/brain/" "DESTINATION" "local/lib/python3.10/dist-packages/brain" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_py/brain/" "DESTINATION" "local/lib/python3.10/dist-packages/brain" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_py/brain/" "DESTINATION" "local/lib/python3.10/dist-packages/brain" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "brain__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/brain")
-include("/workspace/hsl-player/build/brain/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "brain__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/brain")
-include("/workspace/hsl-player/build/brain/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "brain__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/brain")
-include("/workspace/hsl-player/build/brain/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rust_packages/brain" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/rust_packages/brain" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl" "DESTINATION" "share/brain/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl" "DESTINATION" "share/brain/msg")
 
-# install(DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_rs/brain/rust" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "/workspace/hsl-player/build/brain/rosidl_generator_rs/brain/rust" "DESTINATION" "share/brain")
-
-# install(FILES "/workspace/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl" "DESTINATION" "share/brain/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl" "DESTINATION" "share/brain/msg")
-
-# install(FILES "/workspace/hsl-player/src/brain/msg/Kick.msg" "DESTINATION" "share/brain/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/src/brain/msg/Kick.msg" "DESTINATION" "share/brain/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/brain/msg/Kick.msg" "DESTINATION" "share/brain/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/brain/msg/Kick.msg" "DESTINATION" "share/brain/msg")
 
 # install("TARGETS" "brain_node" "DESTINATION" "lib/brain")
-include("/workspace/hsl-player/build/brain/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "launch" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "launch" "DESTINATION" "share/brain")
 
 # install(DIRECTORY "config" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "config" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "config" "DESTINATION" "share/brain")
 
 # install(DIRECTORY "behavior_trees" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/brain" DIRECTORY "behavior_trees" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/brain" DIRECTORY "behavior_trees" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/brain" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/brain" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/brain" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/brain" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/brain" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/brain" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/brain" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/brain" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/brain/environment")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/brain/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/brain/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/brain/environment")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/brain/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/brain/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/brain/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/brain/environment")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/brain")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/packages/brain" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/packages/brain" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/packages/brain" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_index/share/ament_index/resource_index/packages/brain" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/build/brain/ament_cmake_core/brainConfig.cmake" "/workspace/hsl-player/build/brain/ament_cmake_core/brainConfig-version.cmake" "DESTINATION" "share/brain/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/build/brain/ament_cmake_core/brainConfig.cmake" "/workspace/hsl-player/build/brain/ament_cmake_core/brainConfig-version.cmake" "DESTINATION" "share/brain/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_core/brainConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_core/brainConfig-version.cmake" "DESTINATION" "share/brain/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_core/brainConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_core/brainConfig-version.cmake" "DESTINATION" "share/brain/cmake")
 
-# install(FILES "/workspace/hsl-player/src/brain/package.xml" "DESTINATION" "share/brain")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/brain" FILES "/workspace/hsl-player/src/brain/package.xml" "DESTINATION" "share/brain")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/brain/package.xml" "DESTINATION" "share/brain")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/brain" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/brain/package.xml" "DESTINATION" "share/brain")

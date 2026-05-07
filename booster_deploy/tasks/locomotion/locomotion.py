@@ -127,6 +127,14 @@ class LocomotionPolicy(Policy):
             action = self._model(self.obs_history.flatten()).squeeze(0)
             action = torch.clamp(action, -100.0, 100.0)
 
+        if not hasattr(self, '_dbg_count'):
+            self._dbg_count = 0
+        if self._dbg_count % 100 == 0:
+            vel = obs[6:9].tolist()
+            leg_actions = [round(float(action[i].item()), 4) for i in [5, 9, 13, 15, 17, 19]]
+            print(f"[DEBUG policy] vel_in_obs={[round(v,3) for v in vel]} leg_actions(hp,hr,hy,k,ap,ar)={leg_actions}", flush=True)
+        self._dbg_count += 1
+
         # Store action for next step
         self.last_action = action.clone()
 

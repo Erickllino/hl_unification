@@ -278,6 +278,7 @@ class BoosterRobotPortal:
         cmd[0]["vy"]   = msg.linear.y  / self.cfg.vel_command.vy_max
         cmd[0]["vyaw"] = msg.angular.z / self.cfg.vel_command.vyaw_max
         self.synced_command.write(cmd)
+        print(f"[DEBUG rl_move_handler] vx={cmd[0]['vx']:.3f} vy={cmd[0]['vy']:.3f} vyaw={cmd[0]['vyaw']:.3f}", flush=True)
 
     def _low_state_handler(self, low_state_msg: LowState):
         self.metrics["low_state_handler"].mark()
@@ -336,7 +337,7 @@ class BoosterRobotPortal:
             "joint_ctrl",
             QoSProfile(
                 depth=1,
-                reliability=ReliabilityPolicy.RELIABLE,
+                reliability=ReliabilityPolicy.BEST_EFFORT,
                 history=HistoryPolicy.KEEP_LAST
             )
         )
@@ -383,6 +384,7 @@ class BoosterRobotPortal:
             self.motor_cmd[i].q = init_joint_pos[i]
             self.motor_cmd[i].kp = float(prepare_state.stiffness[i])
             self.motor_cmd[i].kd = float(prepare_state.damping[i])
+            self.motor_cmd[i].weight = 1.0
 
         self.low_cmd_publisher.publish(self.low_cmd)
         time.sleep(0.1)
@@ -551,6 +553,7 @@ class BoosterRobotController(BaseController):
     def __init__(self, cfg: ControllerCfg, portal: BoosterRobotPortal) -> None:
         super().__init__(cfg)
         self.portal = portal
+        self._debug_step = 0
 
     def update_vel_command(self):
         cmd = self.portal.synced_command.read()[0]
@@ -558,6 +561,8 @@ class BoosterRobotController(BaseController):
         self.vel_command.lin_vel_x = cmd["vx"] * self.vel_command.vx_max
         self.vel_command.lin_vel_y = cmd["vy"] * self.vel_command.vy_max
         self.vel_command.ang_vel_yaw = cmd["vyaw"] * self.vel_command.vyaw_max
+        if self._debug_step % 100 == 0:
+            print(f"[DEBUG inference] vel_cmd vx={self.vel_command.lin_vel_x:.3f} vy={self.vel_command.lin_vel_y:.3f} vyaw={self.vel_command.ang_vel_yaw:.3f}", flush=True)
 
     def update_state(self) -> None:
         state = self.portal.synced_state.read()[0]
@@ -596,7 +601,12 @@ class BoosterRobotController(BaseController):
             kd_val = float(self.robot.joint_damping[i].item())
             self.portal.motor_cmd[i].kp = kp_val
             self.portal.motor_cmd[i].kd = kd_val
+            self.portal.motor_cmd[i].weight = 1.0
         self.portal.low_cmd_publisher.publish(self.portal.low_cmd)
+        if self._debug_step % 100 == 0:
+            leg = [round(float(dof_targets[i].item()), 4) for i in range(11, 17)]
+            print(f"[DEBUG ctrl_step] step={self._debug_step} left_leg_targets={leg}", flush=True)
+        self._debug_step += 1
 
     def stop(self):
         super().stop()

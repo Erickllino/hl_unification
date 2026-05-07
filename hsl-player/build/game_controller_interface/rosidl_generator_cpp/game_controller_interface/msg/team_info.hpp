@@ -7,6 +7,5 @@
 #include "game_controller_interface/msg/detail/team_info__struct.hpp"
 #include "game_controller_interface/msg/detail/team_info__builder.hpp"
 #include "game_controller_interface/msg/detail/team_info__traits.hpp"
-#include "game_controller_interface/msg/detail/team_info__type_support.hpp"
 
 #endif  // GAME_CONTROLLER_INTERFACE__MSG__TEAM_INFO_HPP_

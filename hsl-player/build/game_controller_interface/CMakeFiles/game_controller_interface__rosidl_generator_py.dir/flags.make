@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"game_controller_interface\" -Dgame_controller_interface__rosidl_generator_py_EXPORTS
 
-C_INCLUDES = -I/workspace/hsl-player/build/game_controller_interface/rosidl_generator_c -I/workspace/hsl-player/build/game_controller_interface/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
+C_INCLUDES = -I/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_c -I/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_py -I/usr/include/python3.10 -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface
 
-C_FLAGS = -O3 -DNDEBUG -fPIC -Wall -Wextra
+C_FLAGS = -fPIC -Wall -Wextra
 

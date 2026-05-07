@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/hand_command__struct.hpp"
 #include "booster_interface/msg/detail/hand_command__builder.hpp"
 #include "booster_interface/msg/detail/hand_command__traits.hpp"
-#include "booster_interface/msg/detail/hand_command__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__HAND_COMMAND_HPP_

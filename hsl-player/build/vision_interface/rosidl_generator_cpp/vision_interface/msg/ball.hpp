@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/ball__struct.hpp"
 #include "vision_interface/msg/detail/ball__builder.hpp"
 #include "vision_interface/msg/detail/ball__traits.hpp"
-#include "vision_interface/msg/detail/ball__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__BALL_HPP_

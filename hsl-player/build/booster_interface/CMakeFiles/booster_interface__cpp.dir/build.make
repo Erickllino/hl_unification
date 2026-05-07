@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/booster_ros2_interface
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/booster_interface
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface
 
 # Utility rule file for booster_interface__cpp.
 
@@ -70,93 +70,74 @@ CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/bo
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/booster_api_resp_msg.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/button_event_msg.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/motor_state.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/motor_cmd.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/low_cmd.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/imu_state.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/low_state.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/raw_bytes_msg.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/raw_bytes_stamped.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/odometer.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/fall_down_state.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/remote_controller_state.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/hand_command.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/hand_dds_msg.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/hand_param.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/rpc_service.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__type_support.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/agent_service.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__builder.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__struct.hpp
 CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__traits.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__type_support.hpp
-CMakeFiles/booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -223,8 +204,8 @@ rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/hum
 rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/hsl-player/build/booster_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /workspace/hsl-player/build/booster_interface/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__builder.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__builder.hpp
@@ -234,9 +215,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__struct.hp
 
 rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/booster_api_resp_msg.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/booster_api_resp_msg.hpp
@@ -250,9 +228,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__struct.h
 rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/button_event_msg.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/button_event_msg.hpp
 
@@ -264,9 +239,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__struct.hpp: 
 
 rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/motor_state.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/motor_state.hpp
@@ -280,9 +252,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp: rosid
 rosidl_generator_cpp/booster_interface/msg/detail/motor_state__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/motor_state__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/motor_state__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/motor_state__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/motor_cmd.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/motor_cmd.hpp
 
@@ -294,9 +263,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__struct.hpp: rosidl_
 
 rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/low_cmd.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/low_cmd.hpp
@@ -310,9 +276,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__struct.hpp: rosidl_ge
 rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/imu_state.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/imu_state.hpp
 
@@ -324,9 +287,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/imu_state__struct.hpp: rosidl_
 
 rosidl_generator_cpp/booster_interface/msg/detail/imu_state__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/imu_state__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/imu_state__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/imu_state__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/low_state.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/low_state.hpp
@@ -340,9 +300,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/low_state__struct.hpp: rosidl_
 rosidl_generator_cpp/booster_interface/msg/detail/low_state__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/low_state__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/low_state__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/low_state__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/raw_bytes_msg.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/raw_bytes_msg.hpp
 
@@ -354,9 +311,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp: ros
 
 rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/raw_bytes_stamped.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/raw_bytes_stamped.hpp
@@ -370,9 +324,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__struct.hpp:
 rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/odometer.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/odometer.hpp
 
@@ -384,9 +335,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/odometer__struct.hpp: rosidl_g
 
 rosidl_generator_cpp/booster_interface/msg/detail/odometer__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/odometer__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/odometer__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/odometer__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/fall_down_state.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/fall_down_state.hpp
@@ -400,9 +348,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__struct.hpp: r
 rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/remote_controller_state.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/remote_controller_state.hpp
 
@@ -414,9 +359,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__struc
 
 rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/hand_command.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/hand_command.hpp
@@ -430,9 +372,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/hand_command__struct.hpp: rosi
 rosidl_generator_cpp/booster_interface/msg/detail/hand_command__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_command__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/hand_command__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_command__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/msg/hand_dds_msg.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/hand_dds_msg.hpp
 
@@ -444,9 +383,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__struct.hpp: rosi
 
 rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__traits.hpp
-
-rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/msg/hand_param.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/hand_param.hpp
@@ -460,9 +396,6 @@ rosidl_generator_cpp/booster_interface/msg/detail/hand_param__struct.hpp: rosidl
 rosidl_generator_cpp/booster_interface/msg/detail/hand_param__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_param__traits.hpp
 
-rosidl_generator_cpp/booster_interface/msg/detail/hand_param__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/msg/detail/hand_param__type_support.hpp
-
 rosidl_generator_cpp/booster_interface/srv/rpc_service.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/rpc_service.hpp
 
@@ -474,9 +407,6 @@ rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__struct.hpp: rosid
 
 rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__traits.hpp
-
-rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__type_support.hpp
 
 rosidl_generator_cpp/booster_interface/srv/agent_service.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/agent_service.hpp
@@ -490,9 +420,6 @@ rosidl_generator_cpp/booster_interface/srv/detail/agent_service__struct.hpp: ros
 rosidl_generator_cpp/booster_interface/srv/detail/agent_service__traits.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/detail/agent_service__traits.hpp
 
-rosidl_generator_cpp/booster_interface/srv/detail/agent_service__type_support.hpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/booster_interface/srv/detail/agent_service__type_support.hpp
-
 booster_interface__cpp: CMakeFiles/booster_interface__cpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/booster_api_req_msg.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/booster_api_resp_msg.hpp
@@ -500,67 +427,51 @@ booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/button_event_
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_req_msg__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/button_event_msg__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_command__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_dds_msg__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/hand_param__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/imu_state__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_cmd__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/low_state__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_cmd__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/motor_state__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/odometer__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_msg__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/raw_bytes_stamped__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/fall_down_state.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/hand_command.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/msg/hand_dds_msg.hpp
@@ -578,11 +489,9 @@ booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/agent_service
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/agent_service__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__builder.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__struct.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__traits.hpp
-booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__type_support.hpp
 booster_interface__cpp: rosidl_generator_cpp/booster_interface/srv/rpc_service.hpp
 booster_interface__cpp: CMakeFiles/booster_interface__cpp.dir/build.make
 .PHONY : booster_interface__cpp
@@ -596,6 +505,6 @@ CMakeFiles/booster_interface__cpp.dir/clean:
 .PHONY : CMakeFiles/booster_interface__cpp.dir/clean
 
 CMakeFiles/booster_interface__cpp.dir/depend:
-	cd /workspace/hsl-player/build/booster_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/hsl-player/src/booster_ros2_interface /workspace/hsl-player/src/booster_ros2_interface /workspace/hsl-player/build/booster_interface /workspace/hsl-player/build/booster_interface /workspace/hsl-player/build/booster_interface/CMakeFiles/booster_interface__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface /home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface /home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/CMakeFiles/booster_interface__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/booster_interface__cpp.dir/depend
 

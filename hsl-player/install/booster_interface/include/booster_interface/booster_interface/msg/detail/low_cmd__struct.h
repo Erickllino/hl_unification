@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_c/booster_interface/msg/detail/low_cmd__struct.h
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_c/booster_interface/msg/detail/low_cmd__struct.h

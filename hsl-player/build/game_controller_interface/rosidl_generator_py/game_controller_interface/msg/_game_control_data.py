@@ -123,7 +123,8 @@ class GameControlData(metaclass=Metaclass_GameControlData):
         if 'header' not in kwargs:
             self.header = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.header = kwargs.get('header')
+            self.header = numpy.array(kwargs.get('header'), dtype=numpy.uint8)
+            assert self.header.shape == (4, )
         self.version = kwargs.get('version', int())
         self.packet_number = kwargs.get('packet_number', int())
         self.players_per_team = kwargs.get('players_per_team', int())
@@ -135,7 +136,8 @@ class GameControlData(metaclass=Metaclass_GameControlData):
         if 'secondary_state_info' not in kwargs:
             self.secondary_state_info = numpy.zeros(4, dtype=numpy.uint8)
         else:
-            self.secondary_state_info = kwargs.get('secondary_state_info')
+            self.secondary_state_info = numpy.array(kwargs.get('secondary_state_info'), dtype=numpy.uint8)
+            assert self.secondary_state_info.shape == (4, )
         self.drop_in_team = kwargs.get('drop_in_team', int())
         self.drop_in_time = kwargs.get('drop_in_time', int())
         self.secs_remaining = kwargs.get('secs_remaining', int())
@@ -175,7 +177,7 @@ class GameControlData(metaclass=Metaclass_GameControlData):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if any(self.header != other.header):
+        if all(self.header != other.header):
             return False
         if self.version != other.version:
             return False
@@ -193,7 +195,7 @@ class GameControlData(metaclass=Metaclass_GameControlData):
             return False
         if self.secondary_state != other.secondary_state:
             return False
-        if any(self.secondary_state_info != other.secondary_state_info):
+        if all(self.secondary_state_info != other.secondary_state_info):
             return False
         if self.drop_in_team != other.drop_in_team:
             return False

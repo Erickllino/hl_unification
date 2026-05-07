@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/raw_bytes_msg__struct.hpp"
 #include "booster_interface/msg/detail/raw_bytes_msg__builder.hpp"
 #include "booster_interface/msg/detail/raw_bytes_msg__traits.hpp"
-#include "booster_interface/msg/detail/raw_bytes_msg__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__RAW_BYTES_MSG_HPP_

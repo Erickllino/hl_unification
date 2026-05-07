@@ -1,11 +1,11 @@
 {
   "package_name": "booster_msgs",
-  "output_dir": "/workspace/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs",
+  "output_dir": "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/BinaryData.idl",
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/RpcReqMsg.idl",
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/RpcRespMsg.idl"
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/BinaryData.idl",
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/RpcReqMsg.idl",
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs:msg/RpcRespMsg.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp",
@@ -23,8 +23,8 @@
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__builder.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl",
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl",
-    "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl"
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl",
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl",
+    "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl"
   ]
 }

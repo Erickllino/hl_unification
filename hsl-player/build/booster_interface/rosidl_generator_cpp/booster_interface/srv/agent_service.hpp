@@ -7,6 +7,5 @@
 #include "booster_interface/srv/detail/agent_service__struct.hpp"
 #include "booster_interface/srv/detail/agent_service__builder.hpp"
 #include "booster_interface/srv/detail/agent_service__traits.hpp"
-#include "booster_interface/srv/detail/agent_service__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__SRV__AGENT_SERVICE_HPP_

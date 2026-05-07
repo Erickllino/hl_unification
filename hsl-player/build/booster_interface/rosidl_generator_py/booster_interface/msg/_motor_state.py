@@ -106,7 +106,8 @@ class MotorState(metaclass=Metaclass_MotorState):
         if 'reserve' not in kwargs:
             self.reserve = numpy.zeros(2, dtype=numpy.uint32)
         else:
-            self.reserve = kwargs.get('reserve')
+            self.reserve = numpy.array(kwargs.get('reserve'), dtype=numpy.uint32)
+            assert self.reserve.shape == (2, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -151,7 +152,7 @@ class MotorState(metaclass=Metaclass_MotorState):
             return False
         if self.lost != other.lost:
             return False
-        if any(self.reserve != other.reserve):
+        if all(self.reserve != other.reserve):
             return False
         return True
 

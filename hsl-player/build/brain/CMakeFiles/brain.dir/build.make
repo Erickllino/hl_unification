@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/brain
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/brain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/brain
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/brain
 
 # Utility rule file for brain.
 
@@ -66,7 +66,7 @@ include CMakeFiles/brain.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/brain.dir/progress.make
 
-CMakeFiles/brain: /workspace/hsl-player/src/brain/msg/Kick.msg
+CMakeFiles/brain: /home/booster/Workspace/hl_unification/hsl-player/src/brain/msg/Kick.msg
 CMakeFiles/brain: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/brain: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/brain: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -111,6 +111,6 @@ CMakeFiles/brain.dir/clean:
 .PHONY : CMakeFiles/brain.dir/clean
 
 CMakeFiles/brain.dir/depend:
-	cd /workspace/hsl-player/build/brain && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/hsl-player/src/brain /workspace/hsl-player/src/brain /workspace/hsl-player/build/brain /workspace/hsl-player/build/brain /workspace/hsl-player/build/brain/CMakeFiles/brain.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/brain && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/booster/Workspace/hl_unification/hsl-player/src/brain /home/booster/Workspace/hl_unification/hsl-player/src/brain /home/booster/Workspace/hl_unification/hsl-player/build/brain /home/booster/Workspace/hl_unification/hsl-player/build/brain /home/booster/Workspace/hl_unification/hsl-player/build/brain/CMakeFiles/brain.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/brain.dir/depend
 

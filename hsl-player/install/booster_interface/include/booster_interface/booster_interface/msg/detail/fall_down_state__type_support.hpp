@@ -1,1 +1,0 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/fall_down_state__type_support.hpp

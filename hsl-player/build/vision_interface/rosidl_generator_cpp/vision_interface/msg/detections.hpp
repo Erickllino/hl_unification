@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/detections__struct.hpp"
 #include "vision_interface/msg/detail/detections__builder.hpp"
 #include "vision_interface/msg/detail/detections__traits.hpp"
-#include "vision_interface/msg/detail/detections__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__DETECTIONS_HPP_

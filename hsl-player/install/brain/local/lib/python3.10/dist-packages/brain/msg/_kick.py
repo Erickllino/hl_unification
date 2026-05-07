@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/brain/rosidl_generator_py/brain/msg/_kick.py
+/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_py/brain/msg/_kick.py

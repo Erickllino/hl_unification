@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/calibration/libbooster_vision_calibration.so" "TARGETS" "booster_vision_calibration" "DESTINATION" "lib")

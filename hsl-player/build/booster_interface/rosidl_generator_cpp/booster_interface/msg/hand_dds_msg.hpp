@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/hand_dds_msg__struct.hpp"
 #include "booster_interface/msg/detail/hand_dds_msg__builder.hpp"
 #include "booster_interface/msg/detail/hand_dds_msg__traits.hpp"
-#include "booster_interface/msg/detail/hand_dds_msg__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__HAND_DDS_MSG_HPP_

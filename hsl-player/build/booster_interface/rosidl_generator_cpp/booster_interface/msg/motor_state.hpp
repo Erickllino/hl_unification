@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/motor_state__struct.hpp"
 #include "booster_interface/msg/detail/motor_state__builder.hpp"
 #include "booster_interface/msg/detail/motor_state__traits.hpp"
-#include "booster_interface/msg/detail/motor_state__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__MOTOR_STATE_HPP_

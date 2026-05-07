@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_game_controller_interface -DROS_PACKAGE_NAME=\"game_controller_interface\"
 
-C_INCLUDES = -I/workspace/hsl-player/build/game_controller_interface/rosidl_typesupport_introspection_c -I/workspace/hsl-player/build/game_controller_interface/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_typesupport_introspection_c -I/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
-C_FLAGS = -O3 -DNDEBUG -fPIC -Wall -std=gnu11
+C_FLAGS = -fPIC -Wall -std=gnu11
 

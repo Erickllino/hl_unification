@@ -1,0 +1,3 @@
+/home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so.2.2.0
+/home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so
+/home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so.4

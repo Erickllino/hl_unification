@@ -7,6 +7,5 @@
 #include "booster_msgs/msg/detail/rpc_resp_msg__struct.hpp"
 #include "booster_msgs/msg/detail/rpc_resp_msg__builder.hpp"
 #include "booster_msgs/msg/detail/rpc_resp_msg__traits.hpp"
-#include "booster_msgs/msg/detail/rpc_resp_msg__type_support.hpp"
 
 #endif  // BOOSTER_MSGS__MSG__RPC_RESP_MSG_HPP_

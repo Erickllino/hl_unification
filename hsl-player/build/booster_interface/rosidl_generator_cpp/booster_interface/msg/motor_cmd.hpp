@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/motor_cmd__struct.hpp"
 #include "booster_interface/msg/detail/motor_cmd__builder.hpp"
 #include "booster_interface/msg/detail/motor_cmd__traits.hpp"
-#include "booster_interface/msg/detail/motor_cmd__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__MOTOR_CMD_HPP_

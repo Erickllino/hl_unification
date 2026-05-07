@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/vision_interface
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /workspace/hsl-player/build/vision_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface /workspace/hsl-player/build/vision_interface /workspace/hsl-player/build/vision_interface /workspace/hsl-player/build/vision_interface/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

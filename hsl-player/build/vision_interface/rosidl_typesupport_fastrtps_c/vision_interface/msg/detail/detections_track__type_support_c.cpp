@@ -203,16 +203,6 @@ static bool _DetectionsTrack__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->detected_objects.data) {
       vision_interface__msg__DetectedObject__Sequence__fini(&ros_message->detected_objects);
     }
@@ -235,16 +225,6 @@ static bool _DetectionsTrack__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->radar_x.data) {
       rosidl_runtime_c__float__Sequence__fini(&ros_message->radar_x);
     }
@@ -261,16 +241,6 @@ static bool _DetectionsTrack__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->radar_y.data) {
       rosidl_runtime_c__float__Sequence__fini(&ros_message->radar_y);
     }
@@ -287,16 +257,6 @@ static bool _DetectionsTrack__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->corner_pos.data) {
       rosidl_runtime_c__float__Sequence__fini(&ros_message->corner_pos);
     }

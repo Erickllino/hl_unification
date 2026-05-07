@@ -74,7 +74,7 @@ cdr_deserialize(
     cdr, ros_message.msg);
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_booster_interface
@@ -323,7 +323,7 @@ cdr_deserialize(
     cdr, ros_message.msg);
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_booster_interface

@@ -1,0 +1,2 @@
+/usr/local/lib/python3.10/dist-packages/booster_robotics_sdk_python.cpython-310-aarch64-linux-gnu.so
+/usr/local/lib/python3.10/dist-packages/booster_robotics_sdk_python.pyi

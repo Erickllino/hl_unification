@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/binary_data.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/msg/binary_data.hpp

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -55,11 +55,6 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
-      
-      # Create destination directory.
-      # This does *not* solve the problem of empty directories WITHIN the install tree,
-      # but does make sure that the top-level directory specified by the caller gets created.
-      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -128,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision_interface/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/workspace/hsl-player/install/vision_interface/${destination}")
+      set(destination "/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,179 +310,173 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vision_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vision_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vision_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vision_interface" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/vision_interface/environment")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vision_interface/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/vision_interface/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_fastrtps_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_introspection_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_introspection_c/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.h")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_typesupport_introspection_cpp/vision_interface/" "DESTINATION" "include/vision_interface/vision_interface" "PATTERN" "*.hpp")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vision_interface/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/vision_interface/environment")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vision_interface/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/vision_interface/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/ament_cmake_python/vision_interface/vision_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/ament_cmake_python/vision_interface/vision_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_python/vision_interface/vision_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_python/vision_interface/vision_interface.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface-1.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_py/vision_interface/" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "vision_interface__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface")
-include("/workspace/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "vision_interface__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface")
-include("/workspace/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "vision_interface__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vision_interface")
-include("/workspace/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rust_packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/rust_packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectedObject.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectedObject.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_rs/vision_interface/rust" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" DIRECTORY "/workspace/hsl-player/build/vision_interface/rosidl_generator_rs/vision_interface/rust" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Detections.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Detections.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectedObject.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectedObject.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/LineSegments.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/LineSegments.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Detections.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Detections.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/CalParam.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/CalParam.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/LineSegments.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/LineSegments.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectionsTrack.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectionsTrack.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/CalParam.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/CalParam.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationPoint.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationPoint.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectionsTrack.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/DetectionsTrack.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationLine.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationLine.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationPoint.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationPoint.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationResult.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationResult.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationLine.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationLine.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/ImageHeadPosition.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/ImageHeadPosition.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationResult.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/SegmentationResult.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Ball.idl" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Ball.idl" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/ImageHeadPosition.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/ImageHeadPosition.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectedObject.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectedObject.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Ball.idl" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_adapter/vision_interface/msg/Ball.idl" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Detections.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Detections.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectedObject.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectedObject.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/LineSegments.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/LineSegments.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Detections.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Detections.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/CalParam.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/CalParam.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/LineSegments.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/LineSegments.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectionsTrack.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectionsTrack.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/CalParam.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/CalParam.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationPoint.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationPoint.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectionsTrack.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/DetectionsTrack.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationLine.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationLine.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationPoint.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationPoint.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationResult.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationResult.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationLine.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationLine.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationResult.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/SegmentationResult.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Ball.msg" "DESTINATION" "share/vision_interface/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Ball.msg" "DESTINATION" "share/vision_interface/msg")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg" "DESTINATION" "share/vision_interface/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Ball.msg" "DESTINATION" "share/vision_interface/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/Ball.msg" "DESTINATION" "share/vision_interface/msg")
-
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision_interface" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision_interface" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vision_interface/environment")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision_interface/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision_interface/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vision_interface/environment")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision_interface/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision_interface/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision_interface/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision_interface/environment")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision_interface")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision_interface")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision_interface")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision_interface")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision_interface")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_index/share/ament_index/resource_index/packages/vision_interface" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig.cmake" "/workspace/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig-version.cmake" "DESTINATION" "share/vision_interface/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig.cmake" "/workspace/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig-version.cmake" "DESTINATION" "share/vision_interface/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig-version.cmake" "DESTINATION" "share/vision_interface/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/ament_cmake_core/vision_interfaceConfig-version.cmake" "DESTINATION" "share/vision_interface/cmake")
 
-# install(FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/package.xml" "DESTINATION" "share/vision_interface")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/package.xml" "DESTINATION" "share/vision_interface")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/package.xml" "DESTINATION" "share/vision_interface")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/package.xml" "DESTINATION" "share/vision_interface")

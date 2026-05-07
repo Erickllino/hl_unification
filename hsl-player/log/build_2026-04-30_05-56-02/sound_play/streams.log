@@ -1,0 +1,76 @@
+[1.549s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/sound_play': PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/booster/Workspace/hl_unification/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/build --no-deps symlink_data
+[2.041s] running develop
+[2.042s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[2.042s]   warnings.warn(
+[2.376s] running egg_info
+[2.376s] creating sound_play.egg-info
+[2.378s] writing sound_play.egg-info/PKG-INFO
+[2.380s] writing dependency_links to sound_play.egg-info/dependency_links.txt
+[2.381s] writing entry points to sound_play.egg-info/entry_points.txt
+[2.382s] writing requirements to sound_play.egg-info/requires.txt
+[2.383s] writing top-level names to sound_play.egg-info/top_level.txt
+[2.384s] writing manifest file 'sound_play.egg-info/SOURCES.txt'
+[2.392s] reading manifest file 'sound_play.egg-info/SOURCES.txt'
+[2.392s] writing manifest file 'sound_play.egg-info/SOURCES.txt'
+[2.499s] running build_ext
+[2.499s] Creating /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/lib/python3.10/site-packages/sound-play.egg-link (link to .)
+[2.502s] Installing sound_play_node script to /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/lib/sound_play
+[2.503s] 
+[2.503s] Installed /home/booster/Workspace/hl_unification/hsl-player/build/sound_play
+[2.503s] running symlink_data
+[2.503s] creating /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/ament_index
+[2.503s] creating /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/ament_index/resource_index
+[2.503s] creating /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/ament_index/resource_index/packages
+[2.504s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/resource/sound_play -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/ament_index/resource_index/packages
+[2.504s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/package.xml -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play
+[2.505s] creating /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.505s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-kick.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.506s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/playful.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.507s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.507s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/exited.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.508s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-regret.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.509s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/laugh.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.509s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-adjust.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.510s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-kick.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.511s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.511s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-taunt.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.512s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.513s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/locate_success.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.514s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/sad.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.515s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/locating.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.515s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/beep-whistle.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.516s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tj-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.517s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/locate_success_right.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.517s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-chase.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.518s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.519s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rickroll.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.519s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-kick.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.520s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-taunt.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.520s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-adjust.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/locate_success_left.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-regret.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tj-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/talk.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-taunt.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.524s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-adjust.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-kick.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/start.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-ready.wav -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-kick.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-regret.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/alarm.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-regret.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-chase.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.525s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-celebrate.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.526s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/search.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.526s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/rmm-chase.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.527s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/r2d2-ready.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.527s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/tvb-regret.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.528s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/stop.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.528s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/fbb-chase.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.529s] symbolically linking /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/sounds/jianguo-chase.mp3 -> /home/booster/Workspace/hl_unification/hsl-player/install/sound_play/share/sound_play/sounds
+[2.667s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/sound_play' returned '0': PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/build/sound_play/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/booster/Workspace/hl_unification/hsl-player/install/sound_play/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/booster/Workspace/hl_unification/hsl-player/build/sound_play/build --no-deps symlink_data

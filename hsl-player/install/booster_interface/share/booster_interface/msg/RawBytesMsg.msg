@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/booster_ros2_interface/msg/RawBytesMsg.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface/msg/RawBytesMsg.msg

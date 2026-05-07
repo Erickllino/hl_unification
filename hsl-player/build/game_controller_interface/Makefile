@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/game_controller_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/game_controller_interface
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/game_controller_interface/CMakeFiles /workspace/hsl-player/build/game_controller_interface//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/CMakeFiles /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/game_controller_interface/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -404,19 +404,6 @@ game_controller_interface__py: cmake_check_build_system
 game_controller_interface__py/fast:
 	$(MAKE) $(MAKESILENT) -f game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/build.make game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/build
 .PHONY : game_controller_interface__py/fast
-
-#=============================================================================
-# Target rules for targets named game_controller_interface__rs
-
-# Build rule for target.
-game_controller_interface__rs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game_controller_interface__rs
-.PHONY : game_controller_interface__rs
-
-# fast build rule for target.
-game_controller_interface__rs/fast:
-	$(MAKE) $(MAKESILENT) -f game_controller_interface__rs/CMakeFiles/game_controller_interface__rs.dir/build.make game_controller_interface__rs/CMakeFiles/game_controller_interface__rs.dir/build
-.PHONY : game_controller_interface__rs/fast
 
 rosidl_generator_c/game_controller_interface/msg/detail/game_control_data__functions.o: rosidl_generator_c/game_controller_interface/msg/detail/game_control_data__functions.c.o
 .PHONY : rosidl_generator_c/game_controller_interface/msg/detail/game_control_data__functions.o
@@ -1084,7 +1071,6 @@ help:
 	@echo "... game_controller_interface"
 	@echo "... game_controller_interface__cpp"
 	@echo "... game_controller_interface__py"
-	@echo "... game_controller_interface__rs"
 	@echo "... game_controller_interface_uninstall"
 	@echo "... uninstall"
 	@echo "... game_controller_interface__rosidl_generator_c"

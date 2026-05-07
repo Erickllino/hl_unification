@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller_interface/rosidl_generator_c/game_controller_interface/msg/rosidl_generator_c__visibility_control.h
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_c/game_controller_interface/msg/rosidl_generator_c__visibility_control.h

@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface/msg/TeamInfo.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/game_controller_interface/msg/TeamInfo.msg

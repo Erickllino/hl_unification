@@ -1,0 +1,256 @@
+[0.015s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/booster/Workspace/hl_unification/hsl-player/src/vision -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/booster/Workspace/hl_unification/hsl-player/install/vision
+[0.109s] -- The C compiler identification is GNU 11.4.0
+[0.198s] -- The CXX compiler identification is GNU 11.4.0
+[0.210s] -- Detecting C compiler ABI info
+[0.331s] -- Detecting C compiler ABI info - done
+[0.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.340s] -- Detecting C compile features
+[0.341s] -- Detecting C compile features - done
+[0.345s] -- Detecting CXX compiler ABI info
+[0.487s] -- Detecting CXX compiler ABI info - done
+[0.494s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.495s] -- Detecting CXX compile features
+[0.496s] -- Detecting CXX compile features - done
+[0.502s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.791s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.922s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.968s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.037s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.045s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.057s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.075s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.098s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.165s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.169s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.320s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.369s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.440s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.455s] -- Looking for pthread.h
+[1.585s] -- Looking for pthread.h - found
+[1.585s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.718s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.721s] -- Found Threads: TRUE  
+[1.812s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.857s] -- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)
+[1.913s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[1.919s] -- Found vision_interface: 1.0.0 (/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/share/vision_interface/cmake)
+[1.953s] -- Found OpenCV: /usr (found suitable version "4.8.0", minimum required is "4.5") 
+[1.980s] -- Checking for module 'eigen3'
+[2.003s] --   Found eigen3, version 3.4.0
+[2.066s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.066s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.100s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.128s] -- Checking for module 'flann'
+[2.158s] --   Found flann, version 1.9.1
+[2.244s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[2.244s] -- FLANN found (include: /usr/include, lib: /usr/lib/aarch64-linux-gnu/libflann_cpp.so)
+[2.293s] -- Found GLEW: /usr/lib/aarch64-linux-gnu/libGLEW.so  
+[2.302s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[2.543s] -- Found MPI_C: /usr/lib/aarch64-linux-gnu/libmpi.so (found version "3.1") 
+[2.543s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[2.548s] -- Found JsonCpp: /usr/lib/aarch64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[2.561s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[2.586s] -- Found PNG: /usr/lib/aarch64-linux-gnu/libpng.so (found version "1.6.37") 
+[2.603s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[2.753s] -- Found X11: /usr/include   
+[2.754s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[2.879s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[2.879s] -- Looking for gethostbyname
+[3.006s] -- Looking for gethostbyname - found
+[3.007s] -- Looking for connect
+[3.133s] -- Looking for connect - found
+[3.138s] -- Looking for remove
+[3.264s] -- Looking for remove - found
+[3.264s] -- Looking for shmat
+[3.382s] -- Looking for shmat - found
+[3.382s] -- Looking for IceConnectionNumber in ICE
+[3.506s] -- Looking for IceConnectionNumber in ICE - found
+[3.652s] -- Found EXPAT: /usr/lib/aarch64-linux-gnu/libexpat.so (found version "2.4.7") 
+[3.655s] -- Found double-conversion: /usr/lib/aarch64-linux-gnu/libdouble-conversion.so  
+[3.658s] -- Found LZ4: /usr/lib/aarch64-linux-gnu/liblz4.so (found version "1.9.3") 
+[3.661s] -- Found LZMA: /usr/lib/aarch64-linux-gnu/liblzma.so (found version "5.2.5") 
+[3.683s] -- Found JPEG: /usr/lib/aarch64-linux-gnu/libjpeg.so (found version "80") 
+[3.693s] -- Found TIFF: /usr/lib/aarch64-linux-gnu/libtiff.so (found version "4.3.0")  
+[3.699s] -- Found Freetype: /usr/lib/aarch64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[3.707s] -- Found utf8cpp: /usr/include/utf8cpp  
+[3.847s] -- Checking for module 'libusb-1.0'
+[3.877s] --   Found libusb-1.0, version 1.0.25
+[3.955s] -- Found libusb: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[3.957s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[3.957s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.066s] -- Found OpenNI2: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[4.067s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[4.067s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.294s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.305s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.317s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.538s] -- Found Qhull version 8.0.2
+[4.772s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.001s] -- looking for PCL_COMMON
+[5.003s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[5.003s] -- looking for PCL_KDTREE
+[5.004s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[5.005s] -- looking for PCL_OCTREE
+[5.006s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[5.006s] -- looking for PCL_SEARCH
+[5.007s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[5.007s] -- looking for PCL_SAMPLE_CONSENSUS
+[5.009s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[5.009s] -- looking for PCL_FILTERS
+[5.010s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[5.010s] -- looking for PCL_2D
+[5.010s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[5.011s] -- looking for PCL_GEOMETRY
+[5.011s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[5.011s] -- looking for PCL_IO
+[5.012s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[5.013s] -- looking for PCL_FEATURES
+[5.014s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[5.014s] -- looking for PCL_ML
+[5.015s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[5.016s] -- looking for PCL_SEGMENTATION
+[5.017s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[5.017s] -- looking for PCL_VISUALIZATION
+[5.018s] -- Found PCL_VISUALIZATION: /usr/lib/aarch64-linux-gnu/libpcl_visualization.so  
+[5.019s] -- looking for PCL_SURFACE
+[5.020s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[5.020s] -- looking for PCL_REGISTRATION
+[5.021s] -- Found PCL_REGISTRATION: /usr/lib/aarch64-linux-gnu/libpcl_registration.so  
+[5.022s] -- looking for PCL_KEYPOINTS
+[5.023s] -- Found PCL_KEYPOINTS: /usr/lib/aarch64-linux-gnu/libpcl_keypoints.so  
+[5.023s] -- looking for PCL_TRACKING
+[5.024s] -- Found PCL_TRACKING: /usr/lib/aarch64-linux-gnu/libpcl_tracking.so  
+[5.025s] -- looking for PCL_RECOGNITION
+[5.026s] -- Found PCL_RECOGNITION: /usr/lib/aarch64-linux-gnu/libpcl_recognition.so  
+[5.026s] -- looking for PCL_STEREO
+[5.028s] -- Found PCL_STEREO: /usr/lib/aarch64-linux-gnu/libpcl_stereo.so  
+[5.028s] -- looking for PCL_APPS
+[5.029s] -- Found PCL_APPS: /usr/lib/aarch64-linux-gnu/libpcl_apps.so  
+[5.030s] -- looking for PCL_IN_HAND_SCANNER
+[5.030s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[5.030s] -- looking for PCL_MODELER
+[5.031s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[5.031s] -- looking for PCL_POINT_CLOUD_EDITOR
+[5.031s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[5.032s] -- looking for PCL_OUTOFCORE
+[5.033s] -- Found PCL_OUTOFCORE: /usr/lib/aarch64-linux-gnu/libpcl_outofcore.so  
+[5.033s] -- looking for PCL_PEOPLE
+[5.034s] -- Found PCL_PEOPLE: /usr/lib/aarch64-linux-gnu/libpcl_people.so  
+[5.036s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/aarch64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[6.782s] -- The CUDA compiler identification is NVIDIA 12.2.140
+[6.792s] -- Detecting CUDA compiler ABI info
+[15.035s] -- Detecting CUDA compiler ABI info - done
+[15.068s] -- Check for working CUDA compiler: /usr/local/cuda/bin/nvcc - skipped
+[15.068s] -- Detecting CUDA compile features
+[15.069s] -- Detecting CUDA compile features - done
+[15.080s] -- Builing Calibration
+[15.117s] -- Found CUDAToolkit: /usr/local/cuda/include (found suitable version "12.2.140", minimum required is "12.2.140") 
+[15.221s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[15.231s] -- Found required Ceres dependency: glog
+[15.232s] -- Found required Ceres dependency: gflags
+[15.232s] -- Found Ceres version: 2.2.0 installed in: /home/booster/Workspace/hl_unification/hsl-player/src/vision/thirdparty with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SchurSpecializations]
+[15.366s] -- Configuring done
+[15.391s] [33mCMake Warning (dev) at src/calibration/CMakeLists.txt:12 (add_library):
+[15.391s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[15.391s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[15.392s]   command to set the policy and suppress this warning.
+[15.392s] 
+[15.392s]   File:
+[15.392s] 
+[15.392s]     /home/booster/Workspace/hl_unification/hsl-player/src/vision/src/calibration/board_detector.cpp
+[15.392s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.392s] [0m
+[15.477s] [33mCMake Warning (dev) in src/model/trt/CMakeLists.txt:
+[15.477s]   Policy CMP0104 is not set: CMAKE_CUDA_ARCHITECTURES now detected for NVCC,
+[15.477s]   empty CUDA_ARCHITECTURES not allowed.  Run "cmake --help-policy CMP0104"
+[15.477s]   for policy details.  Use the cmake_policy command to set the policy and
+[15.477s]   suppress this warning.
+[15.477s] 
+[15.477s]   CUDA_ARCHITECTURES is empty for target "yolov8_trt".
+[15.477s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[15.477s] [0m
+[15.565s] -- Generating done
+[15.572s] -- Build files have been written to: /home/booster/Workspace/hl_unification/hsl-player/build/vision
+[15.632s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/booster/Workspace/hl_unification/hsl-player/src/vision -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/booster/Workspace/hl_unification/hsl-player/install/vision
+[15.636s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/booster/Workspace/hl_unification/hsl-player/build/vision -- -j8 -l8
+[15.732s] [  3%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_trt.dir/block.cpp.o[0m
+[22.324s] [  6%] [32mBuilding CUDA object src/model/trt/CMakeFiles/yolov8_trt.dir/preprocess.cu.o[0m
+[36.496s] [  9%] [32mBuilding CUDA object src/model/trt/CMakeFiles/yolov8_trt.dir/yololayer.cu.o[0m
+[39.905s] [ 12%] [32mBuilding CUDA object src/model/trt/CMakeFiles/yolov8_trt.dir/postprocess.cu.o[0m
+[51.961s] [ 15%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_trt.dir/postprocess.cpp.o[0m
+[56.774s] [ 18%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_trt.dir/model.cpp.o[0m
+[58.378s] [ 21%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_trt.dir/impl.cpp.o[0m
+[63.792s] [ 24%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_trt.dir/calibrator.cpp.o[0m
+[65.844s] [ 27%] [32m[1mLinking CXX shared library libyolov8_trt.so[0m
+[66.118s] [ 27%] Built target yolov8_trt
+[66.154s] [ 30%] [32mBuilding CXX object src/base/CMakeFiles/booster_vision_base.dir/intrin.cpp.o[0m
+[71.005s] [ 33%] [32mBuilding CXX object src/base/CMakeFiles/booster_vision_base.dir/data_syncer.cpp.o[0m
+[79.801s] [ 36%] [32mBuilding CXX object src/base/CMakeFiles/booster_vision_base.dir/pointcloud_process.cpp.o[0m
+[94.236s] [ 39%] [32mBuilding CXX object src/base/CMakeFiles/booster_vision_base.dir/pose.cpp.o[0m
+[98.796s] [ 42%] [32m[1mLinking CXX shared library libbooster_vision_base.so[0m
+[101.260s] [ 42%] Built target booster_vision_base
+[101.298s] [ 45%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_seg.dir/yolov8_seg.cpp.o[0m
+[105.936s] [ 48%] [32m[1mLinking CXX executable yolov8_seg[0m
+[106.181s] [ 48%] Built target yolov8_seg
+[106.218s] [ 51%] [32mBuilding CXX object src/calibration/CMakeFiles/booster_vision_calibration.dir/calibration.cpp.o[0m
+[117.800s] [ 54%] [32mBuilding CXX object src/calibration/CMakeFiles/booster_vision_calibration.dir/board_detector.cpp.o[0m
+[122.501s] [ 57%] [32m[1mLinking CXX shared library libbooster_vision_calibration.so[0m
+[123.741s] [ 57%] Built target booster_vision_calibration
+[123.778s] [ 60%] [32mBuilding CXX object src/model/trt/CMakeFiles/yolov8_det.dir/yolov8_det.cpp.o[0m
+[128.609s] [ 63%] [32m[1mLinking CXX executable yolov8_det[0m
+[128.846s] [ 63%] Built target yolov8_det
+[128.882s] [ 66%] [32mBuilding CXX object src/model/CMakeFiles/yolov8_model.dir/detector.cc.o[0m
+[140.714s] [ 69%] [32mBuilding CXX object src/model/CMakeFiles/yolov8_model.dir/segmentor.cc.o[0m
+[145.905s] [ 72%] [32m[1mLinking CXX shared library libyolov8_model.so[0m
+[146.131s] [ 72%] Built target yolov8_model
+[146.176s] [ 75%] [32mBuilding CXX object src/pose_estimator/CMakeFiles/booster_vision_pose_estimator.dir/pose_estimator.cpp.o[0m
+[156.420s] [ 78%] [32m[1mLinking CXX shared library libbooster_vision_pose_estimator.so[0m
+[157.295s] [ 78%] Built target booster_vision_pose_estimator
+[157.332s] [ 81%] [32mBuilding CXX object src/CMakeFiles/vision_node.dir/main.cpp.o[0m
+[167.310s] [ 84%] [32mBuilding CXX object src/CMakeFiles/vision_node.dir/vision_node.cpp.o[0m
+[203.674s] [ 87%] [32mBuilding CXX object src/CMakeFiles/vision_node.dir/img_bridge.cpp.o[0m
+[211.464s] [ 90%] [32m[1mLinking CXX executable vision_node[0m
+[216.246s] [ 90%] Built target vision_node
+[216.286s] [ 93%] [32mBuilding CXX object src/calibration/CMakeFiles/calibration_node.dir/calibration_node.cpp.o[0m
+[244.924s] [ 96%] [32mBuilding CXX object src/calibration/CMakeFiles/calibration_node.dir/__/img_bridge.cpp.o[0m
+[251.503s] [100%] [32m[1mLinking CXX executable calibration_node[0m
+[255.838s] [100%] Built target calibration_node
+[255.860s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/booster/Workspace/hl_unification/hsl-player/build/vision -- -j8 -l8
+[255.916s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/booster/Workspace/hl_unification/hsl-player/build/vision
+[255.929s] -- Install configuration: ""
+[255.929s] -- Execute custom install script
+[255.930s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libbooster_vision_base.so
+[255.946s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libyolov8_trt.so
+[255.963s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/vision/yolov8_det
+[255.979s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/vision/yolov8_seg
+[255.994s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libyolov8_model.so
+[256.011s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libbooster_vision_pose_estimator.so
+[256.030s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/vision/calibration_node
+[256.047s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libbooster_vision_calibration.so
+[256.062s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/vision/vision_node
+[256.080s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/launch/launch.py
+[256.095s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/config/field.yaml
+[256.112s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/config/vision.yaml
+[256.130s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/ament_index/resource_index/package_run_dependencies/vision
+[256.149s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/ament_index/resource_index/parent_prefix_path/vision
+[256.166s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/environment/ament_prefix_path.sh
+[256.185s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/environment/ament_prefix_path.dsv
+[256.203s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/environment/path.sh
+[256.221s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/environment/path.dsv
+[256.238s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/local_setup.bash
+[256.255s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/local_setup.sh
+[256.274s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/local_setup.zsh
+[256.293s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/local_setup.dsv
+[256.312s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/package.dsv
+[256.330s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/ament_index/resource_index/packages/vision
+[256.346s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/cmake/ament_cmake_export_include_directories-extras.cmake
+[256.362s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/cmake/visionConfig.cmake
+[256.380s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/cmake/visionConfig-version.cmake
+[256.397s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/vision/share/vision/package.xml
+[256.415s] -- Up-to-date: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib
+[256.415s] -- Installing: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so.2.2.0
+[256.437s] -- Installing: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/cmake
+[256.437s] -- Installing: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/cmake/Ceres
+[256.438s] -- Installing: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so
+[256.456s] -- Installing: /home/booster/Workspace/hl_unification/hsl-player/install/vision/lib/libceres.so.4
+[256.478s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/vision' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/vision_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/booster/Workspace/hl_unification/hsl-player/build/vision

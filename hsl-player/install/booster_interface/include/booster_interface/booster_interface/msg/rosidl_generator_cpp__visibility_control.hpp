@@ -1,1 +1,0 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/rosidl_generator_cpp__visibility_control.hpp

@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/msg/detail/kick__rosidl_typesupport_fastrtps_cpp.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_fastrtps_cpp/brain/msg/detail/kick__rosidl_typesupport_fastrtps_cpp.hpp

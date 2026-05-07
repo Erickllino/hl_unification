@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/ament_cmake_core/booster_interfaceConfig-version.cmake
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/ament_cmake_core/booster_interfaceConfig-version.cmake

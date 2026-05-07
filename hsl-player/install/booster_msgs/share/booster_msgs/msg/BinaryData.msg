@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/booster_msgs/msg/BinaryData.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/BinaryData.msg

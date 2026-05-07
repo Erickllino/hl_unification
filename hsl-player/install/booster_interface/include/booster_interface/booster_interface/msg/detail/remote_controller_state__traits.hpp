@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/msg/detail/remote_controller_state__traits.hpp

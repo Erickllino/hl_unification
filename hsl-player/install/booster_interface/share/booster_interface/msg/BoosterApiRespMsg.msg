@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/booster_ros2_interface/msg/BoosterApiRespMsg.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/booster_ros2_interface/msg/BoosterApiRespMsg.msg

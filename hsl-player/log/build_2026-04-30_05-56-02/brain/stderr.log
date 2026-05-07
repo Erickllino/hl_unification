@@ -1,0 +1,38 @@
+[33mCMake Warning (dev) at CMakeLists.txt:55 (target_link_libraries):
+  The library that is being linked to, yaml-cpp, is marked as being
+  deprecated by the owner.  The message provided by the developer is:
+
+  The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+  Use the yaml-cpp::yaml-cpp target instead.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:55 (target_link_libraries):
+  The library that is being linked to, yaml-cpp, is marked as being
+  deprecated by the owner.  The message provided by the developer is:
+
+  The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+  Use the yaml-cpp::yaml-cpp target instead.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:55 (target_link_libraries):
+  The library that is being linked to, yaml-cpp, is marked as being
+  deprecated by the owner.  The message provided by the developer is:
+
+  The target yaml-cpp is deprecated and will be removed in version 0.10.0.
+  Use the yaml-cpp::yaml-cpp target instead.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/booster/Workspace/hl_unification/hsl-player/src/brain/src/brain.cpp:[m[K In member function ‘[01m[Kvoid Brain::joystickCallback(const RemoteControllerState&)[m[K’:
+[01m[K/home/booster/Workspace/hl_unification/hsl-player/src/brain/src/brain.cpp:1134:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Klog_[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+ 1134 |     auto [01;35m[Klog_[m[K = [=](string msg) {
+      |          [01;35m[K^~~~[m[K
+[01m[K/home/booster/Workspace/hl_unification/hsl-player/src/brain/src/brain_tree.cpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus Adjust::onRunning()[m[K’:
+[01m[K/home/booster/Workspace/hl_unification/hsl-player/src/brain/src/brain_tree.cpp:875:11:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KleftPost[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  875 |   Point2D [01;35m[KleftPost[m[K, rightPost;
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/booster/Workspace/hl_unification/hsl-player/src/brain/src/brain_tree.cpp:875:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KrightPost[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  875 |   Point2D leftPost, [01;35m[KrightPost[m[K;
+      |                     [01;35m[K^~~~~~~~~[m[K

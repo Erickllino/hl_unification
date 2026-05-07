@@ -1,0 +1,64 @@
+[0.017s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/booster/Workspace/hl_unification/hsl-player/src/game_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller
+[0.139s] -- The C compiler identification is GNU 11.4.0
+[0.242s] -- The CXX compiler identification is GNU 11.4.0
+[0.257s] -- Detecting C compiler ABI info
+[0.404s] -- Detecting C compiler ABI info - done
+[0.413s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.413s] -- Detecting C compile features
+[0.414s] -- Detecting C compile features - done
+[0.418s] -- Detecting CXX compiler ABI info
+[0.578s] -- Detecting CXX compiler ABI info - done
+[0.590s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.591s] -- Detecting CXX compile features
+[0.591s] -- Detecting CXX compile features - done
+[0.596s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.899s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.060s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.107s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[1.178s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.186s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.200s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.247s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.319s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.323s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.463s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.507s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.577s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.591s] -- Looking for pthread.h
+[1.728s] -- Looking for pthread.h - found
+[1.728s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.872s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.872s] -- Found Threads: TRUE  
+[1.948s] -- Found game_controller_interface: 1.0.0 (/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/share/game_controller_interface/cmake)
+[2.093s] -- Configuring done
+[2.112s] -- Generating done
+[2.115s] -- Build files have been written to: /home/booster/Workspace/hl_unification/hsl-player/build/game_controller
+[2.142s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/booster/Workspace/hl_unification/hsl-player/src/game_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller
+[2.144s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/booster/Workspace/hl_unification/hsl-player/build/game_controller -- -j8 -l8
+[2.230s] [ 33%] [32mBuilding CXX object CMakeFiles/game_controller_node.dir/src/main.cpp.o[0m
+[7.933s] [ 66%] [32mBuilding CXX object CMakeFiles/game_controller_node.dir/src/game_controller_node.cpp.o[0m
+[18.720s] [100%] [32m[1mLinking CXX executable game_controller_node[0m
+[19.103s] [100%] Built target game_controller_node
+[19.129s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/booster/Workspace/hl_unification/hsl-player/build/game_controller -- -j8 -l8
+[19.182s] Invoking command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/booster/Workspace/hl_unification/hsl-player/build/game_controller
+[19.195s] -- Install configuration: ""
+[19.196s] -- Execute custom install script
+[19.197s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/launch/launch.py
+[19.215s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/lib/game_controller/game_controller_node
+[19.235s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/ament_index/resource_index/package_run_dependencies/game_controller
+[19.255s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/ament_index/resource_index/parent_prefix_path/game_controller
+[19.272s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/environment/ament_prefix_path.sh
+[19.289s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/environment/ament_prefix_path.dsv
+[19.306s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/environment/path.sh
+[19.321s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/environment/path.dsv
+[19.342s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/local_setup.bash
+[19.358s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/local_setup.sh
+[19.376s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/local_setup.zsh
+[19.392s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/local_setup.dsv
+[19.410s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/package.dsv
+[19.427s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/ament_index/resource_index/packages/game_controller
+[19.445s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/cmake/game_controllerConfig.cmake
+[19.466s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/cmake/game_controllerConfig-version.cmake
+[19.485s] -- Symlinking: /home/booster/Workspace/hl_unification/hsl-player/install/game_controller/share/game_controller/package.xml
+[19.507s] Invoked command in '/home/booster/Workspace/hl_unification/hsl-player/build/game_controller' returned '0': AMENT_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface:/home/booster/ThirdParty/zed-ros/install/zed_ros2:/home/booster/ThirdParty/zed-ros/install/zed_wrapper:/home/booster/ThirdParty/zed-ros/install/zed_components:/opt/ros/humble LD_LIBRARY_PATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/booster/Workspace/hl_unification/hsl-player/install/game_controller_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/booster/Workspace/hl_unification/hsl-player/build/game_controller

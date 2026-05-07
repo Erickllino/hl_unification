@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/segmentation_result.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/segmentation_result.hpp

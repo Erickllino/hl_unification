@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/brain/msg/Kick.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/brain/msg/Kick.msg

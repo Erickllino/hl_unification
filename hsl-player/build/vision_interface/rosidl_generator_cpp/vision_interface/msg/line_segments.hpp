@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/line_segments__struct.hpp"
 #include "vision_interface/msg/detail/line_segments__builder.hpp"
 #include "vision_interface/msg/detail/line_segments__traits.hpp"
-#include "vision_interface/msg/detail/line_segments__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__LINE_SEGMENTS_HPP_

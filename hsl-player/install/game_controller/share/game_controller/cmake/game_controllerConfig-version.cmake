@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller/ament_cmake_core/game_controllerConfig-version.cmake
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller/ament_cmake_core/game_controllerConfig-version.cmake

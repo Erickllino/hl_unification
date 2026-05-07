@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/brain/msg/detail/kick__builder.hpp"
   "rosidl_generator_cpp/brain/msg/detail/kick__struct.hpp"
   "rosidl_generator_cpp/brain/msg/detail/kick__traits.hpp"
-  "rosidl_generator_cpp/brain/msg/detail/kick__type_support.hpp"
   "rosidl_generator_cpp/brain/msg/kick.hpp"
 )
 
