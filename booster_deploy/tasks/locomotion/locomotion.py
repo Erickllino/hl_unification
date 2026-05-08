@@ -129,9 +129,13 @@ class LocomotionPolicy(Policy):
 
         if not hasattr(self, '_dbg_count'):
             self._dbg_count = 0
+            jnames = self.cfg.policy_joint_names
+            leg_joints = ['Left_Hip_Pitch', 'Left_Hip_Roll', 'Left_Hip_Yaw',
+                          'Left_Knee_Pitch', 'Left_Ankle_Pitch', 'Left_Ankle_Roll']
+            self._dbg_leg_idx = [jnames.index(n) for n in leg_joints if n in jnames]
         if self._dbg_count % 100 == 0:
             vel = obs[6:9].tolist()
-            leg_actions = [round(float(action[i].item()), 4) for i in [5, 9, 13, 15, 17, 19]]
+            leg_actions = [round(float(action[i].item()), 4) for i in self._dbg_leg_idx]
             print(f"[DEBUG policy] vel_in_obs={[round(v,3) for v in vel]} leg_actions(hp,hr,hy,k,ap,ar)={leg_actions}", flush=True)
         self._dbg_count += 1
 

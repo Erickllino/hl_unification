@@ -13,7 +13,7 @@ echo "[START VISION]"
 # source ~/ThirdParty/zed-ros/install/setup.bash
 # nohup ros2 launch zed_wrapper zed_camera.launch.py camera_model:="zed2i" > zed.log 2>&1 &
 echo "[START BRAIN]"
-nohup ros2 launch brain launch.py tree:=test_rl.xml "$@" > brain.log 2>&1 &
+nohup ros2 launch brain launch.py "$@" > brain.log 2>&1 &
 echo "[START GAME_CONTROLLER]"
 nohup ros2 launch game_controller launch.py > game_controller.log 2>&1 &
 echo "[START SOUND]"
@@ -23,5 +23,5 @@ echo "[START DEPLOY]"
   source /opt/ros/humble/setup.bash && \
   source "$WORKSPACE_ROOT/hsl-player/install/setup.bash" && \
   PYTHONPATH="$WORKSPACE_ROOT/booster_deploy${PYTHONPATH:+:$PYTHONPATH}" \
-  nohup python3 scripts/deploy.py --task t1_test --auto-start --game > "$WORKSPACE_ROOT/hsl-player/deploy.log" 2>&1 &)
+  nohup python3 scripts/deploy.py --task t1_test --auto-start --game --net eth0 > "$WORKSPACE_ROOT/hsl-player/deploy.log" 2>&1 &)
 echo "[DONE]"

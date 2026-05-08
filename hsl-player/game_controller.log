@@ -1,8 +1,8 @@
-[INFO] [launch]: All log files can be found below /home/booster/.ros/log/2026-05-08-03-07-06-173886-tegra-ubuntu-37758
+[INFO] [launch]: All log files can be found below /home/booster/.ros/log/2026-05-09-00-57-50-780056-tegra-ubuntu-14845
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [game_controller_node-1]: process started with pid [37784]
-[game_controller_node-1] [INFO] [1778180826.367843351] [game_controller]: [get_parameter] port: 3838
-[game_controller_node-1] [INFO] [1778180826.368208094] [game_controller]: [get_parameter] enable_ip_white_list: 0
-[game_controller_node-1] [INFO] [1778180826.368260159] [game_controller]: [get_parameter] ip_white_list(len=1)
-[game_controller_node-1] [INFO] [1778180826.368274719] [game_controller]: [get_parameter]     --[0]: 127.0.0.1
-[game_controller_node-1] [INFO] [1778180826.373807973] [game_controller]: Listening for UDP broadcast on 0.0.0.0:3838
+[INFO] [game_controller_node-1]: process started with pid [14861]
+[game_controller_node-1] [INFO] [1778259470.920181103] [game_controller]: [get_parameter] port: 3838
+[game_controller_node-1] [INFO] [1778259470.920551937] [game_controller]: [get_parameter] enable_ip_white_list: 0
+[game_controller_node-1] [INFO] [1778259470.920588131] [game_controller]: [get_parameter] ip_white_list(len=1)
+[game_controller_node-1] [INFO] [1778259470.920600611] [game_controller]: [get_parameter]     --[0]: 127.0.0.1
+[game_controller_node-1] [INFO] [1778259470.924650441] [game_controller]: Listening for UDP broadcast on 0.0.0.0:3838

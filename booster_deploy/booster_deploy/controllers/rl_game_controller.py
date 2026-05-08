@@ -16,11 +16,12 @@ from booster_interface.msg import LowState, LowCmd, MotorCmd
 from geometry_msgs.msg import Twist
 
 try:
-    from booster_robotics_sdk_python import B1LocoClient, RobotMode  # type: ignore
+    from booster_robotics_sdk_python import B1LocoClient, RobotMode, GetModeResponse  # type: ignore
     _SDK_AVAILABLE = True
 except ImportError:
     B1LocoClient = None  # type: ignore
     RobotMode    = None  # type: ignore
+    GetModeResponse = None  # type: ignore
     _SDK_AVAILABLE = False
 
 from .controller_cfg import ControllerCfg
@@ -384,23 +385,40 @@ class BoosterRobotPortal:
             self.motor_cmd[i].q = init_joint_pos[i]
             self.motor_cmd[i].kp = float(prepare_state.stiffness[i])
             self.motor_cmd[i].kd = float(prepare_state.damping[i])
-            self.motor_cmd[i].weight = 1.0
+            #self.motor_cmd[i].weight = 1.0
 
         self.low_cmd_publisher.publish(self.low_cmd)
         time.sleep(0.1)
 
         # change to custom mode (skip on sim — MuJoCo has no hardware mode)
         if self.client is not None:
-            self.client.ChangeMode(RobotMode.kCustom)
-        # for i in range(20):  # try multiple times to make sure mode is changed
-        #     self.client.ChangeMode(RobotMode.kCustom)
-        #     time.sleep(0.5)
-        #     if (mode:= self.client.GetStatus().current_mode) == RobotMode.kCustom:
-        #         break
-        # else:
-        #     self.logger.error("Failed to switch to custom mode")
-        #     return False
+            resp = GetModeResponse()
+            self.client.GetMode(resp)
+            self.logger.info(f"Current mode: {resp.mode}")
 
+            # kCustom requires kWalking as prerequisite — transition if needed
+            if resp.mode == RobotMode.kDamping:
+                self.logger.info("In kDamping, transitioning to kWalking first...")
+                self.client.ChangeMode(RobotMode.kWalking)
+                for i in range(20):
+                    time.sleep(0.5)
+                    self.client.GetMode(resp)
+                    self.logger.info(f"Waiting for kWalking... attempt {i+1}: {resp.mode}")
+                    if resp.mode == RobotMode.kWalking:
+                        self.logger.info("Robot is now in kWalking")
+                        break
+                else:
+                    self.logger.error("Failed to reach kWalking after 20 attempts")
+                    return False
+
+            # Request kCustom — motion board requires active /joint_ctrl publishing
+            # to accept the mode switch, so we call ChangeMode once then publish
+            # the transition loop immediately rather than polling while idle.
+            ret = self.client.ChangeMode(RobotMode.kCustom)
+            self.logger.info(f"ChangeMode(kCustom) sent, return code: {ret}")
+
+        # Run the prepare transition at ~500Hz — the continuous publishing is
+        # what allows the motion board to accept and hold kCustom.
         trans = np.linspace(init_joint_pos, prepare_state.joint_pos, num=500)
         start_time = self.timer.get_time()
         for i in range(500):
@@ -409,6 +427,15 @@ class BoosterRobotPortal:
             self.low_cmd_publisher.publish(self.low_cmd)
             while self.timer.get_time() < start_time + (i + 1) * 0.002:
                 time.sleep(0.0002)
+
+        # Verify mode after publishing has been running for 1 second
+        if self.client is not None:
+            self.client.GetMode(resp)
+            self.logger.info(f"Mode after transition loop: {resp.mode}")
+            if resp.mode != RobotMode.kCustom:
+                self.logger.error(f"Failed to enter kCustom, still in {resp.mode}")
+                return False
+
         self.logger.info("Custom mode started, initialized with prepare pose")
         return True
 
