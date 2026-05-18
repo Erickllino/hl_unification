@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/dependency_links.txt
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/dependency_links.txt

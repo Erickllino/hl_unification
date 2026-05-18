@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -shared  -o booster_robotics_sdk_python.cpython-310-aarch64-linux-gnu.so CMakeFiles/booster_robotics_sdk_python.dir/python/binding.cpp.o  -Wl,-Bstatic -lbooster_robotics_sdk -Wl,-Bdynamic -lfastrtps -lfastcdr -Wl,-Bstatic -lfoonathan_memory-0.7.3 -Wl,-Bdynamic 

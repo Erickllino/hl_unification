@@ -104,7 +104,7 @@ cdr_deserialize(
   cdr >> ros_message.robot_theta_to_field;
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_brain

@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller_interface/rosidl_generator_cpp/game_controller_interface/msg/game_control_data.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_cpp/game_controller_interface/msg/game_control_data.hpp

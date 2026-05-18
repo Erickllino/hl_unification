@@ -60,6 +60,27 @@ cd hsl-player
 ./scripts/stop.sh
 ```
 
+### Monitorar o deploy em tempo real
+
+O log do processo de inferência RL é gravado em `hsl-player/deploy.log`:
+
+```bash
+tail -f ~/Workspace/hl_unification/hsl-player/deploy.log
+```
+
+Linhas esperadas durante inicialização normal:
+```
+Subscriber found, starting control loop
+ChangeMode attempt 1: current_mode=RobotMode.kCustom
+Successfully switched to kCustom mode
+Custom mode started, initialized with prepare pose
+Inference process started
+```
+
+> Se o step counter do `[DEBUG ctrl_step]` tiver saltos (ex: 3800 → 82000), há múltiplos processos deploy.py rodando simultaneamente. Resolva com `pkill -9 -f "deploy.py"` antes de reiniciar.
+>
+> Para diagnóstico completo de problemas no deploy, consulte [docs/rl_deploy_debug.md](docs/rl_deploy_debug.md).
+
 ### Simulação (rcsssmj)
 
 ```bash
@@ -95,8 +116,10 @@ O `booster_deploy` roda uma política RL (ex: `t1_walk.pt`) diretamente no hardw
 
 ```bash
 source /opt/booster/BoosterRos2Interface/install/setup.bash
-uv run deploy --task t1_walk
+uv run deploy --task t1_walk --net eth0
 ```
+
+> O argumento `--net` especifica o network interface para o SDK DDS comunicar com o motion board. No T1, o motion board está na rede `192.168.10.x` acessível via `eth0`. Sem esse argumento, o padrão é `127.0.0.1` (loopback) e o `ChangeMode` não funciona.
 
 ### Sequência de ativação no robô
 
@@ -219,7 +242,8 @@ hl_unification/
 │   ├── booster_deploy.md      # Framework booster_deploy: tasks, estrutura
 │   ├── booster_assets.md      # Modelos URDF/MJCF e motion data
 │   ├── booster_robotics_sdk.md # SDK C++/Python — instalação e uso
-│   └── limites_t1_walk.md     # Limites e instabilidades do t1_walk.pt
+│   ├── limites_t1_walk.md     # Limites e instabilidades do t1_walk.pt
+│   └── rl_deploy_debug.md     # Troubleshooting do deploy RL no robô real
 ├── install_remote.sh          # Instalação para PC (simulação nativa)
 ├── install_robot.sh           # Instalação para o robô
 ├── pyproject.toml             # UV workspace Python

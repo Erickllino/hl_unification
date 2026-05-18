@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller/ament_cmake_environment_hooks/local_setup.bash
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller/ament_cmake_environment_hooks/local_setup.bash

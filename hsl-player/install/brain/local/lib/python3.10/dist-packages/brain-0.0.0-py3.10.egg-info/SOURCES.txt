@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/SOURCES.txt
+/home/booster/Workspace/hl_unification/hsl-player/build/brain/ament_cmake_python/brain/brain.egg-info/SOURCES.txt

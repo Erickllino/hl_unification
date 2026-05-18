@@ -7,6 +7,5 @@
 #include "booster_msgs/msg/detail/binary_data__struct.hpp"
 #include "booster_msgs/msg/detail/binary_data__builder.hpp"
 #include "booster_msgs/msg/detail/binary_data__traits.hpp"
-#include "booster_msgs/msg/detail/binary_data__type_support.hpp"
 
 #endif  // BOOSTER_MSGS__MSG__BINARY_DATA_HPP_

@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -55,11 +55,6 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
-      
-      # Create destination directory.
-      # This does *not* solve the problem of empty directories WITHIN the install tree,
-      # but does make sure that the top-level directory specified by the caller gets created.
-      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -128,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/vision/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/vision/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/workspace/hsl-player/install/vision/${destination}")
+      set(destination "/home/booster/Workspace/hl_unification/hsl-player/install/vision/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,4 +311,76 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "booster_vision_base" "DESTINATION" "lib")
-include("/workspace/hsl-player/build/vision/src/base/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/base/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "yolov8_trt" "DESTINATION" "lib")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/model/trt/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "yolov8_det" "yolov8_seg" "DESTINATION" "lib/vision")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/model/trt/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "yolov8_model" "DESTINATION" "lib")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/model/ament_cmake_symlink_install_targets_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "booster_vision_pose_estimator" "DESTINATION" "lib")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/pose_estimator/ament_cmake_symlink_install_targets_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "calibration_node" "DESTINATION" "lib/vision")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/calibration/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "booster_vision_calibration" "DESTINATION" "lib")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/calibration/ament_cmake_symlink_install_targets_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install("TARGETS" "vision_node" "DESTINATION" "lib/vision")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/vision/src/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "launch" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/vision" DIRECTORY "launch" "DESTINATION" "share/vision")
+
+# install(DIRECTORY "config" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/vision" DIRECTORY "config" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/vision" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/vision" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vision/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/vision/environment")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/vision/environment")
+
+# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vision/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/vision/environment")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/vision/environment")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/vision")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/packages/vision" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_index/share/ament_index/resource_index/packages/vision" "DESTINATION" "share/ament_index/resource_index/packages")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/vision/cmake")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_core/visionConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_core/visionConfig-version.cmake" "DESTINATION" "share/vision/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_core/visionConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_core/visionConfig-version.cmake" "DESTINATION" "share/vision/cmake")
+
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/vision/package.xml" "DESTINATION" "share/vision")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/vision" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/vision/package.xml" "DESTINATION" "share/vision")

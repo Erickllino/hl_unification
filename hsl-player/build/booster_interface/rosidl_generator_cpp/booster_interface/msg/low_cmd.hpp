@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/low_cmd__struct.hpp"
 #include "booster_interface/msg/detail/low_cmd__builder.hpp"
 #include "booster_interface/msg/detail/low_cmd__traits.hpp"
-#include "booster_interface/msg/detail/low_cmd__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__LOW_CMD_HPP_

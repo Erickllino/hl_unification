@@ -1,8 +1,8 @@
 {
   "package_name": "booster_msgs",
   "non_idl_tuples": [
-    "/workspace/hsl-player/src/booster_msgs:msg/BinaryData.msg",
-    "/workspace/hsl-player/src/booster_msgs:msg/RpcReqMsg.msg",
-    "/workspace/hsl-player/src/booster_msgs:msg/RpcRespMsg.msg"
+    "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs:msg/BinaryData.msg",
+    "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs:msg/RpcReqMsg.msg",
+    "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs:msg/RpcRespMsg.msg"
   ]
 }

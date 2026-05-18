@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/msg/_imu_state.py
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/msg/_imu_state.py

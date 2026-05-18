@@ -16,11 +16,12 @@ from booster_interface.msg import LowState, LowCmd, MotorCmd
 from geometry_msgs.msg import Twist
 
 try:
-    from booster_robotics_sdk_python import B1LocoClient, RobotMode  # type: ignore
+    from booster_robotics_sdk_python import B1LocoClient, RobotMode, GetModeResponse  # type: ignore
     _SDK_AVAILABLE = True
 except ImportError:
     B1LocoClient = None  # type: ignore
     RobotMode    = None  # type: ignore
+    GetModeResponse = None  # type: ignore
     _SDK_AVAILABLE = False
 
 from .controller_cfg import ControllerCfg
@@ -278,6 +279,7 @@ class BoosterRobotPortal:
         cmd[0]["vy"]   = msg.linear.y  / self.cfg.vel_command.vy_max
         cmd[0]["vyaw"] = msg.angular.z / self.cfg.vel_command.vyaw_max
         self.synced_command.write(cmd)
+        print(f"[DEBUG rl_move_handler] vx={cmd[0]['vx']:.3f} vy={cmd[0]['vy']:.3f} vyaw={cmd[0]['vyaw']:.3f}", flush=True)
 
     def _low_state_handler(self, low_state_msg: LowState):
         self.metrics["low_state_handler"].mark()
@@ -336,7 +338,7 @@ class BoosterRobotPortal:
             "joint_ctrl",
             QoSProfile(
                 depth=1,
-                reliability=ReliabilityPolicy.RELIABLE,
+                reliability=ReliabilityPolicy.BEST_EFFORT,
                 history=HistoryPolicy.KEEP_LAST
             )
         )
@@ -383,22 +385,40 @@ class BoosterRobotPortal:
             self.motor_cmd[i].q = init_joint_pos[i]
             self.motor_cmd[i].kp = float(prepare_state.stiffness[i])
             self.motor_cmd[i].kd = float(prepare_state.damping[i])
+            #self.motor_cmd[i].weight = 1.0
 
         self.low_cmd_publisher.publish(self.low_cmd)
         time.sleep(0.1)
 
         # change to custom mode (skip on sim — MuJoCo has no hardware mode)
         if self.client is not None:
-            self.client.ChangeMode(RobotMode.kCustom)
-        # for i in range(20):  # try multiple times to make sure mode is changed
-        #     self.client.ChangeMode(RobotMode.kCustom)
-        #     time.sleep(0.5)
-        #     if (mode:= self.client.GetStatus().current_mode) == RobotMode.kCustom:
-        #         break
-        # else:
-        #     self.logger.error("Failed to switch to custom mode")
-        #     return False
+            resp = GetModeResponse()
+            self.client.GetMode(resp)
+            self.logger.info(f"Current mode: {resp.mode}")
 
+            # kCustom requires kWalking as prerequisite — transition if needed
+            if resp.mode == RobotMode.kDamping:
+                self.logger.info("In kDamping, transitioning to kWalking first...")
+                self.client.ChangeMode(RobotMode.kWalking)
+                for i in range(20):
+                    time.sleep(0.5)
+                    self.client.GetMode(resp)
+                    self.logger.info(f"Waiting for kWalking... attempt {i+1}: {resp.mode}")
+                    if resp.mode == RobotMode.kWalking:
+                        self.logger.info("Robot is now in kWalking")
+                        break
+                else:
+                    self.logger.error("Failed to reach kWalking after 20 attempts")
+                    return False
+
+            # Request kCustom — motion board requires active /joint_ctrl publishing
+            # to accept the mode switch, so we call ChangeMode once then publish
+            # the transition loop immediately rather than polling while idle.
+            ret = self.client.ChangeMode(RobotMode.kCustom)
+            self.logger.info(f"ChangeMode(kCustom) sent, return code: {ret}")
+
+        # Run the prepare transition at ~500Hz — the continuous publishing is
+        # what allows the motion board to accept and hold kCustom.
         trans = np.linspace(init_joint_pos, prepare_state.joint_pos, num=500)
         start_time = self.timer.get_time()
         for i in range(500):
@@ -407,6 +427,15 @@ class BoosterRobotPortal:
             self.low_cmd_publisher.publish(self.low_cmd)
             while self.timer.get_time() < start_time + (i + 1) * 0.002:
                 time.sleep(0.0002)
+
+        # Verify mode after publishing has been running for 1 second
+        if self.client is not None:
+            self.client.GetMode(resp)
+            self.logger.info(f"Mode after transition loop: {resp.mode}")
+            if resp.mode != RobotMode.kCustom:
+                self.logger.error(f"Failed to enter kCustom, still in {resp.mode}")
+                return False
+
         self.logger.info("Custom mode started, initialized with prepare pose")
         return True
 
@@ -551,6 +580,7 @@ class BoosterRobotController(BaseController):
     def __init__(self, cfg: ControllerCfg, portal: BoosterRobotPortal) -> None:
         super().__init__(cfg)
         self.portal = portal
+        self._debug_step = 0
 
     def update_vel_command(self):
         cmd = self.portal.synced_command.read()[0]
@@ -558,6 +588,8 @@ class BoosterRobotController(BaseController):
         self.vel_command.lin_vel_x = cmd["vx"] * self.vel_command.vx_max
         self.vel_command.lin_vel_y = cmd["vy"] * self.vel_command.vy_max
         self.vel_command.ang_vel_yaw = cmd["vyaw"] * self.vel_command.vyaw_max
+        if self._debug_step % 100 == 0:
+            print(f"[DEBUG inference] vel_cmd vx={self.vel_command.lin_vel_x:.3f} vy={self.vel_command.lin_vel_y:.3f} vyaw={self.vel_command.ang_vel_yaw:.3f}", flush=True)
 
     def update_state(self) -> None:
         state = self.portal.synced_state.read()[0]
@@ -596,7 +628,12 @@ class BoosterRobotController(BaseController):
             kd_val = float(self.robot.joint_damping[i].item())
             self.portal.motor_cmd[i].kp = kp_val
             self.portal.motor_cmd[i].kd = kd_val
+            self.portal.motor_cmd[i].weight = 1.0
         self.portal.low_cmd_publisher.publish(self.portal.low_cmd)
+        if self._debug_step % 100 == 0:
+            leg = [round(float(dof_targets[i].item()), 4) for i in range(11, 17)]
+            print(f"[DEBUG ctrl_step] step={self._debug_step} left_leg_targets={leg}", flush=True)
+        self._debug_step += 1
 
     def stop(self):
         super().stop()

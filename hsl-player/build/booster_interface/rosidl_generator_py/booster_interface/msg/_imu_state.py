@@ -86,15 +86,18 @@ class ImuState(metaclass=Metaclass_ImuState):
         if 'rpy' not in kwargs:
             self.rpy = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.rpy = kwargs.get('rpy')
+            self.rpy = numpy.array(kwargs.get('rpy'), dtype=numpy.float32)
+            assert self.rpy.shape == (3, )
         if 'gyro' not in kwargs:
             self.gyro = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.gyro = kwargs.get('gyro')
+            self.gyro = numpy.array(kwargs.get('gyro'), dtype=numpy.float32)
+            assert self.gyro.shape == (3, )
         if 'acc' not in kwargs:
             self.acc = numpy.zeros(3, dtype=numpy.float32)
         else:
-            self.acc = kwargs.get('acc')
+            self.acc = numpy.array(kwargs.get('acc'), dtype=numpy.float32)
+            assert self.acc.shape == (3, )
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -125,11 +128,11 @@ class ImuState(metaclass=Metaclass_ImuState):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if any(self.rpy != other.rpy):
+        if all(self.rpy != other.rpy):
             return False
-        if any(self.gyro != other.gyro):
+        if all(self.gyro != other.gyro):
             return False
-        if any(self.acc != other.acc):
+        if all(self.acc != other.acc):
             return False
         return True
 

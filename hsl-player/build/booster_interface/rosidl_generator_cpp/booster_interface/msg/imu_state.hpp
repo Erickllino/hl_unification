@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/imu_state__struct.hpp"
 #include "booster_interface/msg/detail/imu_state__builder.hpp"
 #include "booster_interface/msg/detail/imu_state__traits.hpp"
-#include "booster_interface/msg/detail/imu_state__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__IMU_STATE_HPP_

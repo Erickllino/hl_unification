@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/segmentation_point__struct.hpp"
 #include "vision_interface/msg/detail/segmentation_point__builder.hpp"
 #include "vision_interface/msg/detail/segmentation_point__traits.hpp"
-#include "vision_interface/msg/detail/segmentation_point__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__SEGMENTATION_POINT_HPP_

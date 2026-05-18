@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/detected_object__struct.hpp"
 #include "vision_interface/msg/detail/detected_object__builder.hpp"
 #include "vision_interface/msg/detail/detected_object__traits.hpp"
-#include "vision_interface/msg/detail/detected_object__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__DETECTED_OBJECT_HPP_

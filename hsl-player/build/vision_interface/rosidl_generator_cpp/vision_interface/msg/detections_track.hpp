@@ -7,6 +7,5 @@
 #include "vision_interface/msg/detail/detections_track__struct.hpp"
 #include "vision_interface/msg/detail/detections_track__builder.hpp"
 #include "vision_interface/msg/detail/detections_track__traits.hpp"
-#include "vision_interface/msg/detail/detections_track__type_support.hpp"
 
 #endif  // VISION_INTERFACE__MSG__DETECTIONS_TRACK_HPP_

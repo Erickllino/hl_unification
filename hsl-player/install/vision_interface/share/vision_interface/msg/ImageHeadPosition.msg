@@ -1,1 +1,1 @@
-/workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg
+/home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface/msg/ImageHeadPosition.msg

@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/game_controller_interface/ament_cmake_python/game_controller_interface/game_controller_interface.egg-info/dependency_links.txt
+/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/ament_cmake_python/game_controller_interface/game_controller_interface.egg-info/dependency_links.txt

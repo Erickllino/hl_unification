@@ -1,0 +1,35 @@
+[2026-05-09 00:57:53,799] INFO Low state subscription started
+[2026-05-09 00:57:53,806] INFO RL move subscription started
+ChannelSubscriber::InitChannel: setting reliability: 0
+[2026-05-09 00:57:53,823] INFO Subscriber found, starting control loop
+[2026-05-09 00:57:53,937] INFO Current mode: RobotMode.kPrepare
+[2026-05-09 00:57:53,940] INFO ChangeMode(kCustom) sent, return code: 0
+Failed to initialize joystick: No suitable joystick found, downgrade to keyboard control
+Initialization complete.
+[DEBUG rl_move_handler] vx=0.500 vy=0.000 vyaw=0.000
+[2026-05-09 00:57:54,945] INFO Mode after transition loop: RobotMode.kCustom
+[2026-05-09 00:57:54,945] INFO Custom mode started, initialized with prepare pose
+[2026-05-09 00:57:54,960] INFO Inference process started
+[DEBUG inference] vel_cmd vx=0.000 vy=0.000 vyaw=0.000
+[DEBUG inference] vel_cmd vx=0.000 vy=0.000 vyaw=0.000
+[DEBUG policy] vel_in_obs=[0.0, 0.0, 0.0] leg_actions(hp,hr,hy,k,ap,ar)=[0.0545, 0.2565, 0.1503, 0.5265, -0.3625, 0.0583]
+[DEBUG ctrl_step] step=0 left_leg_targets=[-0.1855, 0.0544, 0.0319, 0.5364, -0.3352, 0.0217]
+Press keyboard 'w'/'s' to increase/decrease vx; Press 'a'/'d' to increase/decrease vy; Press 'q'/'e' to increase/decrease vyaw, press 'Space' to stop.
+[DEBUG rl_move_handler] vx=0.500 vy=0.000 vyaw=0.000
+[DEBUG rl_move_handler] vx=0.500 vy=0.000 vyaw=0.000
+[DEBUG inference] vel_cmd vx=0.000 vy=0.000 vyaw=0.000
+[DEBUG policy] vel_in_obs=[0.0, 0.0, 0.0] leg_actions(hp,hr,hy,k,ap,ar)=[3.1269, 0.2907, -2.9339, 2.4501, 2.9566, -0.281]
+[DEBUG ctrl_step] step=100 left_leg_targets=[0.6317, 0.0616, -0.622, 1.0346, 0.9028, -0.1048]
+[DEBUG rl_move_handler] vx=0.500 vy=0.000 vyaw=0.000
+[2026-05-09 00:57:57,839] INFO Inference process stopped.
+
+Falling detected, stopping policy for safety. You can disable safety fallback by setting LocomotionPolicyCfg.enable_safety_fallback to False.
+[2026-05-09 00:57:57,875] INFO Exiting controller, switching to walking mode...
+[2026-05-09 00:57:57,884] INFO Low state subscription stopped
+[2026-05-09 00:57:57,886] INFO Doing cleanup...
+[2026-05-09 00:57:57,894] INFO RL move subscription stopped
+[2026-05-09 00:57:57,898] INFO Cleanup complete
+METRICS low_state_handler: count=1914, freq=477.067Hz, mean_period=0.002096141817564041, min=0.0008525920000010956, max=0.0926090179999619
+METRICS policy_step: count=138, freq=50.081Hz, mean_period=0.019967658897810603, min=0.01217569999994339, max=0.022909114000071895
+pure virtual method called
+terminate called without an active exception

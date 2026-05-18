@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -55,11 +55,6 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
-      
-      # Create destination directory.
-      # This does *not* solve the problem of empty directories WITHIN the install tree,
-      # but does make sure that the top-level directory specified by the caller gets created.
-      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -128,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/workspace/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/booster/Workspace/hl_unification/hsl-player/install/booster_msgs/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/workspace/hsl-player/install/booster_msgs/${destination}")
+      set(destination "/home/booster/Workspace/hl_unification/hsl-player/install/booster_msgs/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -315,137 +310,131 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/booster_msgs/environment")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/booster_msgs/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/booster_msgs/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_c/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.h")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_fastrtps_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_typesupport_introspection_cpp/booster_msgs/" "DESTINATION" "include/booster_msgs/booster_msgs" "PATTERN" "*.hpp")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/booster_msgs/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/booster_msgs/environment")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/booster_msgs/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/booster_msgs/environment")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_python/booster_msgs/booster_msgs.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs-0.0.0-py3.10.egg-info")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_py/booster_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_py/booster_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_py/booster_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" DIRECTORY "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_py/booster_msgs/" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
 # install("TARGETS" "booster_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs")
-include("/workspace/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "booster_msgs__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs")
-include("/workspace/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install("TARGETS" "booster_msgs__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/booster_msgs")
-include("/workspace/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/rust_packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/rust_packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl" "DESTINATION" "share/booster_msgs/msg")
 
-# install(DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_rs/booster_msgs/rust" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_directory("/workspace/hsl-player/src/booster_msgs" DIRECTORY "/workspace/hsl-player/build/booster_msgs/rosidl_generator_rs/booster_msgs/rust" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl" "DESTINATION" "share/booster_msgs/msg")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/BinaryData.idl" "DESTINATION" "share/booster_msgs/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl" "DESTINATION" "share/booster_msgs/msg")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcReqMsg.idl" "DESTINATION" "share/booster_msgs/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/BinaryData.msg" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/BinaryData.msg" "DESTINATION" "share/booster_msgs/msg")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_adapter/booster_msgs/msg/RpcRespMsg.idl" "DESTINATION" "share/booster_msgs/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/RpcReqMsg.msg" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/RpcReqMsg.msg" "DESTINATION" "share/booster_msgs/msg")
 
-# install(FILES "/workspace/hsl-player/src/booster_msgs/msg/BinaryData.msg" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/src/booster_msgs/msg/BinaryData.msg" "DESTINATION" "share/booster_msgs/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/RpcRespMsg.msg" "DESTINATION" "share/booster_msgs/msg")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/msg/RpcRespMsg.msg" "DESTINATION" "share/booster_msgs/msg")
 
-# install(FILES "/workspace/hsl-player/src/booster_msgs/msg/RpcReqMsg.msg" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/src/booster_msgs/msg/RpcReqMsg.msg" "DESTINATION" "share/booster_msgs/msg")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/booster_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/booster_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/workspace/hsl-player/src/booster_msgs/msg/RpcRespMsg.msg" "DESTINATION" "share/booster_msgs/msg")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/src/booster_msgs/msg/RpcRespMsg.msg" "DESTINATION" "share/booster_msgs/msg")
-
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/booster_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/booster_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/booster_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/booster_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/booster_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/booster_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/booster_msgs/environment")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/booster_msgs/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/booster_msgs/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/booster_msgs/environment")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/booster_msgs/environment")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/booster_msgs/environment")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/booster_msgs/environment")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/booster_msgs/environment")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/booster_msgs")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/booster_msgs")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/booster_msgs")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/booster_msgs")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/booster_msgs")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_index/share/ament_index/resource_index/packages/booster_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig.cmake" "/workspace/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig-version.cmake" "DESTINATION" "share/booster_msgs/cmake")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig.cmake" "/workspace/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig-version.cmake" "DESTINATION" "share/booster_msgs/cmake")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig-version.cmake" "DESTINATION" "share/booster_msgs/cmake")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig.cmake" "/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/ament_cmake_core/booster_msgsConfig-version.cmake" "DESTINATION" "share/booster_msgs/cmake")
 
-# install(FILES "/workspace/hsl-player/src/booster_msgs/package.xml" "DESTINATION" "share/booster_msgs")
-ament_cmake_symlink_install_files("/workspace/hsl-player/src/booster_msgs" FILES "/workspace/hsl-player/src/booster_msgs/package.xml" "DESTINATION" "share/booster_msgs")
+# install(FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/package.xml" "DESTINATION" "share/booster_msgs")
+ament_cmake_symlink_install_files("/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs" FILES "/home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs/package.xml" "DESTINATION" "share/booster_msgs")

@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__struct.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_cpp/booster_interface/srv/detail/rpc_service__struct.hpp

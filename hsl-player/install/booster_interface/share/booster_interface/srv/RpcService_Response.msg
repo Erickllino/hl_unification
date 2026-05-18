@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_cmake/srv/RpcService_Response.msg
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_cmake/srv/RpcService_Response.msg

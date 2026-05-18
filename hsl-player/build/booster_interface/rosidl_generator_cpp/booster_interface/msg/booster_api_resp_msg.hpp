@@ -7,6 +7,5 @@
 #include "booster_interface/msg/detail/booster_api_resp_msg__struct.hpp"
 #include "booster_interface/msg/detail/booster_api_resp_msg__builder.hpp"
 #include "booster_interface/msg/detail/booster_api_resp_msg__traits.hpp"
-#include "booster_interface/msg/detail/booster_api_resp_msg__type_support.hpp"
 
 #endif  // BOOSTER_INTERFACE__MSG__BOOSTER_API_RESP_MSG_HPP_

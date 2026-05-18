@@ -176,16 +176,6 @@ static bool _SegmentationResult__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->lines.data) {
       vision_interface__msg__SegmentationLine__Sequence__fini(&ros_message->lines);
     }
@@ -213,16 +203,6 @@ static bool _SegmentationResult__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-
-    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
-    auto old_state = cdr.getState();
-    bool correct_size = cdr.jump(size);
-    cdr.setState(old_state);
-    if (!correct_size) {
-      fprintf(stderr, "sequence size exceeds remaining buffer\n");
-      return false;
-    }
-
     if (ros_message->points.data) {
       vision_interface__msg__SegmentationPoint__Sequence__fini(&ros_message->points);
     }

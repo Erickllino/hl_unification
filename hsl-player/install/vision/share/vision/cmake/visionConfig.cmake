@@ -1,0 +1,1 @@
+/home/booster/Workspace/hl_unification/hsl-player/build/vision/ament_cmake_core/visionConfig.cmake

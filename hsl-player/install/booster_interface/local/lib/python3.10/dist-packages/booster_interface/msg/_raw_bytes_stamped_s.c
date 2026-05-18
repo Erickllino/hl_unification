@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/msg/_raw_bytes_stamped_s.c
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_interface/rosidl_generator_py/booster_interface/msg/_raw_bytes_stamped_s.c

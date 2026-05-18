@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/game_controller_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/game_controller_interface
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface
 
 # Utility rule file for game_controller_interface__py.
 
@@ -93,8 +93,8 @@ rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.ro
 rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/game_controller_interface/msg/GameControlData.idl
 rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/game_controller_interface/msg/RobotInfo.idl
 rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/game_controller_interface/msg/TeamInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/workspace/hsl-player/build/game_controller_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /workspace/hsl-player/build/game_controller_interface/game_controller_interface__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /workspace/hsl-player/build/game_controller_interface/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/game_controller_interface__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/game_controller_interface/_game_controller_interface_s.ep.rosidl_typesupport_introspection_c.c
@@ -142,10 +142,10 @@ game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/build
 .PHONY : game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/build
 
 game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/clean:
-	cd /workspace/hsl-player/build/game_controller_interface/game_controller_interface__py && $(CMAKE_COMMAND) -P CMakeFiles/game_controller_interface__py.dir/cmake_clean.cmake
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/game_controller_interface__py && $(CMAKE_COMMAND) -P CMakeFiles/game_controller_interface__py.dir/cmake_clean.cmake
 .PHONY : game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/clean
 
 game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/depend:
-	cd /workspace/hsl-player/build/game_controller_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/hsl-player/src/robocup_ros2_interface/src/game_controller_interface /workspace/hsl-player/build/game_controller_interface/game_controller_interface__py /workspace/hsl-player/build/game_controller_interface /workspace/hsl-player/build/game_controller_interface/game_controller_interface__py /workspace/hsl-player/build/game_controller_interface/game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/game_controller_interface /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/game_controller_interface__py /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/game_controller_interface__py /home/booster/Workspace/hl_unification/hsl-player/build/game_controller_interface/game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : game_controller_interface__py/CMakeFiles/game_controller_interface__py.dir/depend
 

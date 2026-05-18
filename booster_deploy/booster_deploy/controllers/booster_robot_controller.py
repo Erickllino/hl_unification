@@ -317,6 +317,7 @@ class BoosterRobotPortal:
             self.motor_cmd[i].q = init_joint_pos[i]
             self.motor_cmd[i].kp = float(prepare_state.stiffness[i])
             self.motor_cmd[i].kd = float(prepare_state.damping[i])
+            self.motor_cmd[i].weight = 1.0
 
         self.low_cmd_publisher.publish(self.low_cmd)
         time.sleep(0.1)
@@ -527,6 +528,7 @@ class BoosterRobotController(BaseController):
             kd_val = float(self.robot.joint_damping[i].item())
             self.portal.motor_cmd[i].kp = kp_val
             self.portal.motor_cmd[i].kd = kd_val
+            self.portal.motor_cmd[i].weight = 1.0
         self.portal.low_cmd_publisher.publish(self.portal.low_cmd)
 
     def stop(self):

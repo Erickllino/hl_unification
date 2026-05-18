@@ -1,1 +1,0 @@
-/workspace/hsl-player/build/vision_interface/rosidl_generator_cpp/vision_interface/msg/detail/detected_object__type_support.hpp

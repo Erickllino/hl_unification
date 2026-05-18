@@ -54,7 +54,7 @@ endif()
 add_library(game_controller_interface::game_controller_interface__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(game_controller_interface::game_controller_interface__rosidl_generator_py PROPERTIES
-  INTERFACE_LINK_LIBRARIES "game_controller_interface::game_controller_interface__rosidl_generator_c;/usr/lib/x86_64-linux-gnu/libpython3.10.so;game_controller_interface::game_controller_interface__rosidl_typesupport_c"
+  INTERFACE_LINK_LIBRARIES "game_controller_interface::game_controller_interface__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.10.so;game_controller_interface::game_controller_interface__rosidl_typesupport_c"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

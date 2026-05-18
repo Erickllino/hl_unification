@@ -1,3 +1,3 @@
 # generated from colcon_core/shell/template/hook_prepend_value.sh.em
 
-_colcon_prepend_unique_value PYTHONPATH "/workspace/hsl-player/build/sound_play"
+_colcon_prepend_unique_value PYTHONPATH "/home/booster/Workspace/hl_unification/hsl-player/build/sound_play"

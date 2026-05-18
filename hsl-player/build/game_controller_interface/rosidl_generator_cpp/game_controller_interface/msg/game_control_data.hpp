@@ -7,6 +7,5 @@
 #include "game_controller_interface/msg/detail/game_control_data__struct.hpp"
 #include "game_controller_interface/msg/detail/game_control_data__builder.hpp"
 #include "game_controller_interface/msg/detail/game_control_data__traits.hpp"
-#include "game_controller_interface/msg/detail/game_control_data__type_support.hpp"
 
 #endif  // GAME_CONTROLLER_INTERFACE__MSG__GAME_CONTROL_DATA_HPP_

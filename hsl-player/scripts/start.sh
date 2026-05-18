@@ -18,8 +18,10 @@ echo "[START GAME_CONTROLLER]"
 nohup ros2 launch game_controller launch.py > game_controller.log 2>&1 &
 echo "[START SOUND]"
 nohup ros2 run sound_play sound_play_node > sound.log 2>&1 &
-echo "[DONE]"
+echo "[START DEPLOY]"
 (cd "$WORKSPACE_ROOT/booster_deploy" && \
   source /opt/ros/humble/setup.bash && \
   source "$WORKSPACE_ROOT/hsl-player/install/setup.bash" && \
-  PYTHONPATH="$WORKSPACE_ROOT/booster_deploy${PYTHONPATH:+:$PYTHONPATH}" python3 scripts/deploy.py --task t1_walk --auto-start --game)
+  PYTHONPATH="$WORKSPACE_ROOT/booster_deploy${PYTHONPATH:+:$PYTHONPATH}" \
+  nohup python3 scripts/deploy.py --task t1_test --auto-start --game --net eth0 > "$WORKSPACE_ROOT/hsl-player/deploy.log" 2>&1 &)
+echo "[DONE]"

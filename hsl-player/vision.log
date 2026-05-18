@@ -1,0 +1,103 @@
+[INFO] [launch]: All log files can be found below /home/booster/.ros/log/2026-04-29-21-48-54-142450-tegra-ubuntu-23555
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [vision_node-1]: process started with pid [23623]
+[vision_node-1] Warning: Configuration file empty!
+[vision_node-1] loaded file: 
+[vision_node-1] camera:
+[vision_node-1]   type: zed
+[vision_node-1]   intrin:
+[vision_node-1]     fx: 260.660217
+[vision_node-1]     fy: 260.660217
+[vision_node-1]     cx: 325.599976
+[vision_node-1]     cy: 181.973267
+[vision_node-1]     distortion_model: 0
+[vision_node-1]     distortion_coeffs: []
+[vision_node-1]   extrin:
+[vision_node-1]     -
+[vision_node-1]       - 0.0151938926
+[vision_node-1]       - -0.0339420885
+[vision_node-1]       - 0.999308288
+[vision_node-1]       - 0.048156254
+[vision_node-1]     -
+[vision_node-1]       - -0.999880075
+[vision_node-1]       - 0.0024950048
+[vision_node-1]       - 0.0152873322
+[vision_node-1]       - 0.0965272784
+[vision_node-1]     -
+[vision_node-1]       - -0.0030121631
+[vision_node-1]       - -0.999420762
+[vision_node-1]       - -0.0339001082
+[vision_node-1]       - 0.0727597401
+[vision_node-1]     -
+[vision_node-1]       - 0
+[vision_node-1]       - 0
+[vision_node-1]       - 0
+[vision_node-1]       - 1
+[vision_node-1]   pitch_compensation: 0
+[vision_node-1]   yaw_compensation: 0
+[vision_node-1]   z_compensation: 0
+[vision_node-1] detection_model:
+[vision_node-1]   model_path: ./src/vision/model/best_orin.engine
+[vision_node-1]   confidence_threshold: 0.2
+[vision_node-1]   nms_threshold: 0.4
+[vision_node-1]   classnames: [Ball, Goalpost, Person, LCross, TCross, XCross, PenaltyPoint, Opponent, BRMarker]
+[vision_node-1]   post_process:
+[vision_node-1]     single_ball_assumption: false
+[vision_node-1]     confidence_thresholds:
+[vision_node-1]       Ball: 0.4
+[vision_node-1]       Goalpost: 0.4
+[vision_node-1]       Person: 0.4
+[vision_node-1]       LCross: 0.3
+[vision_node-1]       TCross: 0.3
+[vision_node-1]       XCross: 0.3
+[vision_node-1]       PenaltyPoint: 0.3
+[vision_node-1]       Opponent: 0.4
+[vision_node-1]       BRMarker: 0.2
+[vision_node-1] segmentation_model:
+[vision_node-1]   model_path: ./src/vision/model/best_seg_orin.engine
+[vision_node-1]   confidence_threshold: 0.3
+[vision_node-1]   nms_threshold: 0.9
+[vision_node-1] use_depth: true
+[vision_node-1] ball_pose_estimator:
+[vision_node-1]   use_depth: false
+[vision_node-1]   radius: 0.109
+[vision_node-1]   down_sample_leaf_size: 0.01
+[vision_node-1]   cluster_distance_threshold: 0.01
+[vision_node-1]   fitting_distance_threshold: 0.01
+[vision_node-1]   minimum_cluster_size: 150
+[vision_node-1]   filter_distance: 1.2
+[vision_node-1]   check_ball_height: true
+[vision_node-1] human_like_pose_estimator:
+[vision_node-1]   use_depth: false
+[vision_node-1]   down_sample_leaf_size: 0.01
+[vision_node-1]   fitting_distance_threshold: 0.01
+[vision_node-1]   statistic_outlier_multiplier: 0.01
+[vision_node-1] field_marker_pose_estimator:
+[vision_node-1]   refine: false
+[vision_node-1]   line_segment_area_threshold: 75
+[vision_node-1] calibration:
+[vision_node-1]   offset:
+[vision_node-1]     exclude_distance: 2.0
+[vision_node-1]     zero_translation: true
+[vision_node-1]     field_marker_path: ./src/vision/config/field.yaml
+[vision_node-1]   handeye:
+[vision_node-1]     calibration_time: 2026-01-10-22-33-53
+[vision_node-1]     reprojection_error: 2.1277740071129996
+[vision_node-1] misc:
+[vision_node-1]   save_data_nonstationary: true
+[vision_node-1] offline_mode: 0
+[vision_node-1] show_det: 1
+[vision_node-1] show_seg: 1
+[vision_node-1] save_data: 1
+[vision_node-1] save_depth: 1
+[vision_node-1] save_fps: 2
+[vision_node-1] save_every_n_frame: 15
+[vision_node-1] loading det engine: ./src/vision/model/best_orin.engine
+[vision_node-1] [W] [TRT] Using an engine plan file across different models of devices is not recommended and is likely to affect performance or even cause errors.
+[vision_node-1] [04/29/2026-21:48:54] det model initialization, done!
+[vision_node-1] loading seg engine: ./src/vision/model/best_seg_orin.engine
+[vision_node-1] seg model initialization, done!
+[vision_node-1] creating log directory: /home/booster/Workspace/vision_log/2026-04-29-21-48-55
+[vision_node-1] filter_distance: 1.2
+[vision_node-1] current camera_type : zed
+[vision_node-1] create sub for segmentor

@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/brain/rosidl_generator_cpp/brain/msg/kick.hpp
+/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_generator_cpp/brain/msg/kick.hpp

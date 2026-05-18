@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/msg/detections.h
+/home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/rosidl_generator_c/vision_interface/msg/detections.h

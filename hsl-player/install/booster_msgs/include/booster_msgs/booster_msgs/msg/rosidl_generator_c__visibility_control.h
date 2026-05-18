@@ -1,1 +1,1 @@
-/workspace/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/msg/rosidl_generator_c__visibility_control.h
+/home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/rosidl_generator_c/booster_msgs/msg/rosidl_generator_c__visibility_control.h

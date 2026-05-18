@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/robocup_ros2_interface/src/vision_interface
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/robocup_ros2_interface/src/vision_interface
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/vision_interface
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/vision_interface/CMakeFiles /workspace/hsl-player/build/vision_interface//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/CMakeFiles /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/vision_interface/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/vision_interface/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -404,19 +404,6 @@ vision_interface__py: cmake_check_build_system
 vision_interface__py/fast:
 	$(MAKE) $(MAKESILENT) -f vision_interface__py/CMakeFiles/vision_interface__py.dir/build.make vision_interface__py/CMakeFiles/vision_interface__py.dir/build
 .PHONY : vision_interface__py/fast
-
-#=============================================================================
-# Target rules for targets named vision_interface__rs
-
-# Build rule for target.
-vision_interface__rs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vision_interface__rs
-.PHONY : vision_interface__rs
-
-# fast build rule for target.
-vision_interface__rs/fast:
-	$(MAKE) $(MAKESILENT) -f vision_interface__rs/CMakeFiles/vision_interface__rs.dir/build.make vision_interface__rs/CMakeFiles/vision_interface__rs.dir/build
-.PHONY : vision_interface__rs/fast
 
 rosidl_generator_c/vision_interface/msg/detail/ball__functions.o: rosidl_generator_c/vision_interface/msg/detail/ball__functions.c.o
 .PHONY : rosidl_generator_c/vision_interface/msg/detail/ball__functions.o
@@ -2429,7 +2416,6 @@ help:
 	@echo "... vision_interface"
 	@echo "... vision_interface__cpp"
 	@echo "... vision_interface__py"
-	@echo "... vision_interface__rs"
 	@echo "... vision_interface_uninstall"
 	@echo "... vision_interface__rosidl_generator_c"
 	@echo "... vision_interface__rosidl_generator_py"

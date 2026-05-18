@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/hsl-player/src/booster_msgs
+CMAKE_SOURCE_DIR = /home/booster/Workspace/hl_unification/hsl-player/src/booster_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /workspace/hsl-player/build/booster_msgs
+CMAKE_BINARY_DIR = /home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/booster_msgs/CMakeFiles /workspace/hsl-player/build/booster_msgs//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/CMakeFiles /home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/hsl-player/build/booster_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/booster/Workspace/hl_unification/hsl-player/build/booster_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -404,19 +404,6 @@ booster_msgs__py: cmake_check_build_system
 booster_msgs__py/fast:
 	$(MAKE) $(MAKESILENT) -f booster_msgs__py/CMakeFiles/booster_msgs__py.dir/build.make booster_msgs__py/CMakeFiles/booster_msgs__py.dir/build
 .PHONY : booster_msgs__py/fast
-
-#=============================================================================
-# Target rules for targets named booster_msgs__rs
-
-# Build rule for target.
-booster_msgs__rs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 booster_msgs__rs
-.PHONY : booster_msgs__rs
-
-# fast build rule for target.
-booster_msgs__rs/fast:
-	$(MAKE) $(MAKESILENT) -f booster_msgs__rs/CMakeFiles/booster_msgs__rs.dir/build.make booster_msgs__rs/CMakeFiles/booster_msgs__rs.dir/build
-.PHONY : booster_msgs__rs/fast
 
 rosidl_generator_c/booster_msgs/msg/detail/binary_data__functions.o: rosidl_generator_c/booster_msgs/msg/detail/binary_data__functions.c.o
 .PHONY : rosidl_generator_c/booster_msgs/msg/detail/binary_data__functions.o
@@ -1084,7 +1071,6 @@ help:
 	@echo "... booster_msgs"
 	@echo "... booster_msgs__cpp"
 	@echo "... booster_msgs__py"
-	@echo "... booster_msgs__rs"
 	@echo "... booster_msgs_uninstall"
 	@echo "... uninstall"
 	@echo "... booster_msgs__rosidl_generator_c"

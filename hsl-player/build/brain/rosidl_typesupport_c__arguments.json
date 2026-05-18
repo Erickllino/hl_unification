@@ -1,9 +1,9 @@
 {
   "package_name": "brain",
-  "output_dir": "/workspace/hsl-player/build/brain/rosidl_typesupport_c/brain",
+  "output_dir": "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_typesupport_c/brain",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
   "idl_tuples": [
-    "/workspace/hsl-player/build/brain/rosidl_adapter/brain:msg/Kick.idl"
+    "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_adapter/brain:msg/Kick.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -46,7 +46,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
-    "/workspace/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl",
+    "/home/booster/Workspace/hl_unification/hsl-player/build/brain/rosidl_adapter/brain/msg/Kick.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",
